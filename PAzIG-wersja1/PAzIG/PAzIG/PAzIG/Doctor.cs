@@ -28,6 +28,7 @@ namespace PAzIG
         private void editBt_Click(object sender, EventArgs e)
         {
             Edit edit = new Edit();
+            edit.formLB.Text = "doctor";
             edit.Show();
             this.Close();
         }
