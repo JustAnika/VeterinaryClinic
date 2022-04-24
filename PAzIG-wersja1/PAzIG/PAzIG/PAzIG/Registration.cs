@@ -20,7 +20,7 @@ namespace PAzIG
 
         private void registerBt_Click(object sender, EventArgs e)
         {
-            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             SqlConnection con = new SqlConnection(connection);
             long phone;
             long.TryParse(phoneTB.Text, out phone);
@@ -53,7 +53,7 @@ namespace PAzIG
                                                         {
                                                             if (infoTB.Text == "")
                                                             {
-                                                                string pet = "INSERT INTO Pacjent (Imie, Gatunek, Plec) VALUES (" + "'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "')";
+                                                                string pet = "INSERT INTO Pacjent (Id_zwierzecia, Imie, Gatunek, Plec) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "')";
 
                                                                 con.Open();
 
@@ -67,7 +67,7 @@ namespace PAzIG
                                                             }
                                                             else
                                                             {
-                                                                string pet = "INSERT INTO Pacjent VALUES (Imie, Gatunek, Plec, Opis) VALUES (" + "'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "','" + infoTB.Text + "')";
+                                                                string pet = "INSERT INTO Pacjent VALUES (Id_zwierzecia, Imie, Gatunek, Plec, Opis) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "','" + infoTB.Text + "')";
 
                                                                 con.Open();
 
@@ -88,7 +88,7 @@ namespace PAzIG
                                                             {
                                                                 if (infoTB.Text == "")
                                                                 {
-                                                                    string pet = "INSERT INTO Pacjent VALUES (Imie, Gatunek, Plec, Wiek) VALUES (" + "'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ")";
+                                                                    string pet = "INSERT INTO Pacjent VALUES (Id_zwierzecia, Imie, Gatunek, Plec, Wiek) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ")";
 
                                                                     con.Open();
 
@@ -102,7 +102,7 @@ namespace PAzIG
                                                                 }
                                                                 else
                                                                 {
-                                                                    string pet = "INSERT INTO Pacjent VALUES (Imie, Gatunek, Plec, Wiek, Opis) VALUES (" + "'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ",'" + infoTB.Text + "')";
+                                                                    string pet = "INSERT INTO Pacjent VALUES (Id_zwierzecia, Imie, Gatunek, Plec, Wiek, Opis) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ",'" + infoTB.Text + "')";
 
                                                                     con.Open();
 
