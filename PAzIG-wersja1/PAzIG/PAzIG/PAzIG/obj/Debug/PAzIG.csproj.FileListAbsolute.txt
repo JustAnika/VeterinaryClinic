@@ -1,0 +1,157 @@
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\PAzIG.exe.config
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\PAzIG.exe
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\PAzIG.pdb
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Core.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Identity.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Buffers.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Memory.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Numerics.Vectors.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.AccessControl.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Permissions.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Principal.Windows.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Encodings.Web.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Json.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.ValueTuple.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Core.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Identity.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Data.SqlClient.pdb
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Buffers.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Memory.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Numerics.Vectors.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.AccessControl.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Permissions.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Principal.Windows.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Encodings.Web.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Json.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\System.ValueTuple.xml
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.AssemblyReference.cache
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.SuggestedBindingRedirects.cache
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Form1.resources
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Properties.Resources.resources
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.GenerateResource.cache
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.CoreCompileInputs.cache
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.CopyComplete
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.exe
+D:\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.pdb
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\PAzIG.exe.config
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\PAzIG.exe
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\PAzIG.pdb
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Core.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Identity.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Data.SqlClient.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Logging.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Tokens.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Buffers.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.IdentityModel.Tokens.Jwt.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Memory.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Numerics.Vectors.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.AccessControl.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Cryptography.ProtectedData.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Permissions.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Principal.Windows.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Encodings.Web.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Json.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.ValueTuple.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Core.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Azure.Identity.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Data.SqlClient.pdb
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Data.SqlClient.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.Identity.Client.Extensions.Msal.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Logging.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Protocols.OpenIdConnect.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\Microsoft.IdentityModel.Tokens.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Buffers.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Memory.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Numerics.Vectors.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.AccessControl.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Permissions.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Security.Principal.Windows.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Encodings.Web.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Text.Json.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\System.ValueTuple.xml
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\fr\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\it\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\ja\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\ko\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\pt-BR\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\ru\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.AssemblyReference.cache
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.SuggestedBindingRedirects.cache
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.AddVisit.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Apointment.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Doctor.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Edit.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.LogIn.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Owner.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Properties.Resources.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Nurse.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Registration.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Technician.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Test.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.GenerateResource.cache
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.CoreCompileInputs.cache
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.CopyComplete
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.exe
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.pdb
