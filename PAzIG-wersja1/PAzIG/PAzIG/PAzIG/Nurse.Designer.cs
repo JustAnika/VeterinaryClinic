@@ -38,9 +38,10 @@
             // 
             // registrationBt
             // 
-            this.registrationBt.Location = new System.Drawing.Point(41, 26);
+            this.registrationBt.Location = new System.Drawing.Point(55, 32);
+            this.registrationBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registrationBt.Name = "registrationBt";
-            this.registrationBt.Size = new System.Drawing.Size(285, 37);
+            this.registrationBt.Size = new System.Drawing.Size(380, 46);
             this.registrationBt.TabIndex = 0;
             this.registrationBt.Text = "Registration";
             this.registrationBt.UseVisualStyleBackColor = true;
@@ -48,9 +49,10 @@
             // 
             // editBt
             // 
-            this.editBt.Location = new System.Drawing.Point(344, 26);
+            this.editBt.Location = new System.Drawing.Point(459, 32);
+            this.editBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editBt.Name = "editBt";
-            this.editBt.Size = new System.Drawing.Size(285, 37);
+            this.editBt.Size = new System.Drawing.Size(380, 46);
             this.editBt.TabIndex = 1;
             this.editBt.Text = "Edition";
             this.editBt.UseVisualStyleBackColor = true;
@@ -58,9 +60,10 @@
             // 
             // createBt
             // 
-            this.createBt.Location = new System.Drawing.Point(647, 26);
+            this.createBt.Location = new System.Drawing.Point(863, 32);
+            this.createBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.createBt.Name = "createBt";
-            this.createBt.Size = new System.Drawing.Size(285, 37);
+            this.createBt.Size = new System.Drawing.Size(380, 46);
             this.createBt.TabIndex = 2;
             this.createBt.Text = "Create An Appointment";
             this.createBt.UseVisualStyleBackColor = true;
@@ -69,26 +72,29 @@
             // patientLst
             // 
             this.patientLst.HideSelection = false;
-            this.patientLst.Location = new System.Drawing.Point(41, 83);
+            this.patientLst.Location = new System.Drawing.Point(55, 102);
+            this.patientLst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.patientLst.Name = "patientLst";
-            this.patientLst.Size = new System.Drawing.Size(429, 260);
+            this.patientLst.Size = new System.Drawing.Size(571, 319);
             this.patientLst.TabIndex = 3;
             this.patientLst.UseCompatibleStateImageBehavior = false;
             // 
             // doctorLst
             // 
             this.doctorLst.HideSelection = false;
-            this.doctorLst.Location = new System.Drawing.Point(503, 83);
+            this.doctorLst.Location = new System.Drawing.Point(671, 102);
+            this.doctorLst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.doctorLst.Name = "doctorLst";
-            this.doctorLst.Size = new System.Drawing.Size(429, 260);
+            this.doctorLst.Size = new System.Drawing.Size(571, 319);
             this.doctorLst.TabIndex = 4;
             this.doctorLst.UseCompatibleStateImageBehavior = false;
             // 
             // logOutBt
             // 
-            this.logOutBt.Location = new System.Drawing.Point(418, 376);
+            this.logOutBt.Location = new System.Drawing.Point(557, 463);
+            this.logOutBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logOutBt.Name = "logOutBt";
-            this.logOutBt.Size = new System.Drawing.Size(126, 37);
+            this.logOutBt.Size = new System.Drawing.Size(168, 46);
             this.logOutBt.TabIndex = 10;
             this.logOutBt.Text = "Log Out";
             this.logOutBt.UseVisualStyleBackColor = true;
@@ -96,15 +102,16 @@
             // 
             // Nurse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 459);
+            this.ClientSize = new System.Drawing.Size(1275, 565);
             this.Controls.Add(this.logOutBt);
             this.Controls.Add(this.doctorLst);
             this.Controls.Add(this.patientLst);
             this.Controls.Add(this.createBt);
             this.Controls.Add(this.editBt);
             this.Controls.Add(this.registrationBt);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Nurse";
             this.Text = "Nurse";
             this.ResumeLayout(false);

@@ -52,8 +52,8 @@ namespace PAzIG
                                                         {
                                                             if (infoTB.Text != "")
                                                             {
-                                                                string owner = "UPDATE Wlasciciel SET Imie = '" + firstNameLb.Text + "', Nazwisko = '" + lastNameLb.Text + "', Adres = '" + adressTB.Text + "', Telefon = " + phoneTB.Text + "WHERE Login_uzytkownika LIKE '" + loginTB.Text + "'";
-                                                                string pet = "UPTADE Pacjent SET Imie = '" + petTB.Text + "', Gatunek = '" + speciesTB.Text + "', Plec = '" + sexTB.Text + "', Wiek = '" + ageTB.Text + "', Opis = '" + infoTB.Text + "' WHERE Id_zwierzecia = (SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "'";
+                                                                string owner = "UPDATE Wlasciciel SET Imie = '" + firstNameTB.Text + "', Nazwisko = '" + lastNameTB.Text + "', Adres = '" + adressTB.Text + "', Telefon = " + phoneTB.Text + " WHERE Id_wlasciciela LIKE '" + loginTB.Text + "'";
+                                                                string pet = "UPDATE Pacjent SET Imie = '" + petTB.Text + "', Gatunek = '" + speciesTB.Text + "', Plec = '" + sexTB.Text + "', Wiek = '" + ageTB.Text + "', Opis = '" + infoTB.Text + "' WHERE Id_zwierzecia = (SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "')";
                                                                 con.Open();
 
                                                                 SqlCommand cmdOwner = new SqlCommand(owner, con);
