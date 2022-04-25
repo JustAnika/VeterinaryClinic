@@ -124,3 +124,5 @@ VALUES ('P', 'monkaminska', 'piel')
 
 
 SELECT * FROM Logowanie;
+SELECT * FROM Wlasciciel;
+SELECT * FROM Pacjent;
