@@ -31,7 +31,6 @@
             this.patientLst = new System.Windows.Forms.ListView();
             this.addBt = new System.Windows.Forms.Button();
             this.editBt = new System.Windows.Forms.Button();
-            this.ownerBt = new System.Windows.Forms.Button();
             this.orderBt = new System.Windows.Forms.Button();
             this.logOutBt = new System.Windows.Forms.Button();
             this.petBT = new System.Windows.Forms.Button();
@@ -40,17 +39,19 @@
             // patientLst
             // 
             this.patientLst.HideSelection = false;
-            this.patientLst.Location = new System.Drawing.Point(46, 109);
+            this.patientLst.Location = new System.Drawing.Point(61, 134);
+            this.patientLst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.patientLst.Name = "patientLst";
-            this.patientLst.Size = new System.Drawing.Size(699, 260);
+            this.patientLst.Size = new System.Drawing.Size(931, 319);
             this.patientLst.TabIndex = 4;
             this.patientLst.UseCompatibleStateImageBehavior = false;
             // 
             // addBt
             // 
-            this.addBt.Location = new System.Drawing.Point(473, 45);
+            this.addBt.Location = new System.Drawing.Point(579, 55);
+            this.addBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addBt.Name = "addBt";
-            this.addBt.Size = new System.Drawing.Size(126, 37);
+            this.addBt.Size = new System.Drawing.Size(168, 46);
             this.addBt.TabIndex = 7;
             this.addBt.Text = "Add Visit";
             this.addBt.UseVisualStyleBackColor = true;
@@ -58,29 +59,21 @@
             // 
             // editBt
             // 
-            this.editBt.Location = new System.Drawing.Point(329, 45);
+            this.editBt.Location = new System.Drawing.Point(321, 55);
+            this.editBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editBt.Name = "editBt";
-            this.editBt.Size = new System.Drawing.Size(126, 37);
+            this.editBt.Size = new System.Drawing.Size(168, 46);
             this.editBt.TabIndex = 6;
             this.editBt.Text = "Edition";
             this.editBt.UseVisualStyleBackColor = true;
             this.editBt.Click += new System.EventHandler(this.editBt_Click);
             // 
-            // ownerBt
-            // 
-            this.ownerBt.Location = new System.Drawing.Point(46, 45);
-            this.ownerBt.Name = "ownerBt";
-            this.ownerBt.Size = new System.Drawing.Size(126, 37);
-            this.ownerBt.TabIndex = 5;
-            this.ownerBt.Text = "Add Owner";
-            this.ownerBt.UseVisualStyleBackColor = true;
-            this.ownerBt.Click += new System.EventHandler(this.registrationBt_Click);
-            // 
             // orderBt
             // 
-            this.orderBt.Location = new System.Drawing.Point(619, 45);
+            this.orderBt.Location = new System.Drawing.Point(824, 55);
+            this.orderBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.orderBt.Name = "orderBt";
-            this.orderBt.Size = new System.Drawing.Size(126, 37);
+            this.orderBt.Size = new System.Drawing.Size(168, 46);
             this.orderBt.TabIndex = 8;
             this.orderBt.Text = "Order A Test";
             this.orderBt.UseVisualStyleBackColor = true;
@@ -88,9 +81,10 @@
             // 
             // logOutBt
             // 
-            this.logOutBt.Location = new System.Drawing.Point(329, 406);
+            this.logOutBt.Location = new System.Drawing.Point(439, 500);
+            this.logOutBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logOutBt.Name = "logOutBt";
-            this.logOutBt.Size = new System.Drawing.Size(126, 37);
+            this.logOutBt.Size = new System.Drawing.Size(168, 46);
             this.logOutBt.TabIndex = 9;
             this.logOutBt.Text = "Log Out";
             this.logOutBt.UseVisualStyleBackColor = true;
@@ -98,9 +92,10 @@
             // 
             // petBT
             // 
-            this.petBT.Location = new System.Drawing.Point(187, 45);
+            this.petBT.Location = new System.Drawing.Point(61, 55);
+            this.petBT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.petBT.Name = "petBT";
-            this.petBT.Size = new System.Drawing.Size(126, 37);
+            this.petBT.Size = new System.Drawing.Size(168, 46);
             this.petBT.TabIndex = 10;
             this.petBT.Text = "Add Pet";
             this.petBT.UseVisualStyleBackColor = true;
@@ -108,16 +103,16 @@
             // 
             // Doctor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 484);
+            this.ClientSize = new System.Drawing.Size(1027, 596);
             this.Controls.Add(this.petBT);
             this.Controls.Add(this.logOutBt);
             this.Controls.Add(this.orderBt);
             this.Controls.Add(this.addBt);
             this.Controls.Add(this.editBt);
-            this.Controls.Add(this.ownerBt);
             this.Controls.Add(this.patientLst);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Doctor";
             this.Text = "Doctor";
             this.ResumeLayout(false);
@@ -129,7 +124,6 @@
         private System.Windows.Forms.ListView patientLst;
         private System.Windows.Forms.Button addBt;
         private System.Windows.Forms.Button editBt;
-        private System.Windows.Forms.Button ownerBt;
         private System.Windows.Forms.Button orderBt;
         private System.Windows.Forms.Button logOutBt;
         private System.Windows.Forms.Button petBT;

@@ -144,7 +144,6 @@ D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Apoi
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Doctor.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Edit.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.LogIn.resources
-D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Owner.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Properties.Resources.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Nurse.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Technician.resources
@@ -154,5 +153,4 @@ D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.cspr
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.CopyComplete
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.exe
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.pdb
-D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.AddOwner.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.AddPet.resources

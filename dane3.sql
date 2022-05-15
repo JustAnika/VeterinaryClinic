@@ -1,6 +1,7 @@
 -- Stworzenie i usuniecie bazy danych --
 --CREATE DATABASE Przychodnia
---USE Przychodnia
+USE Przychodnia;
+--use master;
 --DROP DATABASE Przychodnia
 -- Stworzenie tabeli --
 -- Logowanie --
@@ -8,7 +9,9 @@ GO
 CREATE TABLE Logowanie
 (Id_logowania CHAR(1),
 Login_uzytkownika VARCHAR(100) PRIMARY KEY NOT NULL,
-Haslo VARCHAR(100) NOT NULL)
+Haslo VARCHAR(100) NOT NULL,
+Imie VARCHAR(100),
+Nazwisko VARCHAR(100))
 
 -- Pacjent --
 GO
@@ -23,19 +26,12 @@ Imie VARCHAR(100) NOT NULL,
 Nazwisko VARCHAR(100) NOT NULL,
 Telefon DECIMAL NOT NULL)
 
--- Pracownik --
-GO
-CREATE TABLE Pracownik
-(Id_pracownika VARCHAR(100) PRIMARY KEY NOT NULL,
-Imie VARCHAR(100) NOT NULL,
-Nazwisko VARCHAR(100) NOT NULL)
-
 -- Badanie --
 GO
 CREATE TABLE Badanie
 (Id_badania INT IDENTITY PRIMARY KEY NOT NULL,
 Id_zwierzecia INT FOREIGN KEY (Id_zwierzecia) REFERENCES Pacjent ON DELETE CASCADE NOT NULL,
-Id_pracownika VARCHAR(100) FOREIGN KEY (Id_pracownika) REFERENCES Pracownik ON DELETE CASCADE NOT NULL,
+Id_pracownika VARCHAR(100) FOREIGN KEY (Id_pracownika) REFERENCES Logowanie(Login_Uzytkownika) ON DELETE NO ACTION NOT NULL,--
 Data_badania DATETIME NOT NULL)
 
 -- Wizyta --
@@ -43,7 +39,7 @@ GO
 CREATE TABLE Wizyta
 (Id_wizyty INT IDENTITY PRIMARY KEY NOT NULL,
 Id_zwierzecia INT FOREIGN KEY (Id_zwierzecia) REFERENCES Pacjent ON DELETE CASCADE NOT NULL,
-Id_pracownika VARCHAR(100) FOREIGN KEY (Id_pracownika) REFERENCES Pracownik ON DELETE CASCADE NOT NULL,
+Id_pracownika VARCHAR(100) FOREIGN KEY (Id_pracownika) REFERENCES Logowanie(Login_Uzytkownika) ON DELETE NO ACTION NOT NULL,--
 Data_wizyty DATETIME NOT NULL,
 Id_pracowni INT NULL,
 Lek VARCHAR(100) NULL,
@@ -62,7 +58,13 @@ Id_badania INT FOREIGN KEY (Id_badania) REFERENCES Badanie ON DELETE NO ACTION N
 GO
 ALTER TABLE Logowanie
 ADD CONSTRAINT CK_Id
-CHECK(Id_logowania LIKE 'V' OR Id_logowania LIKE 'T' OR Id_logowania LIKE 'P')
+CHECK(Id_logowania LIKE 'V' OR Id_logowania LIKE 'T' OR Id_logowania LIKE 'P' OR Id_logowania LIKE 'A')
+
+--Badanie--
+GO
+ALTER TABLE Badanie
+ADD CONSTRAINT CK_BadFK
+FOREIGN KEY (Id_pracownika) REFERENCES Logowanie(Login_Uzytkownika) ON DELETE NO ACTION;
 
 -- Pacjent --
 GO
@@ -75,21 +77,19 @@ ALTER TABLE Pacjent
 ADD CONSTRAINT CK_Telefon
 CHECK(Telefon LIKE '[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]')
 
--- Pracownik --
-GO
-ALTER TABLE Pracownik
-ADD FOREIGN KEY (Id_pracownika)
-REFERENCES Logowanie(Login_uzytkownika) 
-
 -- Przykladowe dane --
 GO
-INSERT INTO	Logowanie
+INSERT INTO	Logowanie(Id_logowania,Login_uzytkownika,Haslo)
 VALUES ('V', 'jankowalski', 'wete')
 
-INSERT INTO	Logowanie
+INSERT INTO	Logowanie(Id_logowania,Login_uzytkownika,Haslo)
 VALUES ('T', 'adanowak', 'tech')
 
-INSERT INTO	Logowanie
+INSERT INTO	Logowanie(Id_logowania,Login_uzytkownika,Haslo)
 VALUES ('P', 'monkaminska', 'piel')
+
+INSERT INTO	Logowanie(Id_logowania,Login_uzytkownika,Haslo)
+VALUES ('A', 'admin', 'haslo')
+
 
 SELECT * FROM Logowanie;

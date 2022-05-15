@@ -19,9 +19,10 @@ namespace PAzIG
 
         private void registrationBt_Click(object sender, EventArgs e)
         {
-            AddOwner addOwner = new AddOwner();
-            addOwner.Show();
+           // AddOwner addOwner = new AddOwner();
+           // addOwner.Show();
             this.Close();
+           
         }
 
         private void editBt_Click(object sender, EventArgs e)

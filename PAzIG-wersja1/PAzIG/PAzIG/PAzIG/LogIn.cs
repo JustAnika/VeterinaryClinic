@@ -25,13 +25,10 @@ namespace PAzIG
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
-            //int liczba = cmd.ExecuteNonQuery();
             SqlDataReader reader = cmd.ExecuteReader();
             string tryb = "";
             while (reader.Read())
             {
-                //string text = String.Format("{0}", reader[0]);
-                //loginTB.Text = text;
                 if (loginTB.Text != "")
                 {
                     if (passwordTB.Text != "")
