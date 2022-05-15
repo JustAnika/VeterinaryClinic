@@ -38,13 +38,25 @@ namespace PAzIG
         {
             Edit edit = new Edit();
             edit.formLB.Text = "doctor";
-            edit.Show();
-            this.Close();
+            if (patientLst.SelectedItems.Count == 1)
+            {
+                string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
+                string identyfikator = separated[separated.Length - 1].TrimEnd('}');
+                edit.idTB.Text = identyfikator;
+                edit.ShowData();
+                edit.Show();
+                this.Close();
+            }
+            else
+            {
+                if (patientLst.SelectedItems.Count == 0) MessageBox.Show("Please select an animal to edit!");
+                else MessageBox.Show("Please select ONLY ONE animal to edit!");
+            }
         }
 
         private void addBt_Click(object sender, EventArgs e)
         {
-            AddVisit visit = new AddVisit();
+            EditVisit visit = new EditVisit();
             if (patientLst.SelectedItems.Count == 1)
             {
                 string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
@@ -76,7 +88,7 @@ namespace PAzIG
 
         private void petBT_Click(object sender, EventArgs e)
         {
-            AddPet addPet = new AddPet();
+            Register addPet = new Register();
             addPet.formLB.Text = "doctor";
             addPet.Show();
             this.Close();

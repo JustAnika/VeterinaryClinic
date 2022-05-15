@@ -1,6 +1,6 @@
 ﻿namespace PAzIG
 {
-    partial class AddVisit
+    partial class EditVisit
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@
             this.doctoLb = new System.Windows.Forms.Label();
             this.doctorTextBox = new System.Windows.Forms.TextBox();
             this.medicineLb = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.medicineTB = new System.Windows.Forms.TextBox();
             this.addBt = new System.Windows.Forms.Button();
             this.backBt = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -54,7 +54,7 @@
             this.addLb.Name = "addLb";
             this.addLb.Size = new System.Drawing.Size(116, 29);
             this.addLb.TabIndex = 2;
-            this.addLb.Text = "Add Visit";
+            this.addLb.Text = "Edit Visit";
             // 
             // infoLb
             // 
@@ -69,7 +69,7 @@
             // infoTextBox
             // 
             this.infoTextBox.Location = new System.Drawing.Point(404, 379);
-            this.infoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.infoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.infoTextBox.Name = "infoTextBox";
             this.infoTextBox.Size = new System.Drawing.Size(216, 22);
             this.infoTextBox.TabIndex = 38;
@@ -80,15 +80,16 @@
             this.petLb.Location = new System.Drawing.Point(56, 229);
             this.petLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.petLb.Name = "petLb";
-            this.petLb.Size = new System.Drawing.Size(44, 16);
+            this.petLb.Size = new System.Drawing.Size(49, 16);
             this.petLb.TabIndex = 37;
-            this.petLb.Text = "Pet Id:";
+            this.petLb.Text = "Pet Id*:";
             // 
             // petTextBox
             // 
             this.petTextBox.Location = new System.Drawing.Point(60, 268);
-            this.petTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.petTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.petTextBox.Name = "petTextBox";
+            this.petTextBox.ReadOnly = true;
             this.petTextBox.Size = new System.Drawing.Size(216, 22);
             this.petTextBox.TabIndex = 36;
             // 
@@ -105,7 +106,7 @@
             // laboratoryTextBox
             // 
             this.laboratoryTextBox.Location = new System.Drawing.Point(404, 162);
-            this.laboratoryTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.laboratoryTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.laboratoryTextBox.Name = "laboratoryTextBox";
             this.laboratoryTextBox.Size = new System.Drawing.Size(216, 22);
             this.laboratoryTextBox.TabIndex = 34;
@@ -116,14 +117,14 @@
             this.dateLb.Location = new System.Drawing.Point(56, 340);
             this.dateLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateLb.Name = "dateLb";
-            this.dateLb.Size = new System.Drawing.Size(39, 16);
+            this.dateLb.Size = new System.Drawing.Size(44, 16);
             this.dateLb.TabIndex = 33;
-            this.dateLb.Text = "Date:";
+            this.dateLb.Text = "Date*:";
             // 
             // dateTextBox
             // 
             this.dateTextBox.Location = new System.Drawing.Point(60, 379);
-            this.dateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.dateTextBox.Name = "dateTextBox";
             this.dateTextBox.Size = new System.Drawing.Size(216, 22);
             this.dateTextBox.TabIndex = 32;
@@ -134,14 +135,14 @@
             this.doctoLb.Location = new System.Drawing.Point(56, 123);
             this.doctoLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.doctoLb.Name = "doctoLb";
-            this.doctoLb.Size = new System.Drawing.Size(64, 16);
+            this.doctoLb.Size = new System.Drawing.Size(69, 16);
             this.doctoLb.TabIndex = 31;
-            this.doctoLb.Text = "Doctor Id:";
+            this.doctoLb.Text = "Doctor Id*:";
             // 
             // doctorTextBox
             // 
             this.doctorTextBox.Location = new System.Drawing.Point(60, 162);
-            this.doctorTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.doctorTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.doctorTextBox.Name = "doctorTextBox";
             this.doctorTextBox.Size = new System.Drawing.Size(216, 22);
             this.doctorTextBox.TabIndex = 30;
@@ -156,18 +157,18 @@
             this.medicineLb.TabIndex = 41;
             this.medicineLb.Text = "Medicine:";
             // 
-            // textBox1
+            // medicineTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(404, 268);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 22);
-            this.textBox1.TabIndex = 40;
+            this.medicineTB.Location = new System.Drawing.Point(404, 268);
+            this.medicineTB.Margin = new System.Windows.Forms.Padding(4);
+            this.medicineTB.Name = "medicineTB";
+            this.medicineTB.Size = new System.Drawing.Size(216, 22);
+            this.medicineTB.TabIndex = 40;
             // 
             // addBt
             // 
             this.addBt.Location = new System.Drawing.Point(423, 450);
-            this.addBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBt.Margin = new System.Windows.Forms.Padding(4);
             this.addBt.Name = "addBt";
             this.addBt.Size = new System.Drawing.Size(172, 54);
             this.addBt.TabIndex = 42;
@@ -178,7 +179,7 @@
             // backBt
             // 
             this.backBt.Location = new System.Drawing.Point(80, 450);
-            this.backBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backBt.Margin = new System.Windows.Forms.Padding(4);
             this.backBt.Name = "backBt";
             this.backBt.Size = new System.Drawing.Size(172, 54);
             this.backBt.TabIndex = 60;
@@ -186,7 +187,7 @@
             this.backBt.UseVisualStyleBackColor = true;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
-            // AddVisit
+            // EditVisit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -194,7 +195,7 @@
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.addBt);
             this.Controls.Add(this.medicineLb);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.medicineTB);
             this.Controls.Add(this.infoLb);
             this.Controls.Add(this.infoTextBox);
             this.Controls.Add(this.petLb);
@@ -206,8 +207,8 @@
             this.Controls.Add(this.doctoLb);
             this.Controls.Add(this.doctorTextBox);
             this.Controls.Add(this.addLb);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "AddVisit";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "EditVisit";
             this.Text = "AddVisit";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,7 +227,7 @@
         private System.Windows.Forms.Label doctoLb;
         private System.Windows.Forms.TextBox doctorTextBox;
         private System.Windows.Forms.Label medicineLb;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox medicineTB;
         private System.Windows.Forms.Button addBt;
         private System.Windows.Forms.Button backBt;
         internal System.Windows.Forms.TextBox petTextBox;

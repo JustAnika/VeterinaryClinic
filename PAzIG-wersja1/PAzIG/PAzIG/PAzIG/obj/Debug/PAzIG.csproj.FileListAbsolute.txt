@@ -139,7 +139,6 @@ D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\zh-Hans\Mi
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.AssemblyReference.cache
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.SuggestedBindingRedirects.cache
-D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.AddVisit.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Apointment.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Doctor.resources
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Edit.resources
@@ -153,4 +152,6 @@ D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.cspr
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.csproj.CopyComplete
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.exe
 D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.pdb
-D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.AddPet.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Admin.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.EditVisit.resources
+D:\Uczelnia\Semestr 6\PAzIG\PAzIG-wersja1\PAzIG\PAzIG\PAzIG\obj\Debug\PAzIG.Register.resources
