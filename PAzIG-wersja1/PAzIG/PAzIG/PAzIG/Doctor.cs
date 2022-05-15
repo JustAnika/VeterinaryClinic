@@ -1,5 +1,4 @@
-﻿using Microsoft.Data.SqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,33 +15,13 @@ namespace PAzIG
         public Doctor()
         {
             InitializeComponent();
-            Wgraj();
         }
-        private void Wgraj()
-        {
-            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
-            string login = "annnowak";
-            //string sqlQuery = "SELECT * FROM Wlasciciel WHERE id_wlasciciela LIKE '"+login+"'"; 
-            string sqlQuery = "SELECT * FROM Wlasciciel ";
-            SqlConnection con = new SqlConnection(connection);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(sqlQuery, con);
-            SqlDataReader reader = cmd.ExecuteReader();
-            List<string> dane = new List<string>();
-            while (reader.Read())
-            {
-                string dana = String.Format("{0}", reader[0]) + " \n " + String.Format("{0}", reader[1]) + " \n " + String.Format("{0}", reader[2]) + " \n " + String.Format("{0}", reader[3]) + " \n " + String.Format("{0}", reader[4]) + " \n " + String.Format("{0}", reader[5]);
-                patientLst.Items.Add(dana);
-                dane.Add(dana);
-            }
-            con.Close();
-            
-        }
+
         private void registrationBt_Click(object sender, EventArgs e)
         {
-            Registration registration = new Registration();
-            registration.formLB.Text = "doctor";
-            registration.Show();
+            AddOwner addOwner = new AddOwner();
+            addOwner.formLB.Text = "doctor";
+            addOwner.Show();
             this.Close();
         }
 
@@ -75,9 +54,12 @@ namespace PAzIG
             this.Close();
         }
 
-        private void Doctor_FormClosing(object sender, FormClosingEventArgs e)
+        private void petBT_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            AddPet addPet = new AddPet();
+            addPet.formLB.Text = "doctor";
+            addPet.Show();
+            this.Close();
         }
     }
 }

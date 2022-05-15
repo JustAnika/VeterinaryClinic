@@ -60,211 +60,188 @@
             // 
             this.idLb.AutoSize = true;
             this.idLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.idLb.Location = new System.Drawing.Point(205, 48);
-            this.idLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.idLb.Location = new System.Drawing.Point(154, 39);
             this.idLb.Name = "idLb";
-            this.idLb.Size = new System.Drawing.Size(284, 29);
+            this.idLb.Size = new System.Drawing.Size(224, 24);
             this.idLb.TabIndex = 0;
             this.idLb.Text = "Edit Patient Information";
             // 
             // loginTB
             // 
-            this.loginTB.Location = new System.Drawing.Point(137, 127);
-            this.loginTB.Margin = new System.Windows.Forms.Padding(4);
+            this.loginTB.Location = new System.Drawing.Point(103, 103);
             this.loginTB.Name = "loginTB";
-            this.loginTB.Size = new System.Drawing.Size(468, 22);
+            this.loginTB.Size = new System.Drawing.Size(352, 20);
             this.loginTB.TabIndex = 1;
             // 
             // petLb
             // 
             this.petLb.AutoSize = true;
             this.petLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.petLb.Location = new System.Drawing.Point(92, 220);
-            this.petLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.petLb.Location = new System.Drawing.Point(69, 179);
             this.petLb.Name = "petLb";
-            this.petLb.Size = new System.Drawing.Size(155, 24);
+            this.petLb.Size = new System.Drawing.Size(128, 18);
             this.petLb.TabIndex = 2;
             this.petLb.Text = "Pet Information:";
             // 
             // infoLb
             // 
             this.infoLb.AutoSize = true;
-            this.infoLb.Location = new System.Drawing.Point(220, 711);
-            this.infoLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.infoLb.Location = new System.Drawing.Point(165, 578);
             this.infoLb.Name = "infoLb";
-            this.infoLb.Size = new System.Drawing.Size(138, 16);
+            this.infoLb.Size = new System.Drawing.Size(111, 13);
             this.infoLb.TabIndex = 29;
             this.infoLb.Text = "Additional Information:";
             // 
             // infoTB
             // 
-            this.infoTB.Location = new System.Drawing.Point(224, 751);
-            this.infoTB.Margin = new System.Windows.Forms.Padding(4);
+            this.infoTB.Location = new System.Drawing.Point(168, 610);
             this.infoTB.Name = "infoTB";
-            this.infoTB.Size = new System.Drawing.Size(216, 22);
+            this.infoTB.Size = new System.Drawing.Size(163, 20);
             this.infoTB.TabIndex = 28;
             // 
             // ageLb
             // 
             this.ageLb.AutoSize = true;
-            this.ageLb.Location = new System.Drawing.Point(67, 594);
-            this.ageLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ageLb.Location = new System.Drawing.Point(50, 483);
             this.ageLb.Name = "ageLb";
-            this.ageLb.Size = new System.Drawing.Size(35, 16);
+            this.ageLb.Size = new System.Drawing.Size(29, 13);
             this.ageLb.TabIndex = 27;
             this.ageLb.Text = "Age:";
             // 
             // ageTB
             // 
-            this.ageTB.Location = new System.Drawing.Point(71, 634);
-            this.ageTB.Margin = new System.Windows.Forms.Padding(4);
+            this.ageTB.Location = new System.Drawing.Point(53, 515);
             this.ageTB.Name = "ageTB";
-            this.ageTB.Size = new System.Drawing.Size(216, 22);
+            this.ageTB.Size = new System.Drawing.Size(163, 20);
             this.ageTB.TabIndex = 26;
             // 
             // sexLb
             // 
             this.sexLb.AutoSize = true;
-            this.sexLb.Location = new System.Drawing.Point(67, 494);
-            this.sexLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sexLb.Location = new System.Drawing.Point(50, 401);
             this.sexLb.Name = "sexLb";
-            this.sexLb.Size = new System.Drawing.Size(33, 16);
+            this.sexLb.Size = new System.Drawing.Size(28, 13);
             this.sexLb.TabIndex = 25;
             this.sexLb.Text = "Sex:";
             // 
             // sexTB
             // 
-            this.sexTB.Location = new System.Drawing.Point(71, 533);
-            this.sexTB.Margin = new System.Windows.Forms.Padding(4);
+            this.sexTB.Location = new System.Drawing.Point(53, 433);
             this.sexTB.Name = "sexTB";
-            this.sexTB.Size = new System.Drawing.Size(216, 22);
+            this.sexTB.Size = new System.Drawing.Size(163, 20);
             this.sexTB.TabIndex = 24;
             // 
             // speciesLb
             // 
             this.speciesLb.AutoSize = true;
-            this.speciesLb.Location = new System.Drawing.Point(67, 389);
-            this.speciesLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.speciesLb.Location = new System.Drawing.Point(50, 316);
             this.speciesLb.Name = "speciesLb";
-            this.speciesLb.Size = new System.Drawing.Size(60, 16);
+            this.speciesLb.Size = new System.Drawing.Size(48, 13);
             this.speciesLb.TabIndex = 23;
             this.speciesLb.Text = "Species:";
             // 
             // speciesTB
             // 
-            this.speciesTB.Location = new System.Drawing.Point(71, 428);
-            this.speciesTB.Margin = new System.Windows.Forms.Padding(4);
+            this.speciesTB.Location = new System.Drawing.Point(53, 348);
             this.speciesTB.Name = "speciesTB";
-            this.speciesTB.Size = new System.Drawing.Size(216, 22);
+            this.speciesTB.Size = new System.Drawing.Size(163, 20);
             this.speciesTB.TabIndex = 22;
             // 
             // nameLb
             // 
             this.nameLb.AutoSize = true;
-            this.nameLb.Location = new System.Drawing.Point(67, 283);
-            this.nameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nameLb.Location = new System.Drawing.Point(50, 230);
             this.nameLb.Name = "nameLb";
-            this.nameLb.Size = new System.Drawing.Size(47, 16);
+            this.nameLb.Size = new System.Drawing.Size(38, 13);
             this.nameLb.TabIndex = 21;
             this.nameLb.Text = "Name:";
             // 
             // petTB
             // 
-            this.petTB.Location = new System.Drawing.Point(71, 322);
-            this.petTB.Margin = new System.Windows.Forms.Padding(4);
+            this.petTB.Location = new System.Drawing.Point(53, 262);
             this.petTB.Name = "petTB";
-            this.petTB.Size = new System.Drawing.Size(216, 22);
+            this.petTB.Size = new System.Drawing.Size(163, 20);
             this.petTB.TabIndex = 20;
             // 
             // phoneLb
             // 
             this.phoneLb.AutoSize = true;
-            this.phoneLb.Location = new System.Drawing.Point(385, 594);
-            this.phoneLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.phoneLb.Location = new System.Drawing.Point(289, 483);
             this.phoneLb.Name = "phoneLb";
-            this.phoneLb.Size = new System.Drawing.Size(49, 16);
+            this.phoneLb.Size = new System.Drawing.Size(41, 13);
             this.phoneLb.TabIndex = 37;
             this.phoneLb.Text = "Phone:";
             // 
             // phoneTB
             // 
-            this.phoneTB.Location = new System.Drawing.Point(389, 634);
-            this.phoneTB.Margin = new System.Windows.Forms.Padding(4);
+            this.phoneTB.Location = new System.Drawing.Point(292, 515);
             this.phoneTB.Name = "phoneTB";
-            this.phoneTB.Size = new System.Drawing.Size(216, 22);
+            this.phoneTB.Size = new System.Drawing.Size(163, 20);
             this.phoneTB.TabIndex = 36;
             // 
             // adressLb
             // 
             this.adressLb.AutoSize = true;
-            this.adressLb.Location = new System.Drawing.Point(385, 494);
-            this.adressLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.adressLb.Location = new System.Drawing.Point(289, 401);
             this.adressLb.Name = "adressLb";
-            this.adressLb.Size = new System.Drawing.Size(53, 16);
+            this.adressLb.Size = new System.Drawing.Size(42, 13);
             this.adressLb.TabIndex = 35;
             this.adressLb.Text = "Adress:";
             // 
             // adressTB
             // 
-            this.adressTB.Location = new System.Drawing.Point(389, 533);
-            this.adressTB.Margin = new System.Windows.Forms.Padding(4);
+            this.adressTB.Location = new System.Drawing.Point(292, 433);
             this.adressTB.Name = "adressTB";
-            this.adressTB.Size = new System.Drawing.Size(216, 22);
+            this.adressTB.Size = new System.Drawing.Size(163, 20);
             this.adressTB.TabIndex = 34;
             // 
             // lastNameLb
             // 
             this.lastNameLb.AutoSize = true;
-            this.lastNameLb.Location = new System.Drawing.Point(385, 389);
-            this.lastNameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lastNameLb.Location = new System.Drawing.Point(289, 316);
             this.lastNameLb.Name = "lastNameLb";
-            this.lastNameLb.Size = new System.Drawing.Size(75, 16);
+            this.lastNameLb.Size = new System.Drawing.Size(61, 13);
             this.lastNameLb.TabIndex = 33;
             this.lastNameLb.Text = "Last Name:";
             // 
             // lastNameTB
             // 
-            this.lastNameTB.Location = new System.Drawing.Point(389, 428);
-            this.lastNameTB.Margin = new System.Windows.Forms.Padding(4);
+            this.lastNameTB.Location = new System.Drawing.Point(292, 348);
             this.lastNameTB.Name = "lastNameTB";
-            this.lastNameTB.Size = new System.Drawing.Size(216, 22);
+            this.lastNameTB.Size = new System.Drawing.Size(163, 20);
             this.lastNameTB.TabIndex = 32;
             // 
             // firstNameLb
             // 
             this.firstNameLb.AutoSize = true;
-            this.firstNameLb.Location = new System.Drawing.Point(385, 283);
-            this.firstNameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.firstNameLb.Location = new System.Drawing.Point(289, 230);
             this.firstNameLb.Name = "firstNameLb";
-            this.firstNameLb.Size = new System.Drawing.Size(75, 16);
+            this.firstNameLb.Size = new System.Drawing.Size(60, 13);
             this.firstNameLb.TabIndex = 31;
             this.firstNameLb.Text = "First Name:";
             // 
             // firstNameTB
             // 
-            this.firstNameTB.Location = new System.Drawing.Point(389, 322);
-            this.firstNameTB.Margin = new System.Windows.Forms.Padding(4);
+            this.firstNameTB.Location = new System.Drawing.Point(292, 262);
             this.firstNameTB.Name = "firstNameTB";
-            this.firstNameTB.Size = new System.Drawing.Size(216, 22);
+            this.firstNameTB.Size = new System.Drawing.Size(163, 20);
             this.firstNameTB.TabIndex = 30;
             // 
             // ownerLb
             // 
             this.ownerLb.AutoSize = true;
             this.ownerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ownerLb.Location = new System.Drawing.Point(404, 220);
-            this.ownerLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ownerLb.Location = new System.Drawing.Point(303, 179);
             this.ownerLb.Name = "ownerLb";
-            this.ownerLb.Size = new System.Drawing.Size(187, 24);
+            this.ownerLb.Size = new System.Drawing.Size(152, 18);
             this.ownerLb.TabIndex = 38;
             this.ownerLb.Text = "Owner Information:";
             // 
             // editBt
             // 
-            this.editBt.Location = new System.Drawing.Point(389, 822);
-            this.editBt.Margin = new System.Windows.Forms.Padding(4);
+            this.editBt.Location = new System.Drawing.Point(292, 668);
             this.editBt.Name = "editBt";
-            this.editBt.Size = new System.Drawing.Size(217, 63);
+            this.editBt.Size = new System.Drawing.Size(163, 51);
             this.editBt.TabIndex = 39;
             this.editBt.Text = "Edit";
             this.editBt.UseVisualStyleBackColor = true;
@@ -273,19 +250,17 @@
             // ownerLoginLB
             // 
             this.ownerLoginLB.AutoSize = true;
-            this.ownerLoginLB.Location = new System.Drawing.Point(67, 130);
-            this.ownerLoginLB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ownerLoginLB.Location = new System.Drawing.Point(50, 106);
             this.ownerLoginLB.Name = "ownerLoginLB";
-            this.ownerLoginLB.Size = new System.Drawing.Size(54, 20);
+            this.ownerLoginLB.Size = new System.Drawing.Size(36, 13);
             this.ownerLoginLB.TabIndex = 40;
             this.ownerLoginLB.Text = "Login:";
             // 
             // backBt
             // 
-            this.backBt.Location = new System.Drawing.Point(71, 822);
-            this.backBt.Margin = new System.Windows.Forms.Padding(4);
+            this.backBt.Location = new System.Drawing.Point(53, 668);
             this.backBt.Name = "backBt";
-            this.backBt.Size = new System.Drawing.Size(217, 63);
+            this.backBt.Size = new System.Drawing.Size(163, 51);
             this.backBt.TabIndex = 60;
             this.backBt.Text = "Go Back";
             this.backBt.UseVisualStyleBackColor = true;
@@ -294,17 +269,17 @@
             // formLB
             // 
             this.formLB.AutoSize = true;
-            this.formLB.Location = new System.Drawing.Point(262, 181);
+            this.formLB.Location = new System.Drawing.Point(212, 147);
             this.formLB.Name = "formLB";
-            this.formLB.Size = new System.Drawing.Size(0, 16);
+            this.formLB.Size = new System.Drawing.Size(0, 13);
             this.formLB.TabIndex = 61;
             this.formLB.Visible = false;
             // 
             // Edit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 1184);
+            this.ClientSize = new System.Drawing.Size(530, 762);
             this.Controls.Add(this.formLB);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.ownerLoginLB);
@@ -331,7 +306,6 @@
             this.Controls.Add(this.petLb);
             this.Controls.Add(this.loginTB);
             this.Controls.Add(this.idLb);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Edit";
             this.Text = "Edit";
             this.ResumeLayout(false);

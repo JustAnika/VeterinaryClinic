@@ -19,8 +19,8 @@ namespace PAzIG
 
         private void registrationBt_Click(object sender, EventArgs e)
         {
-            Registration registration = new Registration();
-            registration.Show();
+            AddOwner addOwner = new AddOwner();
+            addOwner.Show();
             this.Close();
         }
 
@@ -42,6 +42,13 @@ namespace PAzIG
         {
             LogIn logIn = new LogIn();
             logIn.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddPet addPet = new AddPet();
+            addPet.Show();
             this.Close();
         }
     }
