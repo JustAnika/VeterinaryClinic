@@ -16,7 +16,10 @@ namespace PAzIG
         {
             InitializeComponent();
         }
+        private void UploadData()
+        {
 
+        }
         private void registrationBt_Click(object sender, EventArgs e)
         {
             AddOwner addOwner = new AddOwner();

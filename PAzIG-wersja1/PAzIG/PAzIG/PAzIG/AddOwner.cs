@@ -20,7 +20,7 @@ namespace PAzIG
 
         private void registerBt_Click(object sender, EventArgs e)
         {
-            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             SqlConnection con = new SqlConnection(connection);
             string test = "SELECT * FROM Logowanie WHERE Login_uzytkownika LIKE '" + loginTB.Text + "' AND Haslo LIKE '" + passwordTB.Text + "'";
             con.Open();
@@ -29,11 +29,11 @@ namespace PAzIG
             int notExist = 0;
             while (reader.Read())
             {
-                if (reader[0] == "W")
+                if (String.Format("{0}",reader[0]) == "W")
                 {
-                    if (reader[1] == loginTB.Text)
+                    if (String.Format("{0}",reader[1]) == loginTB.Text)
                     {
-                        if (reader[2] == passwordTB.Text)
+                        if (String.Format("{0}",reader[2]) == passwordTB.Text)
                         {
                             MessageBox.Show("The user already exist. Choose different data.");
                         }
@@ -65,109 +65,15 @@ namespace PAzIG
                                     if (phoneTB.Text != "")
                                     {
                                         if (phone > 0)
-                                        {
-                                            if (petTB.Text != "")
-                                            {
-                                                if (speciesTB.Text != "")
-                                                {
-                                                    if (sexTB.Text != "")
-                                                    {
-                                                        if (sexTB.Text == "K" || sexTB.Text == "M" || sexTB.Text == "N")
-                                                        {
-
-                                                            string login = "INSERT INTO Logowanie VALUES ('W','" + loginTB.Text + "','" + passwordTB.Text + "')";
-                                                            string owner = "INSERT INTO Wlasciciel (Imie, Id_wlasciciela, Nazwisko, Adres, Telefon) VALUES (" + "'" + firstNameTB.Text + "'," + "(SELECT Login_uzytkownika FROM Logowanie WHERE Haslo LIKE '" + passwordTB.Text + "'),'" + lastNameTB.Text + "','" + adressTB.Text + "'," + phoneTB.Text + ")";
-                                                            if (ageTB.Text == "")
-                                                            {
-                                                                if (infoTB.Text == "")
-                                                                {
-                                                                    string pet = "INSERT INTO Pacjent (Id_zwierzecia, Imie, Gatunek, Plec) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "')";
-
-                                                                    con.Open();
-
-                                                                    SqlCommand cmdLogin = new SqlCommand(login, con);
-                                                                    SqlCommand cmdOwner = new SqlCommand(owner, con);
-                                                                    SqlCommand cmdPet = new SqlCommand(pet, con);
-
-                                                                    cmdLogin.ExecuteNonQuery();
-                                                                    cmdOwner.ExecuteNonQuery();
-                                                                    cmdPet.ExecuteNonQuery();
-                                                                }
-                                                                else
-                                                                {
-                                                                    string pet = "INSERT INTO Pacjent VALUES (Id_zwierzecia, Imie, Gatunek, Plec, Opis) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "','" + infoTB.Text + "')";
-
-                                                                    con.Open();
-
-                                                                    SqlCommand cmdLogin = new SqlCommand(login, con);
-                                                                    SqlCommand cmdOwner = new SqlCommand(owner, con);
-                                                                    SqlCommand cmdPet = new SqlCommand(pet, con);
-
-                                                                    cmdLogin.ExecuteNonQuery();
-                                                                    cmdOwner.ExecuteNonQuery();
-                                                                    cmdPet.ExecuteNonQuery();
-                                                                }
-                                                            }
-                                                            else
-                                                            {
-                                                                long age;
-                                                                long.TryParse(ageTB.Text, out age);
-                                                                if (age > 0)
-                                                                {
-                                                                    if (infoTB.Text == "")
-                                                                    {
-                                                                        string pet = "INSERT INTO Pacjent VALUES (Id_zwierzecia, Imie, Gatunek, Plec, Wiek) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ")";
-
-                                                                        con.Open();
-
-                                                                        SqlCommand cmdLogin = new SqlCommand(login, con);
-                                                                        SqlCommand cmdOwner = new SqlCommand(owner, con);
-                                                                        SqlCommand cmdPet = new SqlCommand(pet, con);
-
-                                                                        cmdLogin.ExecuteNonQuery();
-                                                                        cmdOwner.ExecuteNonQuery();
-                                                                        cmdPet.ExecuteNonQuery();
-                                                                    }
-                                                                    else
-                                                                    {
-                                                                        string pet = "INSERT INTO Pacjent VALUES (Id_zwierzecia, Imie, Gatunek, Plec, Wiek, Opis) VALUES (" + "(SELECT Id_zwierzecia FROM Wlasciciel WHERE Id_wlasciciela LIKE '" + loginTB.Text + "),'" + petTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ",'" + infoTB.Text + "')";
-
-                                                                        con.Open();
-
-                                                                        SqlCommand cmdLogin = new SqlCommand(login, con);
-                                                                        SqlCommand cmdOwner = new SqlCommand(owner, con);
-                                                                        SqlCommand cmdPet = new SqlCommand(pet, con);
-
-                                                                        cmdLogin.ExecuteNonQuery();
-                                                                        cmdOwner.ExecuteNonQuery();
-                                                                        cmdPet.ExecuteNonQuery();
-                                                                    }
-                                                                }
-                                                                else
-                                                                {
-                                                                    MessageBox.Show("Please enter correct form of data");
-                                                                }
-                                                            }
-                                                        }
-                                                        else
-                                                        {
-                                                            MessageBox.Show("Please enter correct form of data");
-                                                        }
-                                                    }
-                                                    else
-                                                    {
-                                                        MessageBox.Show("Please enter all required information");
-                                                    }
-                                                }
-                                                else
-                                                {
-                                                    MessageBox.Show("Please enter all required information");
-                                                }
-                                            }
-                                            else
-                                            {
-                                                MessageBox.Show("Please enter all required information");
-                                            }
+                                        { 
+                                            string login = "INSERT INTO Logowanie VALUES ('W','" + loginTB.Text + "','" + passwordTB.Text + "')";
+                                            string owner = "INSERT INTO Wlasciciel (Imie, Id_wlasciciela, Nazwisko, Adres, Telefon) VALUES (" + "'" + firstNameTB.Text + "'," + "(SELECT Login_uzytkownika FROM Logowanie WHERE Haslo LIKE '" + passwordTB.Text + "'),'" + lastNameTB.Text + "','" + adressTB.Text + "'," + phoneTB.Text + ")";
+                                            con.Open();
+                                            SqlCommand cmdLogin = new SqlCommand(login, con);
+                                            SqlCommand cmdOwner = new SqlCommand(owner, con);
+                                            cmdLogin.ExecuteNonQuery();
+                                            cmdOwner.ExecuteNonQuery();
+                                         
                                         }
                                         else
                                         {

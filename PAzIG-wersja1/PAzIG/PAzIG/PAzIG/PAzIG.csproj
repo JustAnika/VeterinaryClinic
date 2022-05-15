@@ -166,6 +166,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddOwner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddOwner.Designer.cs">
+      <DependentUpon>AddOwner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddPet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPet.Designer.cs">
+      <DependentUpon>AddPet.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddVisit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,18 +228,18 @@
     <Compile Include="Nurse.Designer.cs">
       <DependentUpon>Nurse.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registration.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Registration.Designer.cs">
-      <DependentUpon>Registration.cs</DependentUpon>
-    </Compile>
     <Compile Include="Technician.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Technician.Designer.cs">
       <DependentUpon>Technician.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddOwner.resx">
+      <DependentUpon>AddOwner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPet.resx">
+      <DependentUpon>AddPet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddVisit.resx">
       <DependentUpon>AddVisit.cs</DependentUpon>
     </EmbeddedResource>
@@ -257,9 +269,6 @@
     </Compile>
     <EmbeddedResource Include="Nurse.resx">
       <DependentUpon>Nurse.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Registration.resx">
-      <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Technician.resx">
       <DependentUpon>Technician.cs</DependentUpon>
