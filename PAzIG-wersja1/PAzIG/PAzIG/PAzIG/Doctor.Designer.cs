@@ -41,7 +41,7 @@
             // 
             this.patientLst.HideSelection = false;
             this.patientLst.Location = new System.Drawing.Point(61, 134);
-            this.patientLst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.patientLst.Margin = new System.Windows.Forms.Padding(4);
             this.patientLst.Name = "patientLst";
             this.patientLst.Size = new System.Drawing.Size(769, 319);
             this.patientLst.TabIndex = 4;
@@ -50,7 +50,7 @@
             // addBt
             // 
             this.addBt.Location = new System.Drawing.Point(465, 55);
-            this.addBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addBt.Margin = new System.Windows.Forms.Padding(4);
             this.addBt.Name = "addBt";
             this.addBt.Size = new System.Drawing.Size(168, 46);
             this.addBt.TabIndex = 7;
@@ -61,7 +61,7 @@
             // editBt
             // 
             this.editBt.Location = new System.Drawing.Point(260, 55);
-            this.editBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editBt.Margin = new System.Windows.Forms.Padding(4);
             this.editBt.Name = "editBt";
             this.editBt.Size = new System.Drawing.Size(168, 46);
             this.editBt.TabIndex = 6;
@@ -72,7 +72,7 @@
             // registrationBt
             // 
             this.registrationBt.Location = new System.Drawing.Point(61, 55);
-            this.registrationBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registrationBt.Margin = new System.Windows.Forms.Padding(4);
             this.registrationBt.Name = "registrationBt";
             this.registrationBt.Size = new System.Drawing.Size(168, 46);
             this.registrationBt.TabIndex = 5;
@@ -83,7 +83,7 @@
             // orderBt
             // 
             this.orderBt.Location = new System.Drawing.Point(664, 55);
-            this.orderBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.orderBt.Margin = new System.Windows.Forms.Padding(4);
             this.orderBt.Name = "orderBt";
             this.orderBt.Size = new System.Drawing.Size(168, 46);
             this.orderBt.TabIndex = 8;
@@ -94,7 +94,7 @@
             // logOutBt
             // 
             this.logOutBt.Location = new System.Drawing.Point(359, 498);
-            this.logOutBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logOutBt.Margin = new System.Windows.Forms.Padding(4);
             this.logOutBt.Name = "logOutBt";
             this.logOutBt.Size = new System.Drawing.Size(168, 46);
             this.logOutBt.TabIndex = 9;
@@ -118,9 +118,10 @@
             this.Controls.Add(this.editBt);
             this.Controls.Add(this.registrationBt);
             this.Controls.Add(this.patientLst);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Doctor";
             this.Text = "Doctor";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Doctor_FormClosing);
             this.ResumeLayout(false);
 
         }
