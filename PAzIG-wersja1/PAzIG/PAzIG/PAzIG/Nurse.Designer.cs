@@ -39,7 +39,7 @@
             // editBt
             // 
             this.editBt.Location = new System.Drawing.Point(508, 32);
-            this.editBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editBt.Margin = new System.Windows.Forms.Padding(4);
             this.editBt.Name = "editBt";
             this.editBt.Size = new System.Drawing.Size(276, 46);
             this.editBt.TabIndex = 1;
@@ -50,7 +50,7 @@
             // createBt
             // 
             this.createBt.Location = new System.Drawing.Point(881, 32);
-            this.createBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createBt.Margin = new System.Windows.Forms.Padding(4);
             this.createBt.Name = "createBt";
             this.createBt.Size = new System.Drawing.Size(276, 46);
             this.createBt.TabIndex = 2;
@@ -62,26 +62,28 @@
             // 
             this.patientLst.HideSelection = false;
             this.patientLst.Location = new System.Drawing.Point(55, 102);
-            this.patientLst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.patientLst.Margin = new System.Windows.Forms.Padding(4);
             this.patientLst.Name = "patientLst";
             this.patientLst.Size = new System.Drawing.Size(571, 319);
             this.patientLst.TabIndex = 3;
             this.patientLst.UseCompatibleStateImageBehavior = false;
+            this.patientLst.View = System.Windows.Forms.View.List;
             // 
             // doctorLst
             // 
             this.doctorLst.HideSelection = false;
             this.doctorLst.Location = new System.Drawing.Point(671, 102);
-            this.doctorLst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.doctorLst.Margin = new System.Windows.Forms.Padding(4);
             this.doctorLst.Name = "doctorLst";
             this.doctorLst.Size = new System.Drawing.Size(571, 319);
             this.doctorLst.TabIndex = 4;
             this.doctorLst.UseCompatibleStateImageBehavior = false;
+            this.doctorLst.View = System.Windows.Forms.View.List;
             // 
             // logOutBt
             // 
             this.logOutBt.Location = new System.Drawing.Point(557, 463);
-            this.logOutBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.logOutBt.Margin = new System.Windows.Forms.Padding(4);
             this.logOutBt.Name = "logOutBt";
             this.logOutBt.Size = new System.Drawing.Size(168, 46);
             this.logOutBt.TabIndex = 10;
@@ -92,7 +94,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(147, 32);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(272, 46);
             this.button1.TabIndex = 11;
@@ -111,7 +113,7 @@
             this.Controls.Add(this.patientLst);
             this.Controls.Add(this.createBt);
             this.Controls.Add(this.editBt);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Nurse";
             this.Text = "Nurse";
             this.ResumeLayout(false);

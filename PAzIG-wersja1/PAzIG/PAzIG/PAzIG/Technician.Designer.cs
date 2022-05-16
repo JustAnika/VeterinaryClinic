@@ -34,9 +34,10 @@
             // 
             // logOutBt
             // 
-            this.logOutBt.Location = new System.Drawing.Point(226, 277);
+            this.logOutBt.Location = new System.Drawing.Point(301, 341);
+            this.logOutBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logOutBt.Name = "logOutBt";
-            this.logOutBt.Size = new System.Drawing.Size(126, 37);
+            this.logOutBt.Size = new System.Drawing.Size(168, 46);
             this.logOutBt.TabIndex = 10;
             this.logOutBt.Text = "Log Out";
             this.logOutBt.UseVisualStyleBackColor = true;
@@ -45,19 +46,22 @@
             // testsLst
             // 
             this.testsLst.HideSelection = false;
-            this.testsLst.Location = new System.Drawing.Point(50, 44);
+            this.testsLst.Location = new System.Drawing.Point(67, 54);
+            this.testsLst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.testsLst.Name = "testsLst";
-            this.testsLst.Size = new System.Drawing.Size(470, 199);
+            this.testsLst.Size = new System.Drawing.Size(625, 244);
             this.testsLst.TabIndex = 11;
             this.testsLst.UseCompatibleStateImageBehavior = false;
+            this.testsLst.View = System.Windows.Forms.View.List;
             // 
             // Technician
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(577, 350);
+            this.ClientSize = new System.Drawing.Size(769, 431);
             this.Controls.Add(this.testsLst);
             this.Controls.Add(this.logOutBt);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Technician";
             this.Text = "Technician";
             this.ResumeLayout(false);

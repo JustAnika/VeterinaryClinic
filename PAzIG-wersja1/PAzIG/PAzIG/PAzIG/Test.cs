@@ -16,5 +16,14 @@ namespace PAzIG
         {
             InitializeComponent();
         }
+
+        private void backBt_Click(object sender, EventArgs e)
+        {
+            Doctor doctor = new Doctor();
+            doctor.loginInfoLb.Text = fromLB.Text;
+            doctor.UploadDataVisits();
+            doctor.Show();
+            this.Close();
+        }
     }
 }

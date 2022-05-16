@@ -27,7 +27,7 @@ namespace PAzIG
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string dane = "Animal: " + reader[0] + "\n Doctor: " + reader[1] + "\n Data: " + reader[2];
+                string dane = "Animal: " + reader[0] + " Doctor: " + reader[1] + " Data: " + reader[2];
                 testsLst.Items.Add(dane);
             }
             con.Close();

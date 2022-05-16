@@ -20,7 +20,7 @@ namespace PAzIG
 
         private void addBT_Click(object sender, EventArgs e)
         {
-            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             string sqlQuery = "SELECT * FROM Logowanie";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
@@ -50,7 +50,7 @@ namespace PAzIG
                 {
                     if (passwordTB.Text != "")
                     {
-                        if (typeLstBox.SelectedItem == "Doctor" || typeLstBox.SelectedItem == "Nurse" || typeLstBox.SelectedItem == "Technician")
+                        if (typeLstBox.SelectedItem.ToString() == "Doctor" || typeLstBox.SelectedItem.ToString() == "Nurse" || typeLstBox.SelectedItem.ToString() == "Technician")
                         {
                             string user;
                             con.Open();

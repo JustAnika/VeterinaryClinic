@@ -27,6 +27,7 @@ namespace PAzIG
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
             SqlDataReader reader = cmd.ExecuteReader();
             string tryb = "";
+            string login = "";
             while (reader.Read())
             {
                 if (loginTB.Text != "")
@@ -38,6 +39,7 @@ namespace PAzIG
                             if (String.Format("{0}", reader[2]) == passwordTB.Text)
                             {
                                 tryb = String.Format("{0}", reader[0]);
+                                login = String.Format("{0}", reader[1]);
 
                             }
                         }
@@ -60,6 +62,8 @@ namespace PAzIG
                     break;
                 case "V":
                     Doctor lekarz = new Doctor();
+                    lekarz.loginInfoLb.Text = login;
+                    lekarz.UploadDataVisits();
                     lekarz.Show();
                     this.Hide();
                     break;
@@ -71,6 +75,11 @@ namespace PAzIG
                 case "P":
                     Nurse piel = new Nurse();
                     piel.Show();
+                    this.Hide();
+                    break;
+                case "A":
+                    Admin admin = new Admin();
+                    admin.Show();
                     this.Hide();
                     break;
             }

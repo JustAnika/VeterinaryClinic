@@ -40,9 +40,10 @@
             this.doctorTextBox = new System.Windows.Forms.TextBox();
             this.medicineLb = new System.Windows.Forms.Label();
             this.medicineTB = new System.Windows.Forms.TextBox();
-            this.addBt = new System.Windows.Forms.Button();
+            this.editBt = new System.Windows.Forms.Button();
             this.backBt = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.infoVisitLb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // addLb
@@ -117,9 +118,9 @@
             this.dateLb.Location = new System.Drawing.Point(56, 340);
             this.dateLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateLb.Name = "dateLb";
-            this.dateLb.Size = new System.Drawing.Size(114, 20);
+            this.dateLb.Size = new System.Drawing.Size(99, 16);
             this.dateLb.TabIndex = 33;
-            this.dateLb.Text = "Date an hour*:";
+            this.dateLb.Text = "Date and hour*:";
             // 
             // doctoLb
             // 
@@ -136,6 +137,7 @@
             this.doctorTextBox.Location = new System.Drawing.Point(60, 162);
             this.doctorTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.doctorTextBox.Name = "doctorTextBox";
+            this.doctorTextBox.ReadOnly = true;
             this.doctorTextBox.Size = new System.Drawing.Size(216, 22);
             this.doctorTextBox.TabIndex = 30;
             // 
@@ -157,16 +159,16 @@
             this.medicineTB.Size = new System.Drawing.Size(216, 22);
             this.medicineTB.TabIndex = 40;
             // 
-            // addBt
+            // editBt
             // 
-            this.addBt.Location = new System.Drawing.Point(423, 450);
-            this.addBt.Margin = new System.Windows.Forms.Padding(4);
-            this.addBt.Name = "addBt";
-            this.addBt.Size = new System.Drawing.Size(172, 54);
-            this.addBt.TabIndex = 42;
-            this.addBt.Text = "Add";
-            this.addBt.UseVisualStyleBackColor = true;
-            this.addBt.Click += new System.EventHandler(this.addBt_Click);
+            this.editBt.Location = new System.Drawing.Point(423, 450);
+            this.editBt.Margin = new System.Windows.Forms.Padding(4);
+            this.editBt.Name = "editBt";
+            this.editBt.Size = new System.Drawing.Size(172, 54);
+            this.editBt.TabIndex = 42;
+            this.editBt.Text = "Edit";
+            this.editBt.UseVisualStyleBackColor = true;
+            this.editBt.Click += new System.EventHandler(this.addBt_Click);
             // 
             // backBt
             // 
@@ -181,21 +183,32 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(60, 379);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(216, 22);
             this.dateTimePicker1.TabIndex = 61;
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            // 
+            // infoVisitLb
+            // 
+            this.infoVisitLb.AutoSize = true;
+            this.infoVisitLb.Location = new System.Drawing.Point(479, 48);
+            this.infoVisitLb.Name = "infoVisitLb";
+            this.infoVisitLb.Size = new System.Drawing.Size(44, 16);
+            this.infoVisitLb.TabIndex = 62;
+            this.infoVisitLb.Text = "label1";
+            this.infoVisitLb.Visible = false;
             // 
             // EditVisit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 543);
+            this.Controls.Add(this.infoVisitLb);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.backBt);
-            this.Controls.Add(this.addBt);
+            this.Controls.Add(this.editBt);
             this.Controls.Add(this.medicineLb);
             this.Controls.Add(this.medicineTB);
             this.Controls.Add(this.infoLb);
@@ -225,12 +238,13 @@
         private System.Windows.Forms.TextBox laboratoryTextBox;
         private System.Windows.Forms.Label dateLb;
         private System.Windows.Forms.Label doctoLb;
-        private System.Windows.Forms.TextBox doctorTextBox;
         private System.Windows.Forms.Label medicineLb;
         private System.Windows.Forms.TextBox medicineTB;
-        private System.Windows.Forms.Button addBt;
+        private System.Windows.Forms.Button editBt;
         private System.Windows.Forms.Button backBt;
         internal System.Windows.Forms.TextBox petTextBox;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        internal System.Windows.Forms.TextBox doctorTextBox;
+        internal System.Windows.Forms.Label infoVisitLb;
     }
 }

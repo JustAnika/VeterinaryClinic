@@ -57,7 +57,7 @@ namespace PAzIG
                 {
                     if (speciesTB.Text != "")
                     {
-                        if (sexLstBox.SelectedItem == "K" || sexLstBox.SelectedItem == "M" || sexLstBox.SelectedItem == "N")
+                        if (sexLstBox.SelectedItem.ToString() == "K" || sexLstBox.SelectedItem.ToString() == "M" || sexLstBox.SelectedItem.ToString() == "N")
                         {
                             if (firstNameTB.Text != "")
                             {
@@ -160,9 +160,11 @@ namespace PAzIG
 
         private void backBt_Click(object sender, EventArgs e)
         {
-            if (formLB.Text == "doctor")
+            if (formLB.Text !="")
             {
                 Doctor doctor = new Doctor();
+                doctor.loginInfoLb.Text = formLB.Text;
+                doctor.UploadDataVisits();
                 doctor.Show();
                 this.Close();
             }

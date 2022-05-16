@@ -12,7 +12,7 @@ namespace PAzIG
         }
         public void ShowData()
         {
-            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             SqlConnection con = new SqlConnection(connection);
             string test = "SELECT * FROM Pacjent WHERE Id_zwierzecia = " + idTB.Text;
             con.Open();
@@ -34,7 +34,7 @@ namespace PAzIG
 
         private void editBt_Click(object sender, EventArgs e)
         {
-            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             SqlConnection con = new SqlConnection(connection);
             string test = "SELECT * FROM Pacjent WHERE Id_zwierzecia = " + idTB.Text;
             con.Open();
@@ -182,16 +182,18 @@ namespace PAzIG
 
         private void backBt_Click(object sender, EventArgs e)
         {
-            if (formLB.Text == "doctor")
+            if (formLB.Text == "")
             {
-                Doctor doctor = new Doctor();
-                doctor.Show();
+                Nurse nurse = new Nurse();
+                nurse.Show();
                 this.Close();
             }
             else
             {
-                Nurse nurse = new Nurse();
-                nurse.Show();
+                Doctor doctor = new Doctor();
+                doctor.loginInfoLb.Text = formLB.Text; 
+                doctor.UploadDataVisits();
+                doctor.Show();
                 this.Close();
             }
         }

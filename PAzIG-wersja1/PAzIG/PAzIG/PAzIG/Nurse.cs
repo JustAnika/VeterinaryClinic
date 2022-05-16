@@ -29,7 +29,7 @@ namespace PAzIG
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string dane = "Animal: " + reader[1] + "\n Species: " + reader[2] + "\n Sex: " + reader[3] + "\n Id: " + reader[0];
+                string dane = "Animal: " + reader[1] + " Species: " + reader[2] + " Sex: " + reader[3] + " Id: " + reader[0];
                 patientLst.Items.Add(dane);
             }
             con.Close();
@@ -44,7 +44,7 @@ namespace PAzIG
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string dane = "Imię: " + reader[3] + "\n Nazwisko: " + reader[4] + "\n Login: " + reader[1] ;
+                string dane = "First name: " + reader[3] + " Surname: " + reader[4] + " Login: " + reader[1] ;
                 doctorLst.Items.Add(dane);
             }
             con.Close();
