@@ -29,39 +29,68 @@ namespace PAzIG
         {
             string cos = petTextBox.Text;
             string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; 
-            string sqlQuery = "SELECT * FROM Wizyta";
+            string sqlQuery = "SELECT Id_zwierzecia,Id_pracownika,CONVERT(DATETIME,Data_wizyty,120) FROM Wizyta";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
             SqlDataReader reader = cmd.ExecuteReader();
             bool exists = false;
+            string dzien = "";
+            string miesiac = "";
+            string godzina = "";
+            string minuta = "";
+            if (dateTimePicker1.Value.Day<10)
+            {
+                dzien = '0'+dateTimePicker1.Value.Day.ToString();
+            }
+            else
+            {
+                dzien = dateTimePicker1.Value.Day.ToString();    
+            }
+            if (dateTimePicker1.Value.Month < 10)
+            {
+                miesiac = '0' + dateTimePicker1.Value.Month.ToString();
+            }
+            else
+            {
+                miesiac = dateTimePicker1.Value.Month.ToString();
+            }
+            if (dateTimePicker1.Value.Hour < 10)
+            {
+                godzina = '0' + dateTimePicker1.Value.Hour.ToString();
+            }
+            else
+            {
+                godzina = dateTimePicker1.Value.Hour.ToString();
+            }
+            if (dateTimePicker1.Value.Minute < 10)
+            {
+                minuta = '0' + dateTimePicker1.Value.Minute.ToString();
+            }
+            else
+            {
+                minuta = dateTimePicker1.Value.Minute.ToString();
+            }
+            string formatdaty = dzien +'.'+ miesiac+'.'+ dateTimePicker1.Value.Year+' '+ godzina+':'+ minuta;
             while (reader.Read())
             {
-                string data = reader[3].ToString(); // dostaję jaz kropkami między datą w ofrmi dd.mm.yyyy i godziną z dwukropkiem
-                if (dateTextBox.Text!="")
+                
+                if (doctorTextBox.Text!= "")
                 {
-                    if (doctorTextBox.Text!= "")
+                    if (reader[0].ToString()==petTextBox.Text && reader[1].ToString() == doctorTextBox.Text && reader[2].ToString() == dateTimePicker1.Text)
                     {
-                        if (reader[2].ToString() == doctorTextBox.Text && reader[3].ToString() == dateTextBox.Text)
-                        {
-                            exists = true;
-                            break;
-                        }
-                    }
-                    else
-                    {
-                        MessageBox.Show("Please enter employees' login!");
+                        exists = true;
                         break;
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Please enter the date of the visit!");
+                    MessageBox.Show("Please enter employees' login!");
                     break;
                 }
             }
             con.Close();
-            if (!exists)
+            if (exists)
             {
                 if (laboratoryTextBox.Text != "")
                 {
@@ -70,41 +99,45 @@ namespace PAzIG
                         if (infoTextBox.Text != "")
                         {
                             //pracownia i leki i opis jest
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty,Id_pracowni,Lek,Opis) VALUES(" + petTextBox.Text + "," + doctorTextBox.Text + "," + dateTextBox.Text +", "+laboratoryTextBox.Text+","+medicineTB.Text+ ", "+ infoTextBox.Text + ");";
+                            string data = "UPDATE Wizyta SET Id_pracowni='"+ laboratoryTextBox.Text+"', Lek='"+medicineTB.Text+"', Opis='"+infoTextBox.Text+"' WHERE Id_zwierzecia="+petTextBox.Text+"AND Id_pracownika LIKE '" + doctorTextBox.Text+ "' AND Data_wizyty = CONVERT(DATETIME,'"+dateTimePicker1.Text+"',120)";
                             con.Open();
                             SqlCommand newvisit = new SqlCommand(data, con);
                             newvisit.ExecuteNonQuery();
                             con.Close();
+                            MessageBox.Show("Edit succesful!");
                         }
                         else
                         {
                             //pracownia i leki ale bez opisu
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty,Id_pracowni,Lek) VALUES(" + petTextBox.Text + "," + doctorTextBox.Text + "," + dateTextBox.Text +", " + laboratoryTextBox.Text + "," + medicineTB.Text + ");";
+                            string data = "UPDATE Wizyta SET Id_pracowni='" + laboratoryTextBox.Text + "', Lek='" + medicineTB.Text+ "' WHERE Id_zwierzecia=" + petTextBox.Text + "AND Id_pracownika LIKE '" + doctorTextBox.Text + "' AND Data_wizyty = CONVERT(DATETIME,'" + dateTimePicker1.Text + "',120)";
                             con.Open();
                             SqlCommand newvisit = new SqlCommand(data, con);
                             newvisit.ExecuteNonQuery();
                             con.Close();
+                            MessageBox.Show("Edit succesful!");
                         }
                     }
                     else
                     {
                         if (infoTextBox.Text != "")
                         {
-                            //pracownia i bez leków z opsiem
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty,Id_pracowni,Opis) VALUES(" + petTextBox.Text + "," + doctorTextBox.Text + "," + dateTextBox.Text +", " + laboratoryTextBox.Text + "," + infoTextBox.Text + ");";
+                            //pracownia bez leków z opsiem
+                            string data = "UPDATE Wizyta SET Id_pracowni='" + laboratoryTextBox.Text + "', Opis='" + infoTextBox.Text + "' WHERE Id_zwierzecia=" + petTextBox.Text + "AND Id_pracownika LIKE '" + doctorTextBox.Text + "' AND Data_wizyty = CONVERT(DATETIME,'" + dateTimePicker1.Text + "',120)";
                             con.Open();
                             SqlCommand newvisit = new SqlCommand(data, con);
                             newvisit.ExecuteNonQuery();
                             con.Close();
+                            MessageBox.Show("Edit succesful!");
                         }
                         else
                         {
                             //pracowia bez leków bez opisu
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty,Id_pracowni) VALUES(" + petTextBox.Text + "," + doctorTextBox.Text + "," + dateTextBox.Text +", " + laboratoryTextBox.Text+");";
+                            string data = "UPDATE Wizyta SET Id_pracowni='" + laboratoryTextBox.Text + "' WHERE Id_zwierzecia=" + petTextBox.Text + "AND Id_pracownika LIKE '" + doctorTextBox.Text + "' AND Data_wizyty = CONVERT(DATETIME,'" + dateTimePicker1.Text + "',120)";
                             con.Open();
                             SqlCommand newvisit = new SqlCommand(data, con);
                             newvisit.ExecuteNonQuery();
                             con.Close();
+                            MessageBox.Show("Edit succesful!");
                         }
                     }
                 }
@@ -115,20 +148,22 @@ namespace PAzIG
                         if (infoTextBox.Text != "")
                         {
                             //bez pracowni, z lekami  i z opisem
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty,Lek,Opis) VALUES("+petTextBox.Text+","+doctorTextBox.Text+","+dateTextBox.Text+ "," + medicineTB.Text + ", " + infoTextBox.Text + ");";
+                            string data = "UPDATE Wizyta SET Lek='" + medicineTB.Text + "', Opis='" + infoTextBox.Text + "' WHERE Id_zwierzecia=" + petTextBox.Text + "AND Id_pracownika LIKE '" + doctorTextBox.Text + "' AND Data_wizyty = CONVERT(DATETIME,'" + dateTimePicker1.Text + "',120)";
                             con.Open();
                             SqlCommand newvisit = new SqlCommand(data, con);
                             newvisit.ExecuteNonQuery();
                             con.Close();
+                            MessageBox.Show("Edit succesful!");
                         }
                         else
                         {
                             //bez pracowni z lekami bez opisu
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty,Opis) VALUES(" + petTextBox.Text + "," + doctorTextBox.Text + "," + dateTextBox.Text + ", " + infoTextBox.Text + ");";
+                            string data = "UPDATE Wizyta SET Lek='" + medicineTB.Text + "' WHERE Id_zwierzecia=" + petTextBox.Text + "AND Id_pracownika LIKE '" + doctorTextBox.Text + "' AND Data_wizyty = CONVERT(DATETIME,'" + dateTimePicker1.Text + "',120)";
                             con.Open();
                             SqlCommand newvisit = new SqlCommand(data, con);
                             newvisit.ExecuteNonQuery();
                             con.Close();
+                            MessageBox.Show("Edit succesful!");
                         }
                     }
                     else
@@ -136,20 +171,17 @@ namespace PAzIG
                         if (infoTextBox.Text != "")
                         {
                             //bez leków bez pracowni , z opisem
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty,Opis) VALUES(" + petTextBox.Text + "," + doctorTextBox.Text + "," + dateTextBox.Text + ", " + infoTextBox.Text + ");";
+                            string data = "UPDATE Wizyta SET Opis='" + infoTextBox.Text + "' WHERE Id_zwierzecia=" + petTextBox.Text + "AND Id_pracownika LIKE '" + doctorTextBox.Text + "' AND Data_wizyty = CONVERT(DATETIME,'" + dateTimePicker1.Text + "',120)";
                             con.Open();
                             SqlCommand newvisit = new SqlCommand(data, con);
                             newvisit.ExecuteNonQuery();
                             con.Close();
+                            MessageBox.Show("Edit succesful!");
                         }
                         else
                         {
                             //bez niczego
-                            string data = "INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty) VALUES(" + petTextBox.Text + "," + doctorTextBox.Text + "," + dateTextBox.Text + ");";
-                            con.Open();
-                            SqlCommand newvisit = new SqlCommand(data, con);
-                            newvisit.ExecuteNonQuery();
-                            con.Close();
+                            MessageBox.Show("No data to change!");
                         }
                     }
                 }
@@ -157,7 +189,7 @@ namespace PAzIG
             }
             else
             {
-                MessageBox.Show("There is already a visit at that date with this employee!");
+                MessageBox.Show("There isn't a visit at that date with this employee!");
             }
         }
     }

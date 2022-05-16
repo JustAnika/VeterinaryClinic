@@ -36,13 +36,13 @@
             this.laboratoryLb = new System.Windows.Forms.Label();
             this.laboratoryTextBox = new System.Windows.Forms.TextBox();
             this.dateLb = new System.Windows.Forms.Label();
-            this.dateTextBox = new System.Windows.Forms.TextBox();
             this.doctoLb = new System.Windows.Forms.Label();
             this.doctorTextBox = new System.Windows.Forms.TextBox();
             this.medicineLb = new System.Windows.Forms.Label();
             this.medicineTB = new System.Windows.Forms.TextBox();
             this.addBt = new System.Windows.Forms.Button();
             this.backBt = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // addLb
@@ -117,17 +117,9 @@
             this.dateLb.Location = new System.Drawing.Point(56, 340);
             this.dateLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dateLb.Name = "dateLb";
-            this.dateLb.Size = new System.Drawing.Size(44, 16);
+            this.dateLb.Size = new System.Drawing.Size(114, 20);
             this.dateLb.TabIndex = 33;
-            this.dateLb.Text = "Date*:";
-            // 
-            // dateTextBox
-            // 
-            this.dateTextBox.Location = new System.Drawing.Point(60, 379);
-            this.dateTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(216, 22);
-            this.dateTextBox.TabIndex = 32;
+            this.dateLb.Text = "Date an hour*:";
             // 
             // doctoLb
             // 
@@ -187,11 +179,21 @@
             this.backBt.UseVisualStyleBackColor = true;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(60, 379);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(216, 22);
+            this.dateTimePicker1.TabIndex = 61;
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            // 
             // EditVisit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(695, 543);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.addBt);
             this.Controls.Add(this.medicineLb);
@@ -203,7 +205,6 @@
             this.Controls.Add(this.laboratoryLb);
             this.Controls.Add(this.laboratoryTextBox);
             this.Controls.Add(this.dateLb);
-            this.Controls.Add(this.dateTextBox);
             this.Controls.Add(this.doctoLb);
             this.Controls.Add(this.doctorTextBox);
             this.Controls.Add(this.addLb);
@@ -223,7 +224,6 @@
         private System.Windows.Forms.Label laboratoryLb;
         private System.Windows.Forms.TextBox laboratoryTextBox;
         private System.Windows.Forms.Label dateLb;
-        private System.Windows.Forms.TextBox dateTextBox;
         private System.Windows.Forms.Label doctoLb;
         private System.Windows.Forms.TextBox doctorTextBox;
         private System.Windows.Forms.Label medicineLb;
@@ -231,5 +231,6 @@
         private System.Windows.Forms.Button addBt;
         private System.Windows.Forms.Button backBt;
         internal System.Windows.Forms.TextBox petTextBox;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

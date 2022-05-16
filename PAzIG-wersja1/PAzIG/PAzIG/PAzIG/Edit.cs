@@ -50,7 +50,7 @@ namespace PAzIG
             {
                 speciesTB.Text = String.Format("{0}", reader[2]);
             }
-            if (sexLstBox.SelectedItem == "K" || sexLstBox.SelectedItem == "M" || sexLstBox.SelectedItem == "N")
+            if (sexLstBox.SelectedItem.ToString() == "K" || sexLstBox.SelectedItem.ToString() == "M" || sexLstBox.SelectedItem.ToString() == "N")
             {
                 sexTB.Text = sexLstBox.SelectedItem.ToString();
             }

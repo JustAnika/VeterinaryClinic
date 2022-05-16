@@ -30,15 +30,12 @@
         {
             this.petLb = new System.Windows.Forms.Label();
             this.petTextBox = new System.Windows.Forms.TextBox();
-            this.dateLb = new System.Windows.Forms.Label();
-            this.dateTextBox = new System.Windows.Forms.TextBox();
+            this.dateHourLb = new System.Windows.Forms.Label();
             this.doctoLb = new System.Windows.Forms.Label();
             this.doctorTextBox = new System.Windows.Forms.TextBox();
             this.createLb = new System.Windows.Forms.Label();
             this.createBt = new System.Windows.Forms.Button();
             this.backBt = new System.Windows.Forms.Button();
-            this.hourTextBox = new System.Windows.Forms.TextBox();
-            this.hourLb = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
@@ -61,23 +58,15 @@
             this.petTextBox.Size = new System.Drawing.Size(216, 22);
             this.petTextBox.TabIndex = 49;
             // 
-            // dateLb
+            // dateHourLb
             // 
-            this.dateLb.AutoSize = true;
-            this.dateLb.Location = new System.Drawing.Point(61, 227);
-            this.dateLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.dateLb.Name = "dateLb";
-            this.dateLb.Size = new System.Drawing.Size(44, 16);
-            this.dateLb.TabIndex = 46;
-            this.dateLb.Text = "Date*:";
-            // 
-            // dateTextBox
-            // 
-            this.dateTextBox.Location = new System.Drawing.Point(64, 263);
-            this.dateTextBox.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTextBox.Name = "dateTextBox";
-            this.dateTextBox.Size = new System.Drawing.Size(216, 22);
-            this.dateTextBox.TabIndex = 45;
+            this.dateHourLb.AutoSize = true;
+            this.dateHourLb.Location = new System.Drawing.Point(175, 212);
+            this.dateHourLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.dateHourLb.Name = "dateHourLb";
+            this.dateHourLb.Size = new System.Drawing.Size(124, 20);
+            this.dateHourLb.TabIndex = 46;
+            this.dateHourLb.Text = "Date and hour*:";
             // 
             // doctoLb
             // 
@@ -131,27 +120,11 @@
             this.backBt.UseVisualStyleBackColor = true;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
-            // hourTextBox
-            // 
-            this.hourTextBox.Location = new System.Drawing.Point(361, 263);
-            this.hourTextBox.Name = "hourTextBox";
-            this.hourTextBox.Size = new System.Drawing.Size(216, 22);
-            this.hourTextBox.TabIndex = 61;
-            // 
-            // hourLb
-            // 
-            this.hourLb.AutoSize = true;
-            this.hourLb.Location = new System.Drawing.Point(367, 220);
-            this.hourLb.Name = "hourLb";
-            this.hourLb.Size = new System.Drawing.Size(44, 16);
-            this.hourLb.TabIndex = 62;
-            this.hourLb.Text = "Hour*:";
-            // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
-            this.dateTimePicker1.Location = new System.Drawing.Point(185, 292);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(178, 254);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(275, 22);
             this.dateTimePicker1.TabIndex = 63;
@@ -162,14 +135,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 454);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.hourLb);
-            this.Controls.Add(this.hourTextBox);
             this.Controls.Add(this.backBt);
             this.Controls.Add(this.createBt);
             this.Controls.Add(this.petLb);
             this.Controls.Add(this.petTextBox);
-            this.Controls.Add(this.dateLb);
-            this.Controls.Add(this.dateTextBox);
+            this.Controls.Add(this.dateHourLb);
             this.Controls.Add(this.doctoLb);
             this.Controls.Add(this.doctorTextBox);
             this.Controls.Add(this.createLb);
@@ -183,16 +153,13 @@
 
         #endregion
         private System.Windows.Forms.Label petLb;
-        private System.Windows.Forms.Label dateLb;
-        private System.Windows.Forms.TextBox dateTextBox;
+        private System.Windows.Forms.Label dateHourLb;
         private System.Windows.Forms.Label doctoLb;
         private System.Windows.Forms.Label createLb;
         private System.Windows.Forms.Button createBt;
         private System.Windows.Forms.Button backBt;
         internal System.Windows.Forms.TextBox petTextBox;
         internal System.Windows.Forms.TextBox doctorTextBox;
-        private System.Windows.Forms.TextBox hourTextBox;
-        private System.Windows.Forms.Label hourLb;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
