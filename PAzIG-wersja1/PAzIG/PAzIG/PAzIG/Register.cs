@@ -20,7 +20,7 @@ namespace PAzIG
 
         private void registerBt_Click(object sender, EventArgs e)
         {
-            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             SqlConnection con = new SqlConnection(connection);
             string test = "SELECT * FROM Pacjent";
             con.Open();
