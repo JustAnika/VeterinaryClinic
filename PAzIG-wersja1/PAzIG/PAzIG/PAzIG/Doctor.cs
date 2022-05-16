@@ -41,7 +41,7 @@ namespace PAzIG
             if (patientLst.SelectedItems.Count == 1)
             {
                 string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
-                string identyfikator = separated[separated.Length - 1].TrimEnd('}');
+                string identyfikator = separated[separated.Length - 1].TrimEnd('}').TrimStart(' ');
                 edit.idTB.Text = identyfikator;
                 edit.ShowData();
                 edit.Show();
@@ -60,15 +60,15 @@ namespace PAzIG
             if (patientLst.SelectedItems.Count == 1)
             {
                 string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
-                string identyfikator = separated[separated.Length - 1].TrimEnd('}');
+                string identyfikator = separated[separated.Length - 1].TrimEnd('}').TrimStart(' ');
                 visit.petTextBox.Text = identyfikator;
                 visit.Show();
                 this.Close();
             }
             else
             {
-                if (patientLst.SelectedItems.Count == 0) MessageBox.Show("Please select an animal to schedule a visit!");
-                else MessageBox.Show("Please select ONLY ONE animal to schedule a visit!");
+                if (patientLst.SelectedItems.Count == 0) MessageBox.Show("Please select an animal to edit a visit!");
+                else MessageBox.Show("Please select ONLY ONE animal to edit a visit!");
             }
         }
 

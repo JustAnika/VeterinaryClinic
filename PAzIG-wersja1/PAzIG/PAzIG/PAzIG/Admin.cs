@@ -50,42 +50,56 @@ namespace PAzIG
                 {
                     if (passwordTB.Text != "")
                     {
-                        string user;
-                        con.Open();
-                        switch (typeLstBox.SelectedIndex)
+                        if (typeLstBox.SelectedItem == "Doctor" || typeLstBox.SelectedItem == "Nurse" || typeLstBox.SelectedItem == "Technician")
                         {
-                            case 0:
-                                user = "INSERT INTO Logowanie VALUES ('V', '" + loginTB.Text + "','" + passwordTB.Text + "')";
-                                SqlCommand cmdUser0 = new SqlCommand(user, con);
-                                cmdUser0.ExecuteNonQuery();
-                                MessageBox.Show("User added successfully.");
-                                break;
-                            case 1:
-                                user = "INSERT INTO Logowanie VALUES ('T', '" + loginTB.Text + "','" + passwordTB.Text + "')";
-                                SqlCommand cmdUser1 = new SqlCommand(user, con);
-                                cmdUser1.ExecuteNonQuery();
-                                MessageBox.Show("User added successfully.");
-                                break;
-                            case 2:
-                                user = "INSERT INTO Logowanie VALUES ('P', '" + loginTB.Text + "','" + passwordTB.Text + "')";
-                                SqlCommand cmdUser2 = new SqlCommand(user, con);
-                                cmdUser2.ExecuteNonQuery();
-                                MessageBox.Show("User added successfully.");
-                                break;
-                        }   
+                            string user;
+                            con.Open();
+                            switch (typeLstBox.SelectedIndex)
+                            {
+                                case 0:
+                                    user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo) VALUES ('V', '" + loginTB.Text + "','" + passwordTB.Text + "')";
+                                    SqlCommand cmdUser0 = new SqlCommand(user, con);
+                                    cmdUser0.ExecuteNonQuery();
+                                    MessageBox.Show("User added successfully.");
+                                    break;
+                                case 1:
+                                    user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo) VALUES ('T', '" + loginTB.Text + "','" + passwordTB.Text + "')";
+                                    SqlCommand cmdUser1 = new SqlCommand(user, con);
+                                    cmdUser1.ExecuteNonQuery();
+                                    MessageBox.Show("User added successfully.");
+                                    break;
+                                case 2:
+                                    user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo) VALUES ('P', '" + loginTB.Text + "','" + passwordTB.Text + "')";
+                                    SqlCommand cmdUser2 = new SqlCommand(user, con);
+                                    cmdUser2.ExecuteNonQuery();
+                                    MessageBox.Show("User added successfully.");
+                                    break;
+                            }
+                        }
+                        else
+                        {
+                            MessageBox.Show("Please enter all required information.");
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Please enter password", "No passsword error");
+                        MessageBox.Show("Please enter all required information.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Please enter login", "No login error");
+                    MessageBox.Show("Please enter all required information.");
                 }
             }
             
             con.Close();
+        }
+
+        private void backBT_Click(object sender, EventArgs e)
+        {
+            LogIn logIn = new LogIn();
+            logIn.Show();
+            this.Close();
         }
     }
 }

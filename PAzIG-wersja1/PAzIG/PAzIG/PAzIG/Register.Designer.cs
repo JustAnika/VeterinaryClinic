@@ -45,12 +45,12 @@
             this.ageLb = new System.Windows.Forms.Label();
             this.ageTB = new System.Windows.Forms.TextBox();
             this.sexLb = new System.Windows.Forms.Label();
-            this.sexTB = new System.Windows.Forms.TextBox();
             this.speciesLb = new System.Windows.Forms.Label();
             this.speciesTB = new System.Windows.Forms.TextBox();
             this.nameLb = new System.Windows.Forms.Label();
             this.nameTB = new System.Windows.Forms.TextBox();
             this.requiredLB = new System.Windows.Forms.Label();
+            this.sexLstBox = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // firstNameTB
@@ -88,7 +88,7 @@
             // phoneLb
             // 
             this.phoneLb.AutoSize = true;
-            this.phoneLb.Location = new System.Drawing.Point(289, 316);
+            this.phoneLb.Location = new System.Drawing.Point(289, 306);
             this.phoneLb.Name = "phoneLb";
             this.phoneLb.Size = new System.Drawing.Size(45, 13);
             this.phoneLb.TabIndex = 9;
@@ -96,7 +96,7 @@
             // 
             // phoneTB
             // 
-            this.phoneTB.Location = new System.Drawing.Point(292, 348);
+            this.phoneTB.Location = new System.Drawing.Point(292, 332);
             this.phoneTB.Name = "phoneTB";
             this.phoneTB.Size = new System.Drawing.Size(163, 20);
             this.phoneTB.TabIndex = 8;
@@ -195,18 +195,11 @@
             // sexLb
             // 
             this.sexLb.AutoSize = true;
-            this.sexLb.Location = new System.Drawing.Point(47, 316);
+            this.sexLb.Location = new System.Drawing.Point(47, 306);
             this.sexLb.Name = "sexLb";
             this.sexLb.Size = new System.Drawing.Size(32, 13);
             this.sexLb.TabIndex = 78;
             this.sexLb.Text = "Sex:*";
-            // 
-            // sexTB
-            // 
-            this.sexTB.Location = new System.Drawing.Point(50, 348);
-            this.sexTB.Name = "sexTB";
-            this.sexTB.Size = new System.Drawing.Size(163, 20);
-            this.sexTB.TabIndex = 77;
             // 
             // speciesLb
             // 
@@ -249,11 +242,24 @@
             this.requiredLB.TabIndex = 84;
             this.requiredLB.Text = "*required information";
             // 
+            // sexLstBox
+            // 
+            this.sexLstBox.FormattingEnabled = true;
+            this.sexLstBox.Items.AddRange(new object[] {
+            "K",
+            "M",
+            "N"});
+            this.sexLstBox.Location = new System.Drawing.Point(50, 332);
+            this.sexLstBox.Name = "sexLstBox";
+            this.sexLstBox.Size = new System.Drawing.Size(120, 49);
+            this.sexLstBox.TabIndex = 85;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(507, 605);
+            this.Controls.Add(this.sexLstBox);
             this.Controls.Add(this.requiredLB);
             this.Controls.Add(this.petLB);
             this.Controls.Add(this.infoLb);
@@ -261,7 +267,6 @@
             this.Controls.Add(this.ageLb);
             this.Controls.Add(this.ageTB);
             this.Controls.Add(this.sexLb);
-            this.Controls.Add(this.sexTB);
             this.Controls.Add(this.speciesLb);
             this.Controls.Add(this.speciesTB);
             this.Controls.Add(this.nameLb);
@@ -303,11 +308,11 @@
         private System.Windows.Forms.Label ageLb;
         private System.Windows.Forms.TextBox ageTB;
         private System.Windows.Forms.Label sexLb;
-        private System.Windows.Forms.TextBox sexTB;
         private System.Windows.Forms.Label speciesLb;
         private System.Windows.Forms.TextBox speciesTB;
         private System.Windows.Forms.Label nameLb;
         private System.Windows.Forms.TextBox nameTB;
         private System.Windows.Forms.Label requiredLB;
+        private System.Windows.Forms.CheckedListBox sexLstBox;
     }
 }

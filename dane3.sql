@@ -91,5 +91,26 @@ VALUES ('P', 'monkaminska', 'piel')
 INSERT INTO	Logowanie(Id_logowania,Login_uzytkownika,Haslo)
 VALUES ('A', 'admin', 'haslo')
 
+SELECT * From Logowanie
 
-SELECT * FROM Logowanie;
+INSERT INTO Pacjent(Imie_zwierzecia,Gatunek,Plec,Imie,Nazwisko,Telefon)
+VALUES('Burek','Pies','M','Anna','Nowak','111111111');
+INSERT INTO Pacjent(Imie_zwierzecia,Gatunek,Plec,Imie,Nazwisko,Telefon)
+VALUES('Miœ','Pies','M','Anna','Nowak','111111111');
+INSERT INTO Pacjent(Imie_zwierzecia,Gatunek,Plec,Imie,Nazwisko,Telefon)
+VALUES('Komar','Pies','M','Anna','Nowak','111111111');
+
+SELECT * From Pacjent
+
+INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty)
+VALUES(1,'jankowalski','2022-01-01 17:15:00')
+INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty)
+VALUES(1,'jankowalski','2022-01-01 17:15')
+INSERT INTO Wizyta(Id_zwierzecia,Id_pracownika,Data_wizyty)
+VALUES(1,'jankowalski','01.01.2022 17:15')
+INSERT INTO Wizyta(Id_zwierzecia,Data_wizyty,Id_pracownika) 
+VALUES(2,CONVERT(datetime,'2020-03-10 15:30',120),'jankowalski');
+
+
+
+SELECT * From Wizyta

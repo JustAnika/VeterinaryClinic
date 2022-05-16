@@ -51,16 +51,16 @@
             this.backBt = new System.Windows.Forms.Button();
             this.formLB = new System.Windows.Forms.Label();
             this.idTB = new System.Windows.Forms.TextBox();
+            this.sexLstBox = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // idLb
             // 
             this.idLb.AutoSize = true;
             this.idLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.idLb.Location = new System.Drawing.Point(205, 48);
-            this.idLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.idLb.Location = new System.Drawing.Point(154, 39);
             this.idLb.Name = "idLb";
-            this.idLb.Size = new System.Drawing.Size(284, 29);
+            this.idLb.Size = new System.Drawing.Size(224, 24);
             this.idLb.TabIndex = 0;
             this.idLb.Text = "Edit Patient Information";
             // 
@@ -68,174 +68,156 @@
             // 
             this.petLb.AutoSize = true;
             this.petLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.petLb.Location = new System.Drawing.Point(95, 124);
-            this.petLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.petLb.Location = new System.Drawing.Point(71, 101);
             this.petLb.Name = "petLb";
-            this.petLb.Size = new System.Drawing.Size(155, 24);
+            this.petLb.Size = new System.Drawing.Size(128, 18);
             this.petLb.TabIndex = 2;
             this.petLb.Text = "Pet Information:";
             // 
             // infoLb
             // 
             this.infoLb.AutoSize = true;
-            this.infoLb.Location = new System.Drawing.Point(75, 596);
-            this.infoLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.infoLb.Location = new System.Drawing.Point(56, 507);
             this.infoLb.Name = "infoLb";
-            this.infoLb.Size = new System.Drawing.Size(138, 16);
+            this.infoLb.Size = new System.Drawing.Size(111, 13);
             this.infoLb.TabIndex = 29;
             this.infoLb.Text = "Additional Information:";
             // 
             // infoTB
             // 
-            this.infoTB.Location = new System.Drawing.Point(79, 635);
-            this.infoTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.infoTB.Location = new System.Drawing.Point(59, 539);
             this.infoTB.Name = "infoTB";
-            this.infoTB.Size = new System.Drawing.Size(216, 22);
+            this.infoTB.Size = new System.Drawing.Size(163, 20);
             this.infoTB.TabIndex = 28;
             // 
             // ageLb
             // 
             this.ageLb.AutoSize = true;
-            this.ageLb.Location = new System.Drawing.Point(69, 498);
-            this.ageLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ageLb.Location = new System.Drawing.Point(52, 428);
             this.ageLb.Name = "ageLb";
-            this.ageLb.Size = new System.Drawing.Size(35, 16);
+            this.ageLb.Size = new System.Drawing.Size(29, 13);
             this.ageLb.TabIndex = 27;
             this.ageLb.Text = "Age:";
             // 
             // ageTB
             // 
-            this.ageTB.Location = new System.Drawing.Point(73, 538);
-            this.ageTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ageTB.Location = new System.Drawing.Point(55, 460);
             this.ageTB.Name = "ageTB";
-            this.ageTB.Size = new System.Drawing.Size(216, 22);
+            this.ageTB.Size = new System.Drawing.Size(163, 20);
             this.ageTB.TabIndex = 26;
             // 
             // sexLb
             // 
             this.sexLb.AutoSize = true;
-            this.sexLb.Location = new System.Drawing.Point(69, 398);
-            this.sexLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.sexLb.Location = new System.Drawing.Point(52, 323);
             this.sexLb.Name = "sexLb";
-            this.sexLb.Size = new System.Drawing.Size(33, 16);
+            this.sexLb.Size = new System.Drawing.Size(28, 13);
             this.sexLb.TabIndex = 25;
             this.sexLb.Text = "Sex:";
             // 
             // sexTB
             // 
-            this.sexTB.Location = new System.Drawing.Point(73, 437);
-            this.sexTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sexTB.Location = new System.Drawing.Point(86, 320);
             this.sexTB.Name = "sexTB";
-            this.sexTB.Size = new System.Drawing.Size(216, 22);
+            this.sexTB.ReadOnly = true;
+            this.sexTB.Size = new System.Drawing.Size(132, 20);
             this.sexTB.TabIndex = 24;
             // 
             // speciesLb
             // 
             this.speciesLb.AutoSize = true;
-            this.speciesLb.Location = new System.Drawing.Point(69, 293);
-            this.speciesLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.speciesLb.Location = new System.Drawing.Point(52, 238);
             this.speciesLb.Name = "speciesLb";
-            this.speciesLb.Size = new System.Drawing.Size(60, 16);
+            this.speciesLb.Size = new System.Drawing.Size(48, 13);
             this.speciesLb.TabIndex = 23;
             this.speciesLb.Text = "Species:";
             // 
             // speciesTB
             // 
-            this.speciesTB.Location = new System.Drawing.Point(73, 332);
-            this.speciesTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.speciesTB.Location = new System.Drawing.Point(55, 270);
             this.speciesTB.Name = "speciesTB";
-            this.speciesTB.Size = new System.Drawing.Size(216, 22);
+            this.speciesTB.Size = new System.Drawing.Size(163, 20);
             this.speciesTB.TabIndex = 22;
             // 
             // nameLb
             // 
             this.nameLb.AutoSize = true;
-            this.nameLb.Location = new System.Drawing.Point(69, 187);
-            this.nameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nameLb.Location = new System.Drawing.Point(52, 152);
             this.nameLb.Name = "nameLb";
-            this.nameLb.Size = new System.Drawing.Size(47, 16);
+            this.nameLb.Size = new System.Drawing.Size(38, 13);
             this.nameLb.TabIndex = 21;
             this.nameLb.Text = "Name:";
             // 
             // petTB
             // 
-            this.petTB.Location = new System.Drawing.Point(73, 226);
-            this.petTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.petTB.Location = new System.Drawing.Point(55, 184);
             this.petTB.Name = "petTB";
-            this.petTB.Size = new System.Drawing.Size(216, 22);
+            this.petTB.Size = new System.Drawing.Size(163, 20);
             this.petTB.TabIndex = 20;
             // 
             // phoneLb
             // 
             this.phoneLb.AutoSize = true;
-            this.phoneLb.Location = new System.Drawing.Point(388, 398);
-            this.phoneLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.phoneLb.Location = new System.Drawing.Point(291, 323);
             this.phoneLb.Name = "phoneLb";
-            this.phoneLb.Size = new System.Drawing.Size(49, 16);
+            this.phoneLb.Size = new System.Drawing.Size(41, 13);
             this.phoneLb.TabIndex = 37;
             this.phoneLb.Text = "Phone:";
             // 
             // phoneTB
             // 
-            this.phoneTB.Location = new System.Drawing.Point(392, 437);
-            this.phoneTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneTB.Location = new System.Drawing.Point(294, 355);
             this.phoneTB.Name = "phoneTB";
-            this.phoneTB.Size = new System.Drawing.Size(216, 22);
+            this.phoneTB.Size = new System.Drawing.Size(163, 20);
             this.phoneTB.TabIndex = 36;
             // 
             // lastNameLb
             // 
             this.lastNameLb.AutoSize = true;
-            this.lastNameLb.Location = new System.Drawing.Point(388, 293);
-            this.lastNameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lastNameLb.Location = new System.Drawing.Point(291, 238);
             this.lastNameLb.Name = "lastNameLb";
-            this.lastNameLb.Size = new System.Drawing.Size(75, 16);
+            this.lastNameLb.Size = new System.Drawing.Size(61, 13);
             this.lastNameLb.TabIndex = 33;
             this.lastNameLb.Text = "Last Name:";
             // 
             // lastNameTB
             // 
-            this.lastNameTB.Location = new System.Drawing.Point(392, 332);
-            this.lastNameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lastNameTB.Location = new System.Drawing.Point(294, 270);
             this.lastNameTB.Name = "lastNameTB";
-            this.lastNameTB.Size = new System.Drawing.Size(216, 22);
+            this.lastNameTB.Size = new System.Drawing.Size(163, 20);
             this.lastNameTB.TabIndex = 32;
             // 
             // firstNameLb
             // 
             this.firstNameLb.AutoSize = true;
-            this.firstNameLb.Location = new System.Drawing.Point(388, 187);
-            this.firstNameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.firstNameLb.Location = new System.Drawing.Point(291, 152);
             this.firstNameLb.Name = "firstNameLb";
-            this.firstNameLb.Size = new System.Drawing.Size(75, 16);
+            this.firstNameLb.Size = new System.Drawing.Size(60, 13);
             this.firstNameLb.TabIndex = 31;
             this.firstNameLb.Text = "First Name:";
             // 
             // firstNameTB
             // 
-            this.firstNameTB.Location = new System.Drawing.Point(392, 226);
-            this.firstNameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.firstNameTB.Location = new System.Drawing.Point(294, 184);
             this.firstNameTB.Name = "firstNameTB";
-            this.firstNameTB.Size = new System.Drawing.Size(216, 22);
+            this.firstNameTB.Size = new System.Drawing.Size(163, 20);
             this.firstNameTB.TabIndex = 30;
             // 
             // ownerLb
             // 
             this.ownerLb.AutoSize = true;
             this.ownerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ownerLb.Location = new System.Drawing.Point(407, 124);
-            this.ownerLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ownerLb.Location = new System.Drawing.Point(305, 101);
             this.ownerLb.Name = "ownerLb";
-            this.ownerLb.Size = new System.Drawing.Size(187, 24);
+            this.ownerLb.Size = new System.Drawing.Size(152, 18);
             this.ownerLb.TabIndex = 38;
             this.ownerLb.Text = "Owner Information:";
             // 
             // editBt
             // 
-            this.editBt.Location = new System.Drawing.Point(392, 498);
-            this.editBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.editBt.Location = new System.Drawing.Point(294, 428);
             this.editBt.Name = "editBt";
-            this.editBt.Size = new System.Drawing.Size(217, 63);
+            this.editBt.Size = new System.Drawing.Size(163, 51);
             this.editBt.TabIndex = 39;
             this.editBt.Text = "Edit";
             this.editBt.UseVisualStyleBackColor = true;
@@ -243,10 +225,9 @@
             // 
             // backBt
             // 
-            this.backBt.Location = new System.Drawing.Point(392, 596);
-            this.backBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backBt.Location = new System.Drawing.Point(294, 507);
             this.backBt.Name = "backBt";
-            this.backBt.Size = new System.Drawing.Size(217, 64);
+            this.backBt.Size = new System.Drawing.Size(163, 52);
             this.backBt.TabIndex = 60;
             this.backBt.Text = "Go Back";
             this.backBt.UseVisualStyleBackColor = true;
@@ -255,26 +236,37 @@
             // formLB
             // 
             this.formLB.AutoSize = true;
-            this.formLB.Location = new System.Drawing.Point(563, 58);
-            this.formLB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.formLB.Location = new System.Drawing.Point(422, 47);
             this.formLB.Name = "formLB";
-            this.formLB.Size = new System.Drawing.Size(0, 16);
+            this.formLB.Size = new System.Drawing.Size(0, 13);
             this.formLB.TabIndex = 61;
             // 
             // idTB
             // 
-            this.idTB.Location = new System.Drawing.Point(428, 87);
-            this.idTB.Margin = new System.Windows.Forms.Padding(4);
+            this.idTB.Location = new System.Drawing.Point(321, 71);
             this.idTB.Name = "idTB";
-            this.idTB.Size = new System.Drawing.Size(132, 22);
+            this.idTB.Size = new System.Drawing.Size(100, 20);
             this.idTB.TabIndex = 62;
             this.idTB.Visible = false;
             // 
+            // sexLstBox
+            // 
+            this.sexLstBox.FormattingEnabled = true;
+            this.sexLstBox.Items.AddRange(new object[] {
+            "K",
+            "M",
+            "N"});
+            this.sexLstBox.Location = new System.Drawing.Point(59, 355);
+            this.sexLstBox.Name = "sexLstBox";
+            this.sexLstBox.Size = new System.Drawing.Size(120, 49);
+            this.sexLstBox.TabIndex = 63;
+            // 
             // Edit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(707, 698);
+            this.ClientSize = new System.Drawing.Size(530, 600);
+            this.Controls.Add(this.sexLstBox);
             this.Controls.Add(this.idTB);
             this.Controls.Add(this.formLB);
             this.Controls.Add(this.backBt);
@@ -298,7 +290,6 @@
             this.Controls.Add(this.petTB);
             this.Controls.Add(this.petLb);
             this.Controls.Add(this.idLb);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Edit";
             this.Text = "Edit";
             this.ResumeLayout(false);
@@ -331,5 +322,6 @@
         private System.Windows.Forms.Button backBt;
         internal System.Windows.Forms.Label formLB;
         internal System.Windows.Forms.TextBox idTB;
+        private System.Windows.Forms.CheckedListBox sexLstBox;
     }
 }

@@ -36,6 +36,7 @@
             this.registerLb = new System.Windows.Forms.Label();
             this.typeLB = new System.Windows.Forms.Label();
             this.typeLstBox = new System.Windows.Forms.CheckedListBox();
+            this.backBT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // loginLB
@@ -72,7 +73,7 @@
             // 
             // addBT
             // 
-            this.addBT.Location = new System.Drawing.Point(99, 278);
+            this.addBT.Location = new System.Drawing.Point(30, 284);
             this.addBT.Name = "addBT";
             this.addBT.Size = new System.Drawing.Size(75, 23);
             this.addBT.TabIndex = 4;
@@ -111,11 +112,22 @@
             this.typeLstBox.Size = new System.Drawing.Size(141, 49);
             this.typeLstBox.TabIndex = 24;
             // 
+            // backBT
+            // 
+            this.backBT.Location = new System.Drawing.Point(157, 284);
+            this.backBT.Name = "backBT";
+            this.backBT.Size = new System.Drawing.Size(75, 23);
+            this.backBT.TabIndex = 25;
+            this.backBT.Text = "Go Back";
+            this.backBT.UseVisualStyleBackColor = true;
+            this.backBT.Click += new System.EventHandler(this.backBT_Click);
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(272, 330);
+            this.Controls.Add(this.backBT);
             this.Controls.Add(this.typeLstBox);
             this.Controls.Add(this.typeLB);
             this.Controls.Add(this.registerLb);
@@ -141,5 +153,6 @@
         private System.Windows.Forms.Label registerLb;
         private System.Windows.Forms.Label typeLB;
         private System.Windows.Forms.CheckedListBox typeLstBox;
+        private System.Windows.Forms.Button backBT;
     }
 }

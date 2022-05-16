@@ -57,69 +57,62 @@ namespace PAzIG
                 {
                     if (speciesTB.Text != "")
                     {
-                        if (sexTB.Text != "")  
+                        if (sexLstBox.SelectedItem == "K" || sexLstBox.SelectedItem == "M" || sexLstBox.SelectedItem == "N")
                         {
-                            if (sexTB.Text == "K" || sexTB.Text == "M" || sexTB.Text == "N")
+                            if (firstNameTB.Text != "")
                             {
-                                if (firstNameTB.Text != "")
+                                if (lastNameLb.Text != "")
                                 {
-                                    if (lastNameLb.Text != "")
+                                    if (phoneTB.Text != "")
                                     {
-                                        if (phoneTB.Text != "")
+                                        if (phone > 0)
                                         {
-                                            if (phone > 0)
+                                            if (phoneTB.Text.Length == 9)
                                             {
-                                                if (phoneTB.Text.Length == 9)
+                                                if (ageTB.Text != "")
                                                 {
-                                                    if(ageTB.Text != "")
+                                                    if (age > 0)
                                                     {
-                                                        if (age > 0)
+                                                        if (infoTB.Text != "")
                                                         {
-                                                            if (infoTB.Text != "")
-                                                            {
-                                                                string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Wiek, Opis, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ",'" + infoTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
-                                                                SqlCommand cmdPatient = new SqlCommand(patient, con);
-                                                                cmdPatient.ExecuteNonQuery();
+                                                            string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Wiek, Opis, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexLstBox.SelectedItem + "'," + ageTB.Text + ",'" + infoTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
+                                                            SqlCommand cmdPatient = new SqlCommand(patient, con);
+                                                            cmdPatient.ExecuteNonQuery();
 
-                                                                MessageBox.Show("Registered successfully");
-                                                            }
-                                                            else
-                                                            {
-                                                                string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Wiek, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "'," + ageTB.Text + ",'" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
-                                                                SqlCommand cmdPatient = new SqlCommand(patient, con);
-                                                                cmdPatient.ExecuteNonQuery();
-
-                                                                MessageBox.Show("Registered successfully");
-                                                            }
+                                                            MessageBox.Show("Registered successfully.");
                                                         }
                                                         else
                                                         {
-                                                            MessageBox.Show("Please enter correct form of data.");
+                                                            string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Wiek, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexLstBox.SelectedItem + "'," + ageTB.Text + ",'" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
+                                                            SqlCommand cmdPatient = new SqlCommand(patient, con);
+                                                            cmdPatient.ExecuteNonQuery();
+
+                                                            MessageBox.Show("Registered successfully.");
                                                         }
                                                     }
                                                     else
                                                     {
-                                                        if (infoTB.Text != "")
-                                                        {
-                                                            string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Opis, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "','" + infoTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
-                                                            SqlCommand cmdPatient = new SqlCommand(patient, con);
-                                                            cmdPatient.ExecuteNonQuery();
-
-                                                            MessageBox.Show("Registered successfully");
-                                                        }
-                                                        else
-                                                        {
-                                                            string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
-                                                            SqlCommand cmdPatient = new SqlCommand(patient, con);
-                                                            cmdPatient.ExecuteNonQuery();
-
-                                                            MessageBox.Show("Registered successfully");
-                                                        }
+                                                        MessageBox.Show("Please enter correct form of data.");
                                                     }
                                                 }
                                                 else
                                                 {
-                                                    MessageBox.Show("Please enter correct form of data.");
+                                                    if (infoTB.Text != "")
+                                                    {
+                                                        string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Opis, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexLstBox.SelectedItem + "','" + infoTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
+                                                        SqlCommand cmdPatient = new SqlCommand(patient, con);
+                                                        cmdPatient.ExecuteNonQuery();
+
+                                                        MessageBox.Show("Registered successfully.");
+                                                    }
+                                                    else
+                                                    {
+                                                        string patient = "INSERT INTO Pacjent (Imie_zwierzecia, Gatunek, Plec, Imie, Nazwisko, Telefon) VALUES ('" + nameTB.Text + "','" + speciesTB.Text + "','" + sexLstBox.SelectedItem + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "'," + phoneTB.Text + ")";
+                                                        SqlCommand cmdPatient = new SqlCommand(patient, con);
+                                                        cmdPatient.ExecuteNonQuery();
+
+                                                        MessageBox.Show("Registered successfully.");
+                                                    }
                                                 }
                                             }
                                             else
@@ -129,37 +122,37 @@ namespace PAzIG
                                         }
                                         else
                                         {
-                                            MessageBox.Show("Please enter all required information");
+                                            MessageBox.Show("Please enter correct form of data.");
                                         }
                                     }
                                     else
                                     {
-                                        MessageBox.Show("Please enter all required information");
+                                        MessageBox.Show("Please enter all required information.");
                                     }
                                 }
                                 else
                                 {
-                                    MessageBox.Show("Please enter all required information");
+                                    MessageBox.Show("Please enter all required information.");
                                 }
                             }
                             else
                             {
-                                MessageBox.Show("Please enter correct form of data.");
+                                MessageBox.Show("Please enter all required information.");
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Please enter all required information");
+                            MessageBox.Show("Please enter all required information.");
                         }
                     }
                     else
                     {
-                        MessageBox.Show("Please enter all required information");
+                        MessageBox.Show("Please enter all required information.");
                     }
                 }
                 else
                 {
-                    MessageBox.Show("Please enter all required information");
+                    MessageBox.Show("Please enter all required information.");
                 }
             }
             con.Close();

@@ -16,9 +16,10 @@ namespace PAzIG
         public Nurse()
         {
             InitializeComponent();
-            UploadData();
+            UploadDataPatients();
+            UploadDataDoctors();
         }
-        private void UploadData()
+        private void UploadDataPatients()
         {
             string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; // 
             string sqlQuery = "SELECT * FROM Pacjent";
@@ -33,11 +34,44 @@ namespace PAzIG
             }
             con.Close();
         }
+        private void UploadDataDoctors()
+        {
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; // 
+            string sqlQuery = "SELECT * FROM Logowanie WHERE Id_logowania LIKE 'V'";
+            SqlConnection con = new SqlConnection(connection);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                string dane = "Imię: " + reader[3] + "\n Nazwisko: " + reader[4] + "\n Login: " + reader[1] ;
+                doctorLst.Items.Add(dane);
+            }
+            con.Close();
+        }
         private void editBt_Click(object sender, EventArgs e)
         {
             Edit edit = new Edit();
-            edit.Show();
-            this.Close();
+            if (patientLst.SelectedItems.Count == 1)
+            {
+                string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
+                string id = separated[separated.Length - 1].TrimEnd('}').TrimStart(' ');
+                edit.idTB.Text = id;
+                edit.ShowData();
+                edit.Show();
+                this.Close();
+            }
+            else
+            {
+                if (patientLst.SelectedItems.Count == 0)
+                {
+                    MessageBox.Show("Please select a patient to edit.");
+                }
+                else
+                {
+                    MessageBox.Show("Please select only one patient to edit.");
+                }
+            }
         }
 
         private void createBt_Click(object sender, EventArgs e)
@@ -45,11 +79,23 @@ namespace PAzIG
             Apointment apointment = new Apointment();
             if (patientLst.SelectedItems.Count == 1)
             {
-                string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
-                string identyfikator = separated[separated.Length - 1].TrimEnd('}');
-                apointment.petTextBox.Text = identyfikator;
-                apointment.Show();
-                this.Close();
+                if (doctorLst.SelectedItems.Count == 1)
+                {
+                    string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
+                    string identyfikatorP = separated[separated.Length - 1].TrimEnd('}').TrimStart(' ');
+                    apointment.petTextBox.Text = identyfikatorP;
+
+                    string[] separatedD = doctorLst.SelectedItems[0].ToString().Split(':');
+                    string identyfikatorD = separatedD[separatedD.Length - 1].TrimEnd('}').TrimStart(' ');
+                    apointment.doctorTextBox.Text = identyfikatorD;
+                    apointment.Show();
+                    this.Close();
+                }
+                else
+                {
+                    if (doctorLst.SelectedItems.Count == 0) MessageBox.Show("Please select a docotr to schedule a visit!");
+                    else MessageBox.Show("Please select ONLY ONE doctor to schedule a visit!");
+                }
             }
             else
             {

@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using System.Windows.Forms;
 
@@ -19,7 +12,7 @@ namespace PAzIG
         }
         public void ShowData()
         {
-            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             SqlConnection con = new SqlConnection(connection);
             string test = "SELECT * FROM Pacjent WHERE Id_zwierzecia = " + idTB.Text;
             con.Open();
@@ -30,7 +23,7 @@ namespace PAzIG
                 petTB.Text = String.Format("{0}", reader[1]);
                 speciesTB.Text = String.Format("{0}", reader[2]);
                 sexTB.Text = String.Format("{0}", reader[3]);
-                ageLb.Text = String.Format("{0}", reader[4]);
+                ageTB.Text = String.Format("{0}", reader[4]);
                 infoTB.Text = String.Format("{0}", reader[5]);
                 firstNameTB.Text = String.Format("{0}", reader[6]);
                 lastNameTB.Text = String.Format("{0}", reader[7]);
@@ -41,12 +34,14 @@ namespace PAzIG
 
         private void editBt_Click(object sender, EventArgs e)
         {
-            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
+            string connection = "Data Source=DESKTOP-BBT1MOF\\CITADEL;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
             SqlConnection con = new SqlConnection(connection);
             string test = "SELECT * FROM Pacjent WHERE Id_zwierzecia = " + idTB.Text;
             con.Open();
             SqlCommand cmdTest = new SqlCommand(test, con);
             SqlDataReader reader = cmdTest.ExecuteReader();
+            int ageEmpty = 0;
+            int infoEmpty = 0;
             if (petTB.Text == "")
             {
                 petTB.Text = String.Format("{0}", reader[1]);
@@ -55,17 +50,35 @@ namespace PAzIG
             {
                 speciesTB.Text = String.Format("{0}", reader[2]);
             }
-            if (sexTB.Text == "")
+            if (sexLstBox.SelectedItem == "K" || sexLstBox.SelectedItem == "M" || sexLstBox.SelectedItem == "N")
+            {
+                sexTB.Text = sexLstBox.SelectedItem.ToString();
+            }
+            else
             {
                 sexTB.Text = String.Format("{0}", reader[3]);
             }
             if (ageTB.Text == "")
             {
-                ageTB.Text = String.Format("{0}", reader[4]);
+                try
+                {
+                    ageTB.Text = String.Format("{0}", reader[4]);
+                }
+                catch (System.InvalidOperationException)
+                {
+                    ageEmpty = 1;
+                }            
             }
             if (infoTB.Text == "")
             {
-                infoTB.Text = String.Format("{0}", reader[5]);
+                try
+                {
+                    infoTB.Text = String.Format("{0}", reader[5]);
+                }
+                catch (System.InvalidOperationException)
+                {
+                    infoEmpty = 1;
+                }
             }
             if (firstNameTB.Text == "")
             {
@@ -73,7 +86,7 @@ namespace PAzIG
             }
             if (lastNameTB.Text == "")
             {
-                lastNameLb.Text = String.Format("{0}", reader[7]);
+                lastNameTB.Text = String.Format("{0}", reader[7]);
             }
             if (phoneTB.Text == "")
             {
@@ -131,9 +144,36 @@ namespace PAzIG
             con.Close();
             con.Open();
 
-            string edit = "ALTER TABLE Pacjent SET VALUES Imie_zwierzecia = '" + petTB.Text + "', Gatunek = '" + speciesTB.Text + "', Plec = '" + sexTB.Text + "', Wiek = " + ageTB.Text + ", Opis = '" + infoTB.Text + "', Imie = '" + firstNameTB.Text + "', Nazwisko = '" + lastNameTB.Text + "', Telefon = " + phoneTB.Text + " WHERE Id_zwierzecia = " + idTB.Text;
-            SqlCommand cmdEdit = new SqlCommand(edit, con);
-            cmdEdit.ExecuteNonQuery();
+            if (ageEmpty == 0)
+            {
+                if (infoEmpty == 0)
+                {
+                    string edit = "UPDATE Pacjent SET Imie_zwierzecia = '" + petTB.Text + "', Gatunek = '" + speciesTB.Text + "', Plec = '" + sexTB.Text + "', Wiek = " + ageTB.Text + ", Opis = '" + infoTB.Text + "', Imie = '" + firstNameTB.Text + "', Nazwisko = '" + lastNameTB.Text + "', Telefon = " + phoneTB.Text + " WHERE Id_zwierzecia = " + idTB.Text;
+                    SqlCommand cmdEdit = new SqlCommand(edit, con);
+                    cmdEdit.ExecuteNonQuery();
+                }
+                else
+                {
+                    string edit = "UPDATE Pacjent SET Imie_zwierzecia = '" + petTB.Text + "', Gatunek = '" + speciesTB.Text + "', Plec = '" + sexTB.Text + "', Wiek = " + ageTB.Text + ", Imie = '" + firstNameTB.Text + "', Nazwisko = '" + lastNameTB.Text + "', Telefon = " + phoneTB.Text + " WHERE Id_zwierzecia = " + idTB.Text;
+                    SqlCommand cmdEdit = new SqlCommand(edit, con);
+                    cmdEdit.ExecuteNonQuery();
+                }
+            }
+            else
+            {
+                if (infoEmpty == 0)
+                {
+                    string edit = "UPDATE Pacjent SET Imie_zwierzecia = '" + petTB.Text + "', Gatunek = '" + speciesTB.Text + "', Plec = '" + sexTB.Text + "', Opis = '" + infoTB.Text + "', Imie = '" + firstNameTB.Text + "', Nazwisko = '" + lastNameTB.Text + "', Telefon = " + phoneTB.Text + " WHERE Id_zwierzecia = " + idTB.Text;
+                    SqlCommand cmdEdit = new SqlCommand(edit, con);
+                    cmdEdit.ExecuteNonQuery();
+                }
+                else
+                {
+                    string edit = "UPDATE Pacjent SET Imie_zwierzecia = '" + petTB.Text + "', Gatunek = '" + speciesTB.Text + "', Plec = '" + sexTB.Text + "', Imie = '" + firstNameTB.Text + "', Nazwisko = '" + lastNameTB.Text + "', Telefon = " + phoneTB.Text + " WHERE Id_zwierzecia = " + idTB.Text;
+                    SqlCommand cmdEdit = new SqlCommand(edit, con);
+                    cmdEdit.ExecuteNonQuery();
+                }
+            }
 
             MessageBox.Show("Edited successfully.");
 
