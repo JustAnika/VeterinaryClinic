@@ -56,7 +56,7 @@ namespace PAzIG
             }
             else
             {
-                sexTB.Text = String.Format("{0}", reader[3]);
+                sexTB.Text = sexTB.Text;
             }
             if (ageTB.Text == "")
             {
@@ -175,6 +175,14 @@ namespace PAzIG
                 }
             }
 
+            petTB.Text = "";
+            speciesTB.Text = "";
+            sexLstBox.SelectedIndex = 0;
+            ageTB.Text = "";
+            infoTB.Text = "";
+            firstNameTB.Text = "";
+            lastNameTB.Text = "";
+            phoneTB.Text = "";
             MessageBox.Show("Edited successfully.");
 
             con.Close();
@@ -182,18 +190,16 @@ namespace PAzIG
 
         private void backBt_Click(object sender, EventArgs e)
         {
-            if (formLB.Text == "")
+            if (formLB.Text == "doctor")
             {
-                Nurse nurse = new Nurse();
-                nurse.Show();
+                Doctor doctor = new Doctor();
+                doctor.Show();
                 this.Close();
             }
             else
             {
-                Doctor doctor = new Doctor();
-                doctor.loginInfoLb.Text = formLB.Text; 
-                doctor.UploadDataVisits();
-                doctor.Show();
+                Nurse nurse = new Nurse();
+                nurse.Show();
                 this.Close();
             }
         }

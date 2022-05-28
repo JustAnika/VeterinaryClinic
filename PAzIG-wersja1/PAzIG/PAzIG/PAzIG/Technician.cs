@@ -17,18 +17,24 @@ namespace PAzIG
         {
             InitializeComponent();
         }
-        private void UploadData()
+        public void UploadData()
         {
-            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; // 
-            string sqlQuery = "SELECT Id_zwierzecia, Id_pracownika, Data_Badania FROM Badanie";
+            string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; 
+            string sqlQuery = "SELECT Id_zwierzecia, Data_Badania, Opis FROM Badanie WHERE Id_pracownika LIKE '"+ loginLb.Text +"'";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                string dane = "Animal: " + reader[0] + " Doctor: " + reader[1] + " Data: " + reader[2];
-                testsLst.Items.Add(dane);
+                string[] data = reader[1].ToString().Split('.', ' ', ':');
+                string dateTaken = data[2] + '-' + data[1] + '-' + data[0] + ' ' + data[3] + ':' + data[4];
+                if (data[0] == DateTime.Now.Day.ToString() && data[1] == DateTime.Now.Month.ToString() && data[2] == DateTime.Now.Year.ToString())
+                {
+                    string dane = "Animal: " + reader[0].ToString() + " Data: " + dateTaken + " Opis: " + reader[2].ToString();
+                    testsLst.Items.Add(dane);
+                }
+
             }
             con.Close();
         }

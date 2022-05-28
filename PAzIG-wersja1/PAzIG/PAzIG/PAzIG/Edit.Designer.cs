@@ -240,6 +240,7 @@
             this.formLB.Name = "formLB";
             this.formLB.Size = new System.Drawing.Size(0, 13);
             this.formLB.TabIndex = 61;
+            this.formLB.Visible = false;
             // 
             // idTB
             // 

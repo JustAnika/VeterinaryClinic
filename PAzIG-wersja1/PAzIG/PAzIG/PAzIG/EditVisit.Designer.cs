@@ -189,6 +189,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(216, 22);
             this.dateTimePicker1.TabIndex = 61;
+            //this.dateTimePicker1.Enabled = false; //readonly
             // 
             // infoVisitLb
             // 

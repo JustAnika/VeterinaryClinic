@@ -69,6 +69,8 @@ namespace PAzIG
                     break;
                 case "T":
                     Technician technik = new Technician();
+                    technik.loginLb.Text = login;
+                    technik.UploadData();
                     technik.Show();
                     this.Hide();
                     break;

@@ -88,6 +88,7 @@ namespace PAzIG
                     string[] separatedD = doctorLst.SelectedItems[0].ToString().Split(':');
                     string identyfikatorD = separatedD[separatedD.Length - 1].TrimEnd('}').TrimStart(' ');
                     apointment.doctorTextBox.Text = identyfikatorD;
+                    apointment.LoadVisit();
                     apointment.Show();
                     this.Close();
                 }

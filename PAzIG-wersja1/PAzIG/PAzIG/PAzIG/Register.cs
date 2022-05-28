@@ -37,6 +37,14 @@ namespace PAzIG
                         {
                             MessageBox.Show("This patient already exist.");
                             notExist = 1;
+                            nameTB.Text = "";
+                            speciesTB.Text = "";
+                            sexLstBox.SelectedIndex = 0;
+                            ageTB.Text = "";
+                            infoTB.Text = "";
+                            firstNameTB.Text = "";
+                            lastNameTB.Text = "";
+                            phoneTB.Text = "";
                         }
                     }
                 }
@@ -57,7 +65,7 @@ namespace PAzIG
                 {
                     if (speciesTB.Text != "")
                     {
-                        if (sexLstBox.SelectedItem.ToString() == "K" || sexLstBox.SelectedItem.ToString() == "M" || sexLstBox.SelectedItem.ToString() == "N")
+                        if (sexLstBox.SelectedItem == "K" || sexLstBox.SelectedItem == "M" || sexLstBox.SelectedItem == "N")
                         {
                             if (firstNameTB.Text != "")
                             {
@@ -80,6 +88,14 @@ namespace PAzIG
                                                             cmdPatient.ExecuteNonQuery();
 
                                                             MessageBox.Show("Registered successfully.");
+                                                            nameTB.Text = "";
+                                                            speciesTB.Text = "";
+                                                            sexLstBox.SelectedIndex = 0;
+                                                            ageTB.Text = "";
+                                                            infoTB.Text = "";
+                                                            firstNameTB.Text = "";
+                                                            lastNameTB.Text = "";
+                                                            phoneTB.Text = "";
                                                         }
                                                         else
                                                         {
@@ -88,6 +104,14 @@ namespace PAzIG
                                                             cmdPatient.ExecuteNonQuery();
 
                                                             MessageBox.Show("Registered successfully.");
+                                                            nameTB.Text = "";
+                                                            speciesTB.Text = "";
+                                                            sexLstBox.SelectedIndex = 0;
+                                                            ageTB.Text = "";
+                                                            infoTB.Text = "";
+                                                            firstNameTB.Text = "";
+                                                            lastNameTB.Text = "";
+                                                            phoneTB.Text = "";
                                                         }
                                                     }
                                                     else
@@ -104,6 +128,14 @@ namespace PAzIG
                                                         cmdPatient.ExecuteNonQuery();
 
                                                         MessageBox.Show("Registered successfully.");
+                                                        nameTB.Text = "";
+                                                        speciesTB.Text = "";
+                                                        sexLstBox.SelectedIndex = 0;
+                                                        ageTB.Text = "";
+                                                        infoTB.Text = "";
+                                                        firstNameTB.Text = "";
+                                                        lastNameTB.Text = "";
+                                                        phoneTB.Text = "";
                                                     }
                                                     else
                                                     {
@@ -112,6 +144,14 @@ namespace PAzIG
                                                         cmdPatient.ExecuteNonQuery();
 
                                                         MessageBox.Show("Registered successfully.");
+                                                        nameTB.Text = "";
+                                                        speciesTB.Text = "";
+                                                        sexLstBox.SelectedIndex = 0;
+                                                        ageTB.Text = "";
+                                                        infoTB.Text = "";
+                                                        firstNameTB.Text = "";
+                                                        lastNameTB.Text = "";
+                                                        phoneTB.Text = "";
                                                     }
                                                 }
                                             }
@@ -160,11 +200,9 @@ namespace PAzIG
 
         private void backBt_Click(object sender, EventArgs e)
         {
-            if (formLB.Text !="")
+            if (formLB.Text == "doctor")
             {
                 Doctor doctor = new Doctor();
-                doctor.loginInfoLb.Text = formLB.Text;
-                doctor.UploadDataVisits();
                 doctor.Show();
                 this.Close();
             }

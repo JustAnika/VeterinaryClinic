@@ -108,9 +108,22 @@ namespace PAzIG
         private void orderBt_Click(object sender, EventArgs e)
         {
             Test test = new Test();
-            test.fromLB.Text = loginInfoLb.Text;
-            test.Show();
-            this.Close();
+            if (patientLst.SelectedItems.Count == 1)
+            {
+                //id zwierzaka
+                string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
+                string idp = separated[separated.Length - 1].TrimEnd('}').TrimStart(' ');
+                test.petTextBox.Text = idp;
+                //login
+                test.fromLB.Text = loginInfoLb.Text;
+                test.Show();
+                this.Close();
+            }
+            else
+            {
+                if (patientLst.SelectedItems.Count == 0) MessageBox.Show("Please select an animal to order a test for!");
+                else MessageBox.Show("Please select ONLY ONE animal to order a test for!");
+            }
         }
 
         private void logOutBt_Click(object sender, EventArgs e)
