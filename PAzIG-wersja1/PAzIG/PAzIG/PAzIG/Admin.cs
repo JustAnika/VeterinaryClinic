@@ -46,34 +46,63 @@ namespace PAzIG
             }
             else
             {
-                if (loginTB.Text != "")
+                if (firstNameTB.Text != "")
                 {
-                    if (passwordTB.Text != "")
+                    if (lastNameTB.Text != "")
                     {
-                        if (typeLstBox.SelectedItem.ToString() == "Doctor" || typeLstBox.SelectedItem.ToString() == "Nurse" || typeLstBox.SelectedItem.ToString() == "Technician")
+                        if (loginTB.Text != "")
                         {
-                            string user;
-                            con.Open();
-                            switch (typeLstBox.SelectedIndex)
+                            if (passwordTB.Text != "")
                             {
-                                case 0:
-                                    user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo) VALUES ('V', '" + loginTB.Text + "','" + passwordTB.Text + "')";
-                                    SqlCommand cmdUser0 = new SqlCommand(user, con);
-                                    cmdUser0.ExecuteNonQuery();
-                                    MessageBox.Show("User added successfully.");
-                                    break;
-                                case 1:
-                                    user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo) VALUES ('T', '" + loginTB.Text + "','" + passwordTB.Text + "')";
-                                    SqlCommand cmdUser1 = new SqlCommand(user, con);
-                                    cmdUser1.ExecuteNonQuery();
-                                    MessageBox.Show("User added successfully.");
-                                    break;
-                                case 2:
-                                    user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo) VALUES ('P', '" + loginTB.Text + "','" + passwordTB.Text + "')";
-                                    SqlCommand cmdUser2 = new SqlCommand(user, con);
-                                    cmdUser2.ExecuteNonQuery();
-                                    MessageBox.Show("User added successfully.");
-                                    break;
+                                if (typeLstBox.SelectedItem == "Doctor" || typeLstBox.SelectedItem == "Nurse" || typeLstBox.SelectedItem == "Technician")
+                                {
+                                    string user;
+                                    con.Open();
+                                    switch (typeLstBox.SelectedIndex)
+                                    {
+                                        case 0:
+                                            user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo, Imie, Nazwisko) VALUES ('V', '" + loginTB.Text + "','" + passwordTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "')";
+                                            SqlCommand cmdUser0 = new SqlCommand(user, con);
+                                            cmdUser0.ExecuteNonQuery();
+                                            MessageBox.Show("User added successfully.");
+                                            firstNameTB.Text = "";
+                                            lastNameTB.Text = "";
+                                            loginTB.Text = "";
+                                            passwordTB.Text = "";
+                                            typeLstBox.SelectedIndex = 0;
+                                            break;
+                                        case 1:
+                                            user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo, Imie, Nazwisko) VALUES ('T', '" + loginTB.Text + "','" + passwordTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "')";
+                                            SqlCommand cmdUser1 = new SqlCommand(user, con);
+                                            cmdUser1.ExecuteNonQuery();
+                                            MessageBox.Show("User added successfully.");
+                                            firstNameTB.Text = "";
+                                            lastNameTB.Text = "";
+                                            loginTB.Text = "";
+                                            passwordTB.Text = "";
+                                            typeLstBox.SelectedIndex = 0;
+                                            break;
+                                        case 2:
+                                            user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo, Imie, Nazwisko) VALUES ('P', '" + loginTB.Text + "','" + passwordTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "')";
+                                            SqlCommand cmdUser2 = new SqlCommand(user, con);
+                                            cmdUser2.ExecuteNonQuery();
+                                            MessageBox.Show("User added successfully.");
+                                            firstNameTB.Text = "";
+                                            lastNameTB.Text = "";
+                                            loginTB.Text = "";
+                                            passwordTB.Text = "";
+                                            typeLstBox.SelectedIndex = 0;
+                                            break;
+                                    }
+                                }
+                                else
+                                {
+                                    MessageBox.Show("Please enter all required information.");
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Please enter all required information.");
                             }
                         }
                         else

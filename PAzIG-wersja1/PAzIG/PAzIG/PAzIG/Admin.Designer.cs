@@ -37,43 +37,48 @@
             this.typeLB = new System.Windows.Forms.Label();
             this.typeLstBox = new System.Windows.Forms.CheckedListBox();
             this.backBT = new System.Windows.Forms.Button();
+            this.lastNameTB = new System.Windows.Forms.TextBox();
+            this.firstNameTB = new System.Windows.Forms.TextBox();
+            this.lastNameLb = new System.Windows.Forms.Label();
+            this.firstNameLb = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // loginLB
             // 
             this.loginLB.AutoSize = true;
-            this.loginLB.Location = new System.Drawing.Point(117, 146);
+            this.loginLB.Location = new System.Drawing.Point(117, 300);
             this.loginLB.Name = "loginLB";
-            this.loginLB.Size = new System.Drawing.Size(36, 13);
+            this.loginLB.Size = new System.Drawing.Size(40, 13);
             this.loginLB.TabIndex = 0;
-            this.loginLB.Text = "Login:";
+            this.loginLB.Text = "Login:*";
             // 
             // passwordLB
             // 
             this.passwordLB.AutoSize = true;
-            this.passwordLB.Location = new System.Drawing.Point(108, 215);
+            this.passwordLB.Location = new System.Drawing.Point(108, 369);
             this.passwordLB.Name = "passwordLB";
-            this.passwordLB.Size = new System.Drawing.Size(56, 13);
+            this.passwordLB.Size = new System.Drawing.Size(60, 13);
             this.passwordLB.TabIndex = 1;
-            this.passwordLB.Text = "Password:";
+            this.passwordLB.Text = "Password:*";
             // 
             // loginTB
             // 
-            this.loginTB.Location = new System.Drawing.Point(69, 172);
+            this.loginTB.Location = new System.Drawing.Point(69, 326);
             this.loginTB.Name = "loginTB";
             this.loginTB.Size = new System.Drawing.Size(141, 20);
             this.loginTB.TabIndex = 2;
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(69, 243);
+            this.passwordTB.Location = new System.Drawing.Point(69, 397);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.Size = new System.Drawing.Size(141, 20);
             this.passwordTB.TabIndex = 3;
             // 
             // addBT
             // 
-            this.addBT.Location = new System.Drawing.Point(30, 284);
+            this.addBT.Location = new System.Drawing.Point(30, 438);
             this.addBT.Name = "addBT";
             this.addBT.Size = new System.Drawing.Size(75, 23);
             this.addBT.TabIndex = 4;
@@ -114,7 +119,7 @@
             // 
             // backBT
             // 
-            this.backBT.Location = new System.Drawing.Point(157, 284);
+            this.backBT.Location = new System.Drawing.Point(157, 438);
             this.backBT.Name = "backBT";
             this.backBT.Size = new System.Drawing.Size(75, 23);
             this.backBT.TabIndex = 25;
@@ -122,11 +127,57 @@
             this.backBT.UseVisualStyleBackColor = true;
             this.backBT.Click += new System.EventHandler(this.backBT_Click);
             // 
+            // lastNameTB
+            // 
+            this.lastNameTB.Location = new System.Drawing.Point(69, 254);
+            this.lastNameTB.Name = "lastNameTB";
+            this.lastNameTB.Size = new System.Drawing.Size(141, 20);
+            this.lastNameTB.TabIndex = 29;
+            // 
+            // firstNameTB
+            // 
+            this.firstNameTB.Location = new System.Drawing.Point(69, 183);
+            this.firstNameTB.Name = "firstNameTB";
+            this.firstNameTB.Size = new System.Drawing.Size(141, 20);
+            this.firstNameTB.TabIndex = 28;
+            // 
+            // lastNameLb
+            // 
+            this.lastNameLb.AutoSize = true;
+            this.lastNameLb.Location = new System.Drawing.Point(108, 226);
+            this.lastNameLb.Name = "lastNameLb";
+            this.lastNameLb.Size = new System.Drawing.Size(65, 13);
+            this.lastNameLb.TabIndex = 27;
+            this.lastNameLb.Text = "Last Name:*";
+            // 
+            // firstNameLb
+            // 
+            this.firstNameLb.AutoSize = true;
+            this.firstNameLb.Location = new System.Drawing.Point(108, 158);
+            this.firstNameLb.Name = "firstNameLb";
+            this.firstNameLb.Size = new System.Drawing.Size(64, 13);
+            this.firstNameLb.TabIndex = 26;
+            this.firstNameLb.Text = "First Name:*";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 468);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "*required information";
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(272, 330);
+            this.ClientSize = new System.Drawing.Size(272, 495);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lastNameTB);
+            this.Controls.Add(this.firstNameTB);
+            this.Controls.Add(this.lastNameLb);
+            this.Controls.Add(this.firstNameLb);
             this.Controls.Add(this.backBT);
             this.Controls.Add(this.typeLstBox);
             this.Controls.Add(this.typeLB);
@@ -154,5 +205,10 @@
         private System.Windows.Forms.Label typeLB;
         private System.Windows.Forms.CheckedListBox typeLstBox;
         private System.Windows.Forms.Button backBT;
+        private System.Windows.Forms.TextBox lastNameTB;
+        private System.Windows.Forms.TextBox firstNameTB;
+        private System.Windows.Forms.Label lastNameLb;
+        private System.Windows.Forms.Label firstNameLb;
+        private System.Windows.Forms.Label label1;
     }
 }
