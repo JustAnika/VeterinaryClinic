@@ -140,5 +140,66 @@ namespace PAzIG
             addPet.Show();
             this.Close();
         }
+
+        private void patientLst_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (patientLst.SelectedItems.Count == 1)
+            {
+                historyLV.Items.Clear();
+                string[] separated = patientLst.SelectedItems[0].ToString().Split(':');
+                string idpet = separated[separated.Length - 1].TrimEnd('}').TrimStart(' ');
+                historyLV.Items.Add("VISITS:");
+                string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; // 
+                string sqlQuery = "SELECT Id_pracownika, Data_wizyty, Id_pracowni, Lek, Opis FROM Wizyta WHERE Id_zwierzecia = "+idpet+";";
+                SqlConnection con = new SqlConnection(connection);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(sqlQuery, con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    string dane = "Date: " + reader[1];
+                    string dane1 = "Doctor: "+ reader[0];
+                    string dane2 = "Workroom: " + reader[2] + " Medicine: " + reader[3];
+                    string dane3 = "Additional: " + reader[4] ;
+                    historyLV.Items.Add(dane);
+                    historyLV.Items.Add(dane1);
+                    historyLV.Items.Add(dane2);
+                    historyLV.Items.Add(dane3);
+                    historyLV.Items.Add("-----");
+                }
+                con.Close();
+                historyLV.Items.Add("TESTS:");
+                string sqlQuery1 = "SELECT Id_pracownika, Data_badania, Opis FROM Badanie WHERE Id_zwierzecia = " + idpet + ";";
+                SqlConnection con1 = new SqlConnection(connection);
+                con.Open();
+                SqlCommand cmd1 = new SqlCommand(sqlQuery1, con);
+                SqlDataReader reader1 = cmd1.ExecuteReader();
+                while (reader1.Read())
+                {
+                    string dane = "Date: " + reader1[1];
+                    string dane1 = "Tech: " + reader1[0];
+                    string dane2 = "Description: ";
+                    string dane3 = reader1[2].ToString();
+                    historyLV.Items.Add(dane);
+                    historyLV.Items.Add(dane1);
+                    historyLV.Items.Add(dane2);
+                    historyLV.Items.Add(dane3);
+                    historyLV.Items.Add("-----");
+                }
+                con.Close();
+            }
+            else
+            {
+                if (patientLst.SelectedItems.Count > 1)
+                {
+                    historyLV.Items.Clear();
+                    historyLV.Items.Add("Need ONLY ONE animal to see it's history!");
+                }
+                else
+                {
+                    historyLV.Items.Clear();
+                }
+            }
+        }
     }
 }

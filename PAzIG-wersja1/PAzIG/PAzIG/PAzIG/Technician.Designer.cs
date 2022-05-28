@@ -31,6 +31,8 @@
             this.logOutBt = new System.Windows.Forms.Button();
             this.testsLst = new System.Windows.Forms.ListView();
             this.loginLb = new System.Windows.Forms.Label();
+            this.dateLB = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // logOutBt
@@ -47,7 +49,7 @@
             // testsLst
             // 
             this.testsLst.HideSelection = false;
-            this.testsLst.Location = new System.Drawing.Point(67, 54);
+            this.testsLst.Location = new System.Drawing.Point(66, 89);
             this.testsLst.Margin = new System.Windows.Forms.Padding(4);
             this.testsLst.Name = "testsLst";
             this.testsLst.Size = new System.Drawing.Size(625, 244);
@@ -60,16 +62,37 @@
             this.loginLb.AutoSize = true;
             this.loginLb.Location = new System.Drawing.Point(606, 377);
             this.loginLb.Name = "loginLb";
-            this.loginLb.Size = new System.Drawing.Size(45, 20);
+            this.loginLb.Size = new System.Drawing.Size(36, 16);
             this.loginLb.TabIndex = 12;
             this.loginLb.Text = "login";
             this.loginLb.Visible = false;
+            // 
+            // dateLB
+            // 
+            this.dateLB.AutoSize = true;
+            this.dateLB.Location = new System.Drawing.Point(63, 44);
+            this.dateLB.Name = "dateLB";
+            this.dateLB.Size = new System.Drawing.Size(112, 16);
+            this.dateLB.TabIndex = 13;
+            this.dateLB.Text = "Tests for the day: ";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(184, 44);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(234, 22);
+            this.dateTimePicker1.TabIndex = 14;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // Technician
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 431);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dateLB);
             this.Controls.Add(this.loginLb);
             this.Controls.Add(this.testsLst);
             this.Controls.Add(this.logOutBt);
@@ -86,5 +109,7 @@
         private System.Windows.Forms.Button logOutBt;
         private System.Windows.Forms.ListView testsLst;
         internal System.Windows.Forms.Label loginLb;
+        private System.Windows.Forms.Label dateLB;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

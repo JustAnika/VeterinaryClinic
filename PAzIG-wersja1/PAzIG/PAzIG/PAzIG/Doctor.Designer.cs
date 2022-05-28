@@ -36,6 +36,7 @@
             this.petBT = new System.Windows.Forms.Button();
             this.visitLst = new System.Windows.Forms.ListView();
             this.loginInfoLb = new System.Windows.Forms.Label();
+            this.historyLV = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // patientLst
@@ -44,14 +45,15 @@
             this.patientLst.Location = new System.Drawing.Point(61, 134);
             this.patientLst.Margin = new System.Windows.Forms.Padding(4);
             this.patientLst.Name = "patientLst";
-            this.patientLst.Size = new System.Drawing.Size(457, 319);
+            this.patientLst.Size = new System.Drawing.Size(275, 319);
             this.patientLst.TabIndex = 4;
             this.patientLst.UseCompatibleStateImageBehavior = false;
             this.patientLst.View = System.Windows.Forms.View.List;
+            this.patientLst.SelectedIndexChanged += new System.EventHandler(this.patientLst_SelectedIndexChanged);
             // 
             // editVisitBt
             // 
-            this.editVisitBt.Location = new System.Drawing.Point(579, 55);
+            this.editVisitBt.Location = new System.Drawing.Point(587, 55);
             this.editVisitBt.Margin = new System.Windows.Forms.Padding(4);
             this.editVisitBt.Name = "editVisitBt";
             this.editVisitBt.Size = new System.Drawing.Size(168, 46);
@@ -62,7 +64,7 @@
             // 
             // editBt
             // 
-            this.editBt.Location = new System.Drawing.Point(321, 55);
+            this.editBt.Location = new System.Drawing.Point(334, 55);
             this.editBt.Margin = new System.Windows.Forms.Padding(4);
             this.editBt.Name = "editBt";
             this.editBt.Size = new System.Drawing.Size(168, 46);
@@ -73,7 +75,7 @@
             // 
             // orderBt
             // 
-            this.orderBt.Location = new System.Drawing.Point(824, 55);
+            this.orderBt.Location = new System.Drawing.Point(836, 55);
             this.orderBt.Margin = new System.Windows.Forms.Padding(4);
             this.orderBt.Name = "orderBt";
             this.orderBt.Size = new System.Drawing.Size(168, 46);
@@ -95,7 +97,7 @@
             // 
             // petBT
             // 
-            this.petBT.Location = new System.Drawing.Point(61, 55);
+            this.petBT.Location = new System.Drawing.Point(87, 55);
             this.petBT.Margin = new System.Windows.Forms.Padding(4);
             this.petBT.Name = "petBT";
             this.petBT.Size = new System.Drawing.Size(168, 46);
@@ -107,9 +109,9 @@
             // visitLst
             // 
             this.visitLst.HideSelection = false;
-            this.visitLst.Location = new System.Drawing.Point(552, 134);
+            this.visitLst.Location = new System.Drawing.Point(376, 134);
             this.visitLst.Name = "visitLst";
-            this.visitLst.Size = new System.Drawing.Size(439, 318);
+            this.visitLst.Size = new System.Drawing.Size(350, 319);
             this.visitLst.TabIndex = 11;
             this.visitLst.UseCompatibleStateImageBehavior = false;
             this.visitLst.View = System.Windows.Forms.View.List;
@@ -124,11 +126,22 @@
             this.loginInfoLb.Text = "login";
             this.loginInfoLb.Visible = false;
             // 
+            // historyLV
+            // 
+            this.historyLV.HideSelection = false;
+            this.historyLV.Location = new System.Drawing.Point(758, 134);
+            this.historyLV.Name = "historyLV";
+            this.historyLV.Size = new System.Drawing.Size(285, 318);
+            this.historyLV.TabIndex = 13;
+            this.historyLV.UseCompatibleStateImageBehavior = false;
+            this.historyLV.View = System.Windows.Forms.View.List;
+            // 
             // Doctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1027, 596);
+            this.ClientSize = new System.Drawing.Size(1078, 596);
+            this.Controls.Add(this.historyLV);
             this.Controls.Add(this.loginInfoLb);
             this.Controls.Add(this.visitLst);
             this.Controls.Add(this.petBT);
@@ -155,5 +168,6 @@
         private System.Windows.Forms.Button petBT;
         private System.Windows.Forms.ListView visitLst;
         internal System.Windows.Forms.Label loginInfoLb;
+        private System.Windows.Forms.ListView historyLV;
     }
 }

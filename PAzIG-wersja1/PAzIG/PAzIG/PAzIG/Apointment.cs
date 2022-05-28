@@ -31,7 +31,10 @@ namespace PAzIG
             {
                 string[] data = reader[0].ToString().Split('.', ' ', ':');
                 string dateTaken = data[2] + '-' + data[1] + '-' + data[0] + ' ' + data[3] + ':' + data[4];
-                if (data[0] == dateTimePicker1.Value.Day.ToString() && data[1] == dateTimePicker1.Value.Month.ToString() && data[2] == dateTimePicker1.Value.Year.ToString())
+                int dzien = dateTimePicker1.Value.Day;
+                int miesiac = dateTimePicker1.Value.Month;
+                int rok = dateTimePicker1.Value.Year;
+                if (int.Parse(data[0]) == dzien && int.Parse(data[1]) == miesiac && int.Parse(data[2]) == rok)
                 {
                     VisitListLv.Items.Add(dateTaken);
                 }
