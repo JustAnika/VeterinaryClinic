@@ -20,6 +20,7 @@ namespace PAzIG
         }
         public void UploadData()
         {
+            testsLst.Items.Clear();
             string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; 
             string sqlQuery = "SELECT Id_zwierzecia, Data_Badania, Opis FROM Badanie WHERE Id_pracownika LIKE '"+ loginLb.Text +"'";
             SqlConnection con = new SqlConnection(connection);
