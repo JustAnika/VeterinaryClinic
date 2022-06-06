@@ -177,7 +177,7 @@ namespace PAzIG
 
             petTB.Text = "";
             speciesTB.Text = "";
-            sexLstBox.SelectedIndex = 0;
+            sexLstBox.ClearSelected();
             ageTB.Text = "";
             infoTB.Text = "";
             firstNameTB.Text = "";

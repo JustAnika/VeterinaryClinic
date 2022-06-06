@@ -37,6 +37,8 @@
             this.visitLst = new System.Windows.Forms.ListView();
             this.loginInfoLb = new System.Windows.Forms.Label();
             this.historyLV = new System.Windows.Forms.ListView();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.allDateCecb = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // patientLst
@@ -136,11 +138,34 @@
             this.historyLV.UseCompatibleStateImageBehavior = false;
             this.historyLV.View = System.Windows.Forms.View.List;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd HH:mm";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(377, 469);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(230, 22);
+            this.dateTimePicker1.TabIndex = 14;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // allDateCecb
+            // 
+            this.allDateCecb.AutoSize = true;
+            this.allDateCecb.Location = new System.Drawing.Point(613, 469);
+            this.allDateCecb.Name = "allDateCecb";
+            this.allDateCecb.Size = new System.Drawing.Size(124, 20);
+            this.allDateCecb.TabIndex = 15;
+            this.allDateCecb.Text = "wszytskie wizyty";
+            this.allDateCecb.UseVisualStyleBackColor = true;
+            this.allDateCecb.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // Doctor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 596);
+            this.Controls.Add(this.allDateCecb);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.historyLV);
             this.Controls.Add(this.loginInfoLb);
             this.Controls.Add(this.visitLst);
@@ -169,5 +194,7 @@
         private System.Windows.Forms.ListView visitLst;
         internal System.Windows.Forms.Label loginInfoLb;
         private System.Windows.Forms.ListView historyLV;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.CheckBox allDateCecb;
     }
 }

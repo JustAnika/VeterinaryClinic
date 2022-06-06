@@ -22,7 +22,7 @@ namespace PAzIG
         {
             VisitListLv.Clear();
             string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False";
-            string sqlQuery = "SELECT Data_wizyty FROM Wizyta WHERE Id_pracownika LIKE '"+ doctorTextBox.Text+"'";
+            string sqlQuery = "SELECT Data_wizyty FROM Wizyta WHERE Id_pracownika LIKE '"+ doctorTextBox.Text+"' ORDER BY Data_wizyty";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             SqlCommand cmd = new SqlCommand(sqlQuery, con);

@@ -39,7 +39,7 @@ namespace PAzIG
                             notExist = 1;
                             nameTB.Text = "";
                             speciesTB.Text = "";
-                            sexLstBox.SelectedIndex = 0;
+                            sexLstBox.ClearSelected();
                             ageTB.Text = "";
                             infoTB.Text = "";
                             firstNameTB.Text = "";
@@ -90,7 +90,7 @@ namespace PAzIG
                                                             MessageBox.Show("Registered successfully.");
                                                             nameTB.Text = "";
                                                             speciesTB.Text = "";
-                                                            sexLstBox.SelectedIndex = 0;
+                                                            sexLstBox.ClearSelected();
                                                             ageTB.Text = "";
                                                             infoTB.Text = "";
                                                             firstNameTB.Text = "";
@@ -106,7 +106,7 @@ namespace PAzIG
                                                             MessageBox.Show("Registered successfully.");
                                                             nameTB.Text = "";
                                                             speciesTB.Text = "";
-                                                            sexLstBox.SelectedIndex = 0;
+                                                            sexLstBox.ClearSelected();
                                                             ageTB.Text = "";
                                                             infoTB.Text = "";
                                                             firstNameTB.Text = "";
@@ -130,7 +130,7 @@ namespace PAzIG
                                                         MessageBox.Show("Registered successfully.");
                                                         nameTB.Text = "";
                                                         speciesTB.Text = "";
-                                                        sexLstBox.SelectedIndex = 0;
+                                                        sexLstBox.ClearSelected();
                                                         ageTB.Text = "";
                                                         infoTB.Text = "";
                                                         firstNameTB.Text = "";
@@ -146,7 +146,7 @@ namespace PAzIG
                                                         MessageBox.Show("Registered successfully.");
                                                         nameTB.Text = "";
                                                         speciesTB.Text = "";
-                                                        sexLstBox.SelectedIndex = 0;
+                                                        sexLstBox.ClearSelected();
                                                         ageTB.Text = "";
                                                         infoTB.Text = "";
                                                         firstNameTB.Text = "";

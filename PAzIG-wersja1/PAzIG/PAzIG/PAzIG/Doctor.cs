@@ -35,8 +35,9 @@ namespace PAzIG
         }
         public void UploadDataVisits()
         {
+            visitLst.Items.Clear();
             string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; // 
-            string sqlQuery = "SELECT * FROM Wizyta WHERE Id_pracownika LIKE'"+loginInfoLb.Text+"';";
+            string sqlQuery = "SELECT * FROM Wizyta WHERE Id_pracownika LIKE'"+loginInfoLb.Text+"' ORDER BY Data_wizyty;";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
@@ -52,8 +53,16 @@ namespace PAzIG
                 {
                     pokoj = " ";
                 }
-                string dane = "Date: " + reader[3].ToString() + " Animal: " + reader[1].ToString()+" Room: "+pokoj+" Id_visit:" +reader[0].ToString();
-                visitLst.Items.Add(dane);
+                string[] data = reader[3].ToString().Split('.', ' ', ':');
+                string dateTaken = data[2] + '-' + data[1] + '-' + data[0] + ' ' + data[3] + ':' + data[4];
+                int dzien = dateTimePicker1.Value.Day;
+                int miesiac = dateTimePicker1.Value.Month;
+                int rok = dateTimePicker1.Value.Year;
+                if (int.Parse(data[0]) == dzien && int.Parse(data[1]) == miesiac && int.Parse(data[2]) == rok)
+                {
+                    string dane = "Date: " + dateTaken + " Animal: " + reader[1].ToString() + " Room: " + pokoj + " Id_visit:" + reader[0].ToString();
+                    visitLst.Items.Add(dane);
+                }
             }
             con.Close();
         }
@@ -150,7 +159,7 @@ namespace PAzIG
                 string idpet = separated[separated.Length - 1].TrimEnd('}').TrimStart(' ');
                 historyLV.Items.Add("VISITS:");
                 string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; // 
-                string sqlQuery = "SELECT Id_pracownika, Data_wizyty, Id_pracowni, Lek, Opis FROM Wizyta WHERE Id_zwierzecia = "+idpet+";";
+                string sqlQuery = "SELECT Id_pracownika, Data_wizyty, Id_pracowni, Lek, Opis FROM Wizyta WHERE Id_zwierzecia = "+idpet+" ORDER BY Data_wizyty";
                 SqlConnection con = new SqlConnection(connection);
                 con.Open();
                 SqlCommand cmd = new SqlCommand(sqlQuery, con);
@@ -169,7 +178,7 @@ namespace PAzIG
                 }
                 con.Close();
                 historyLV.Items.Add("TESTS:");
-                string sqlQuery1 = "SELECT Id_pracownika, Data_badania, Opis FROM Badanie WHERE Id_zwierzecia = " + idpet + ";";
+                string sqlQuery1 = "SELECT Id_pracownika, Data_badania, Opis FROM Badanie WHERE Id_zwierzecia = " + idpet + " ORDER BY Data_badania";
                 SqlConnection con1 = new SqlConnection(connection);
                 con.Open();
                 SqlCommand cmd1 = new SqlCommand(sqlQuery1, con);
@@ -199,6 +208,46 @@ namespace PAzIG
                 {
                     historyLV.Items.Clear();
                 }
+            }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            UploadDataVisits();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (allDateCecb.Checked)
+            {
+                visitLst.Items.Clear();
+                string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; // 
+                string sqlQuery = "SELECT * FROM Wizyta WHERE Id_pracownika LIKE'" + loginInfoLb.Text + "' ORDER BY Data_wizyty;";
+                SqlConnection con = new SqlConnection(connection);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(sqlQuery, con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    string pokoj = "";
+                    try
+                    {
+                        pokoj = reader[4].ToString();
+                    }
+                    catch (System.InvalidOperationException)
+                    {
+                        pokoj = " ";
+                    }
+                    string[] data = reader[3].ToString().Split('.', ' ', ':');
+                    string dateTaken = data[2] + '-' + data[1] + '-' + data[0] + ' ' + data[3] + ':' + data[4];
+                    string dane = "Date: " + dateTaken + " Animal: " + reader[1].ToString() + " Room: " + pokoj + " Id_visit:" + reader[0].ToString();
+                    visitLst.Items.Add(dane);
+                }
+                con.Close();
+            }
+            else
+            {
+                UploadDataVisits();
             }
         }
     }

@@ -69,7 +69,7 @@ namespace PAzIG
                                             lastNameTB.Text = "";
                                             loginTB.Text = "";
                                             passwordTB.Text = "";
-                                            typeLstBox.SelectedIndex = 0;
+                                            typeLstBox.ClearSelected();
                                             break;
                                         case 1:
                                             user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo, Imie, Nazwisko) VALUES ('T', '" + loginTB.Text + "','" + passwordTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "')";
@@ -80,7 +80,7 @@ namespace PAzIG
                                             lastNameTB.Text = "";
                                             loginTB.Text = "";
                                             passwordTB.Text = "";
-                                            typeLstBox.SelectedIndex = 0;
+                                            typeLstBox.ClearSelected();
                                             break;
                                         case 2:
                                             user = "INSERT INTO Logowanie (Id_logowania, Login_uzytkownika, Haslo, Imie, Nazwisko) VALUES ('P', '" + loginTB.Text + "','" + passwordTB.Text + "','" + firstNameTB.Text + "','" + lastNameTB.Text + "')";
@@ -91,7 +91,7 @@ namespace PAzIG
                                             lastNameTB.Text = "";
                                             loginTB.Text = "";
                                             passwordTB.Text = "";
-                                            typeLstBox.SelectedIndex = 0;
+                                            typeLstBox.ClearSelected();
                                             break;
                                     }
                                 }

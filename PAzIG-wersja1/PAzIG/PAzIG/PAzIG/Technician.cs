@@ -22,7 +22,7 @@ namespace PAzIG
         {
             testsLst.Items.Clear();
             string connection = "Data Source=localhost\\SQLEXPRESS;Initial Catalog=Przychodnia;Integrated Security=True;Encrypt=False"; 
-            string sqlQuery = "SELECT Id_zwierzecia, Data_Badania, Opis FROM Badanie WHERE Id_pracownika LIKE '"+ loginLb.Text +"'";
+            string sqlQuery = "SELECT Id_badania, Data_Badania, Opis FROM Badanie WHERE Id_pracownika LIKE '"+ loginLb.Text +"' ORDER BY Data_badania";
             SqlConnection con = new SqlConnection(connection);
             con.Open();
             SqlCommand cmd = new SqlCommand(sqlQuery, con);
@@ -36,7 +36,7 @@ namespace PAzIG
                 int rok = dateTimePicker1.Value.Year;
                 if (int.Parse(data[0]) == dzien && int.Parse(data[1]) == miesiac && int.Parse(data[2]) == rok)
                 {
-                    string dane = "Animal: " + reader[0].ToString() + " Data: " + dateTaken + " Opis: " + reader[2].ToString();
+                    string dane = "Id: " + reader[0].ToString() + " Data: " + dateTaken + " Opis: " + reader[2].ToString();
                     testsLst.Items.Add(dane);
                 }
 
