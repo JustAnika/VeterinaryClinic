@@ -56,6 +56,7 @@
             // 
             // idLb
             // 
+            this.idLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.idLb.AutoSize = true;
             this.idLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.idLb.Location = new System.Drawing.Point(154, 39);
@@ -66,6 +67,8 @@
             // 
             // petLb
             // 
+            this.petLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.petLb.AutoSize = true;
             this.petLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.petLb.Location = new System.Drawing.Point(71, 101);
@@ -76,6 +79,8 @@
             // 
             // infoLb
             // 
+            this.infoLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.infoLb.AutoSize = true;
             this.infoLb.Location = new System.Drawing.Point(56, 507);
             this.infoLb.Name = "infoLb";
@@ -85,6 +90,11 @@
             // 
             // infoTB
             // 
+            this.infoTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.infoTB.BackColor = System.Drawing.SystemColors.Info;
+            this.infoTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.infoTB.Location = new System.Drawing.Point(59, 539);
             this.infoTB.Name = "infoTB";
             this.infoTB.Size = new System.Drawing.Size(163, 20);
@@ -92,6 +102,8 @@
             // 
             // ageLb
             // 
+            this.ageLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.ageLb.AutoSize = true;
             this.ageLb.Location = new System.Drawing.Point(52, 428);
             this.ageLb.Name = "ageLb";
@@ -101,6 +113,11 @@
             // 
             // ageTB
             // 
+            this.ageTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ageTB.BackColor = System.Drawing.SystemColors.Info;
+            this.ageTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ageTB.Location = new System.Drawing.Point(55, 460);
             this.ageTB.Name = "ageTB";
             this.ageTB.Size = new System.Drawing.Size(163, 20);
@@ -108,6 +125,8 @@
             // 
             // sexLb
             // 
+            this.sexLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.sexLb.AutoSize = true;
             this.sexLb.Location = new System.Drawing.Point(52, 323);
             this.sexLb.Name = "sexLb";
@@ -117,6 +136,11 @@
             // 
             // sexTB
             // 
+            this.sexTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sexTB.BackColor = System.Drawing.SystemColors.Info;
+            this.sexTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.sexTB.Location = new System.Drawing.Point(86, 320);
             this.sexTB.Name = "sexTB";
             this.sexTB.ReadOnly = true;
@@ -125,6 +149,8 @@
             // 
             // speciesLb
             // 
+            this.speciesLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.speciesLb.AutoSize = true;
             this.speciesLb.Location = new System.Drawing.Point(52, 238);
             this.speciesLb.Name = "speciesLb";
@@ -134,6 +160,11 @@
             // 
             // speciesTB
             // 
+            this.speciesTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.speciesTB.BackColor = System.Drawing.SystemColors.Info;
+            this.speciesTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.speciesTB.Location = new System.Drawing.Point(55, 270);
             this.speciesTB.Name = "speciesTB";
             this.speciesTB.Size = new System.Drawing.Size(163, 20);
@@ -141,6 +172,8 @@
             // 
             // nameLb
             // 
+            this.nameLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.nameLb.AutoSize = true;
             this.nameLb.Location = new System.Drawing.Point(52, 152);
             this.nameLb.Name = "nameLb";
@@ -150,6 +183,11 @@
             // 
             // petTB
             // 
+            this.petTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.petTB.BackColor = System.Drawing.SystemColors.Info;
+            this.petTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.petTB.Location = new System.Drawing.Point(55, 184);
             this.petTB.Name = "petTB";
             this.petTB.Size = new System.Drawing.Size(163, 20);
@@ -157,6 +195,8 @@
             // 
             // phoneLb
             // 
+            this.phoneLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.phoneLb.AutoSize = true;
             this.phoneLb.Location = new System.Drawing.Point(291, 323);
             this.phoneLb.Name = "phoneLb";
@@ -166,6 +206,11 @@
             // 
             // phoneTB
             // 
+            this.phoneTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.phoneTB.BackColor = System.Drawing.SystemColors.Info;
+            this.phoneTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.phoneTB.Location = new System.Drawing.Point(294, 355);
             this.phoneTB.Name = "phoneTB";
             this.phoneTB.Size = new System.Drawing.Size(163, 20);
@@ -173,6 +218,8 @@
             // 
             // lastNameLb
             // 
+            this.lastNameLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lastNameLb.AutoSize = true;
             this.lastNameLb.Location = new System.Drawing.Point(291, 238);
             this.lastNameLb.Name = "lastNameLb";
@@ -182,6 +229,11 @@
             // 
             // lastNameTB
             // 
+            this.lastNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lastNameTB.BackColor = System.Drawing.SystemColors.Info;
+            this.lastNameTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lastNameTB.Location = new System.Drawing.Point(294, 270);
             this.lastNameTB.Name = "lastNameTB";
             this.lastNameTB.Size = new System.Drawing.Size(163, 20);
@@ -189,6 +241,8 @@
             // 
             // firstNameLb
             // 
+            this.firstNameLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.firstNameLb.AutoSize = true;
             this.firstNameLb.Location = new System.Drawing.Point(291, 152);
             this.firstNameLb.Name = "firstNameLb";
@@ -198,6 +252,11 @@
             // 
             // firstNameTB
             // 
+            this.firstNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstNameTB.BackColor = System.Drawing.SystemColors.Info;
+            this.firstNameTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.firstNameTB.Location = new System.Drawing.Point(294, 184);
             this.firstNameTB.Name = "firstNameTB";
             this.firstNameTB.Size = new System.Drawing.Size(163, 20);
@@ -205,6 +264,8 @@
             // 
             // ownerLb
             // 
+            this.ownerLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ownerLb.AutoSize = true;
             this.ownerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.ownerLb.Location = new System.Drawing.Point(305, 101);
@@ -215,22 +276,34 @@
             // 
             // editBt
             // 
+            this.editBt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.editBt.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.editBt.BackColor = System.Drawing.Color.Lavender;
+            this.editBt.ForeColor = System.Drawing.Color.SaddleBrown;
             this.editBt.Location = new System.Drawing.Point(294, 428);
             this.editBt.Name = "editBt";
             this.editBt.Size = new System.Drawing.Size(163, 51);
             this.editBt.TabIndex = 39;
             this.editBt.Text = "Edit";
-            this.editBt.UseVisualStyleBackColor = true;
+            this.editBt.UseVisualStyleBackColor = false;
             this.editBt.Click += new System.EventHandler(this.editBt_Click);
             // 
             // backBt
             // 
+            this.backBt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.backBt.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.backBt.BackColor = System.Drawing.Color.Lavender;
+            this.backBt.ForeColor = System.Drawing.Color.SaddleBrown;
             this.backBt.Location = new System.Drawing.Point(294, 507);
             this.backBt.Name = "backBt";
             this.backBt.Size = new System.Drawing.Size(163, 52);
             this.backBt.TabIndex = 60;
             this.backBt.Text = "Go Back";
-            this.backBt.UseVisualStyleBackColor = true;
+            this.backBt.UseVisualStyleBackColor = false;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
             // formLB
@@ -244,6 +317,11 @@
             // 
             // idTB
             // 
+            this.idTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.idTB.BackColor = System.Drawing.SystemColors.Info;
+            this.idTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.idTB.Location = new System.Drawing.Point(321, 71);
             this.idTB.Name = "idTB";
             this.idTB.Size = new System.Drawing.Size(100, 20);
@@ -266,6 +344,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SaddleBrown;
             this.ClientSize = new System.Drawing.Size(530, 600);
             this.Controls.Add(this.sexLstBox);
             this.Controls.Add(this.idTB);
@@ -291,6 +370,7 @@
             this.Controls.Add(this.petTB);
             this.Controls.Add(this.petLb);
             this.Controls.Add(this.idLb);
+            this.ForeColor = System.Drawing.Color.Lavender;
             this.Name = "Edit";
             this.Text = "Edit";
             this.ResumeLayout(false);

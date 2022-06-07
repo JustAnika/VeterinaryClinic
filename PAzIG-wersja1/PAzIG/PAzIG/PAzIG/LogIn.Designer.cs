@@ -36,55 +36,75 @@
             // 
             // loginBT
             // 
-            this.loginBT.Location = new System.Drawing.Point(132, 206);
-            this.loginBT.Margin = new System.Windows.Forms.Padding(4);
+            this.loginBT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.loginBT.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.loginBT.BackColor = System.Drawing.Color.Yellow;
+            this.loginBT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.loginBT.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.loginBT.FlatAppearance.BorderSize = 0;
+            this.loginBT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.loginBT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
+            this.loginBT.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
+            this.loginBT.Location = new System.Drawing.Point(99, 167);
             this.loginBT.Name = "loginBT";
-            this.loginBT.Size = new System.Drawing.Size(123, 43);
+            this.loginBT.Size = new System.Drawing.Size(92, 35);
             this.loginBT.TabIndex = 0;
             this.loginBT.Text = "Log In";
-            this.loginBT.UseVisualStyleBackColor = true;
+            this.loginBT.UseVisualStyleBackColor = false;
             this.loginBT.Click += new System.EventHandler(this.loginBT_Click);
             // 
             // loginTB
             // 
             this.loginTB.AllowDrop = true;
-            this.loginTB.Location = new System.Drawing.Point(60, 89);
-            this.loginTB.Margin = new System.Windows.Forms.Padding(4);
+            this.loginTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.loginTB.BackColor = System.Drawing.SystemColors.Info;
+            this.loginTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
+            this.loginTB.Location = new System.Drawing.Point(45, 72);
             this.loginTB.Name = "loginTB";
-            this.loginTB.Size = new System.Drawing.Size(269, 22);
+            this.loginTB.Size = new System.Drawing.Size(203, 20);
             this.loginTB.TabIndex = 3;
             // 
             // passwordTB
             // 
-            this.passwordTB.Location = new System.Drawing.Point(60, 149);
-            this.passwordTB.Margin = new System.Windows.Forms.Padding(4);
+            this.passwordTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.passwordTB.BackColor = System.Drawing.SystemColors.Info;
+            this.passwordTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
+            this.passwordTB.Location = new System.Drawing.Point(45, 121);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.PasswordChar = '*';
-            this.passwordTB.Size = new System.Drawing.Size(269, 22);
+            this.passwordTB.Size = new System.Drawing.Size(203, 20);
             this.passwordTB.TabIndex = 4;
             this.passwordTB.UseSystemPasswordChar = true;
             // 
             // nameLB
             // 
+            this.nameLB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.nameLB.AutoSize = true;
             this.nameLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nameLB.Location = new System.Drawing.Point(56, 34);
-            this.nameLB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nameLB.ForeColor = System.Drawing.Color.Yellow;
+            this.nameLB.Location = new System.Drawing.Point(42, 28);
             this.nameLB.Name = "nameLB";
-            this.nameLB.Size = new System.Drawing.Size(254, 20);
+            this.nameLB.Size = new System.Drawing.Size(206, 16);
             this.nameLB.TabIndex = 6;
             this.nameLB.Text = "Welcome to veterinary clinic!";
             // 
             // LogIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 289);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
+            this.ClientSize = new System.Drawing.Size(292, 235);
             this.Controls.Add(this.nameLB);
             this.Controls.Add(this.passwordTB);
             this.Controls.Add(this.loginTB);
             this.Controls.Add(this.loginBT);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(24)))), ((int)(((byte)(205)))));
             this.Name = "LogIn";
             this.Text = "Vet Clinic";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LogIn_FormClosing);

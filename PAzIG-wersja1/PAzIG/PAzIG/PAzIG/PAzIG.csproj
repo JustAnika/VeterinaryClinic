@@ -172,6 +172,18 @@
     <Compile Include="Admin.designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Apointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apointment.designer.cs">
+      <DependentUpon>Apointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor.designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Edit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,20 +193,20 @@
     <Compile Include="EditVisit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EditVisit.Designer.cs">
+    <Compile Include="EditVisit.designer.cs">
       <DependentUpon>EditVisit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Apointment.cs">
+    <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Apointment.Designer.cs">
-      <DependentUpon>Apointment.cs</DependentUpon>
+    <Compile Include="LogIn.designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="Doctor.cs">
+    <Compile Include="Nurse.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Doctor.Designer.cs">
-      <DependentUpon>Doctor.cs</DependentUpon>
+    <Compile Include="Nurse.designer.cs">
+      <DependentUpon>Nurse.cs</DependentUpon>
     </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
@@ -202,40 +214,22 @@
     <Compile Include="Register.designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="Test.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LogIn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LogIn.Designer.cs">
-      <DependentUpon>LogIn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Nurse.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Nurse.Designer.cs">
-      <DependentUpon>Nurse.cs</DependentUpon>
-    </Compile>
     <Compile Include="Technician.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Technician.Designer.cs">
+    <Compile Include="Technician.designer.cs">
       <DependentUpon>Technician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test.designer.cs">
+      <DependentUpon>Test.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Edit.resx">
-      <DependentUpon>Edit.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="EditVisit.resx">
-      <DependentUpon>EditVisit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Apointment.resx">
       <DependentUpon>Apointment.cs</DependentUpon>
@@ -243,8 +237,17 @@
     <EmbeddedResource Include="Doctor.resx">
       <DependentUpon>Doctor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditVisit.resx">
+      <DependentUpon>EditVisit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nurse.resx">
+      <DependentUpon>Nurse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -255,9 +258,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Nurse.resx">
-      <DependentUpon>Nurse.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>

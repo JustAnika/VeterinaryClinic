@@ -55,210 +55,310 @@
             // 
             // firstNameTB
             // 
-            this.firstNameTB.Location = new System.Drawing.Point(292, 177);
+            this.firstNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstNameTB.BackColor = System.Drawing.SystemColors.Info;
+            this.firstNameTB.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.firstNameTB.Location = new System.Drawing.Point(389, 218);
+            this.firstNameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.firstNameTB.Name = "firstNameTB";
-            this.firstNameTB.Size = new System.Drawing.Size(163, 20);
+            this.firstNameTB.Size = new System.Drawing.Size(216, 22);
             this.firstNameTB.TabIndex = 0;
             // 
             // firstNameLb
             // 
+            this.firstNameLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.firstNameLb.AutoSize = true;
-            this.firstNameLb.Location = new System.Drawing.Point(289, 145);
+            this.firstNameLb.Location = new System.Drawing.Point(385, 178);
+            this.firstNameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.firstNameLb.Name = "firstNameLb";
-            this.firstNameLb.Size = new System.Drawing.Size(64, 13);
+            this.firstNameLb.Size = new System.Drawing.Size(80, 16);
             this.firstNameLb.TabIndex = 3;
             this.firstNameLb.Text = "First Name:*";
             // 
             // lastNameLb
             // 
+            this.lastNameLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lastNameLb.AutoSize = true;
-            this.lastNameLb.Location = new System.Drawing.Point(289, 231);
+            this.lastNameLb.Location = new System.Drawing.Point(385, 284);
+            this.lastNameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lastNameLb.Name = "lastNameLb";
-            this.lastNameLb.Size = new System.Drawing.Size(65, 13);
+            this.lastNameLb.Size = new System.Drawing.Size(80, 16);
             this.lastNameLb.TabIndex = 5;
             this.lastNameLb.Text = "Last Name:*";
             // 
             // lastNameTB
             // 
-            this.lastNameTB.Location = new System.Drawing.Point(292, 263);
+            this.lastNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lastNameTB.BackColor = System.Drawing.SystemColors.Info;
+            this.lastNameTB.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lastNameTB.Location = new System.Drawing.Point(389, 324);
+            this.lastNameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lastNameTB.Name = "lastNameTB";
-            this.lastNameTB.Size = new System.Drawing.Size(163, 20);
+            this.lastNameTB.Size = new System.Drawing.Size(216, 22);
             this.lastNameTB.TabIndex = 4;
             // 
             // phoneLb
             // 
+            this.phoneLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.phoneLb.AutoSize = true;
-            this.phoneLb.Location = new System.Drawing.Point(289, 306);
+            this.phoneLb.Location = new System.Drawing.Point(385, 377);
+            this.phoneLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.phoneLb.Name = "phoneLb";
-            this.phoneLb.Size = new System.Drawing.Size(45, 13);
+            this.phoneLb.Size = new System.Drawing.Size(54, 16);
             this.phoneLb.TabIndex = 9;
             this.phoneLb.Text = "Phone:*";
             // 
             // phoneTB
             // 
-            this.phoneTB.Location = new System.Drawing.Point(292, 332);
+            this.phoneTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.phoneTB.BackColor = System.Drawing.SystemColors.Info;
+            this.phoneTB.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.phoneTB.Location = new System.Drawing.Point(389, 409);
+            this.phoneTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.phoneTB.Name = "phoneTB";
-            this.phoneTB.Size = new System.Drawing.Size(163, 20);
+            this.phoneTB.Size = new System.Drawing.Size(216, 22);
             this.phoneTB.TabIndex = 8;
             // 
             // registerBt
             // 
-            this.registerBt.Location = new System.Drawing.Point(292, 422);
+            this.registerBt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.registerBt.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.registerBt.BackColor = System.Drawing.Color.Lavender;
+            this.registerBt.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.registerBt.Location = new System.Drawing.Point(389, 519);
+            this.registerBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.registerBt.Name = "registerBt";
-            this.registerBt.Size = new System.Drawing.Size(163, 43);
+            this.registerBt.Size = new System.Drawing.Size(217, 53);
             this.registerBt.TabIndex = 20;
             this.registerBt.Text = "Register";
-            this.registerBt.UseVisualStyleBackColor = true;
+            this.registerBt.UseVisualStyleBackColor = false;
             this.registerBt.Click += new System.EventHandler(this.registerBt_Click);
             // 
             // registerLb
             // 
+            this.registerLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.registerLb.AutoSize = true;
             this.registerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.registerLb.Location = new System.Drawing.Point(159, 37);
+            this.registerLb.Location = new System.Drawing.Point(212, 46);
+            this.registerLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.registerLb.Name = "registerLb";
-            this.registerLb.Size = new System.Drawing.Size(204, 24);
+            this.registerLb.Size = new System.Drawing.Size(260, 29);
             this.registerLb.TabIndex = 21;
             this.registerLb.Text = "Register New Patient";
             // 
             // backBt
             // 
-            this.backBt.Location = new System.Drawing.Point(292, 497);
+            this.backBt.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.backBt.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.backBt.BackColor = System.Drawing.Color.Lavender;
+            this.backBt.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.backBt.Location = new System.Drawing.Point(389, 612);
+            this.backBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.backBt.Name = "backBt";
-            this.backBt.Size = new System.Drawing.Size(163, 43);
+            this.backBt.Size = new System.Drawing.Size(217, 53);
             this.backBt.TabIndex = 60;
             this.backBt.Text = "Go Back";
-            this.backBt.UseVisualStyleBackColor = true;
+            this.backBt.UseVisualStyleBackColor = false;
             this.backBt.Click += new System.EventHandler(this.backBt_Click);
             // 
             // formLB
             // 
             this.formLB.AutoSize = true;
-            this.formLB.Location = new System.Drawing.Point(236, 602);
+            this.formLB.Location = new System.Drawing.Point(386, 692);
+            this.formLB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.formLB.Name = "formLB";
-            this.formLB.Size = new System.Drawing.Size(0, 13);
+            this.formLB.Size = new System.Drawing.Size(0, 16);
             this.formLB.TabIndex = 66;
             this.formLB.Visible = false;
             // 
             // ownerLb
             // 
+            this.ownerLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ownerLb.AutoSize = true;
             this.ownerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.ownerLb.Location = new System.Drawing.Point(350, 99);
+            this.ownerLb.Location = new System.Drawing.Point(467, 122);
+            this.ownerLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ownerLb.Name = "ownerLb";
-            this.ownerLb.Size = new System.Drawing.Size(50, 16);
+            this.ownerLb.Size = new System.Drawing.Size(63, 20);
             this.ownerLb.TabIndex = 72;
             this.ownerLb.Text = "Owner";
             // 
             // petLB
             // 
+            this.petLB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.petLB.AutoSize = true;
             this.petLB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.petLB.Location = new System.Drawing.Point(103, 99);
+            this.petLB.Location = new System.Drawing.Point(137, 122);
+            this.petLB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.petLB.Name = "petLB";
-            this.petLB.Size = new System.Drawing.Size(30, 16);
+            this.petLB.Size = new System.Drawing.Size(37, 20);
             this.petLB.TabIndex = 83;
             this.petLB.Text = "Pet";
             // 
             // infoLb
             // 
+            this.infoLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.infoLb.AutoSize = true;
-            this.infoLb.Location = new System.Drawing.Point(47, 477);
+            this.infoLb.Location = new System.Drawing.Point(63, 587);
+            this.infoLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infoLb.Name = "infoLb";
-            this.infoLb.Size = new System.Drawing.Size(111, 13);
+            this.infoLb.Size = new System.Drawing.Size(138, 16);
             this.infoLb.TabIndex = 82;
             this.infoLb.Text = "Additional Information:";
             // 
             // infoTB
             // 
-            this.infoTB.Location = new System.Drawing.Point(50, 509);
+            this.infoTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.infoTB.BackColor = System.Drawing.SystemColors.Info;
+            this.infoTB.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.infoTB.Location = new System.Drawing.Point(67, 626);
+            this.infoTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.infoTB.Name = "infoTB";
-            this.infoTB.Size = new System.Drawing.Size(163, 20);
+            this.infoTB.Size = new System.Drawing.Size(216, 22);
             this.infoTB.TabIndex = 81;
             // 
             // ageLb
             // 
+            this.ageLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.ageLb.AutoSize = true;
-            this.ageLb.Location = new System.Drawing.Point(47, 398);
+            this.ageLb.Location = new System.Drawing.Point(63, 490);
+            this.ageLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ageLb.Name = "ageLb";
-            this.ageLb.Size = new System.Drawing.Size(29, 13);
+            this.ageLb.Size = new System.Drawing.Size(35, 16);
             this.ageLb.TabIndex = 80;
             this.ageLb.Text = "Age:";
             // 
             // ageTB
             // 
-            this.ageTB.Location = new System.Drawing.Point(50, 430);
+            this.ageTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ageTB.BackColor = System.Drawing.SystemColors.Info;
+            this.ageTB.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.ageTB.Location = new System.Drawing.Point(67, 529);
+            this.ageTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ageTB.Name = "ageTB";
-            this.ageTB.Size = new System.Drawing.Size(163, 20);
+            this.ageTB.Size = new System.Drawing.Size(216, 22);
             this.ageTB.TabIndex = 79;
             // 
             // sexLb
             // 
+            this.sexLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.sexLb.AutoSize = true;
-            this.sexLb.Location = new System.Drawing.Point(47, 306);
+            this.sexLb.Location = new System.Drawing.Point(63, 377);
+            this.sexLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sexLb.Name = "sexLb";
-            this.sexLb.Size = new System.Drawing.Size(32, 13);
+            this.sexLb.Size = new System.Drawing.Size(38, 16);
             this.sexLb.TabIndex = 78;
             this.sexLb.Text = "Sex:*";
             // 
             // speciesLb
             // 
+            this.speciesLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.speciesLb.AutoSize = true;
-            this.speciesLb.Location = new System.Drawing.Point(47, 231);
+            this.speciesLb.Location = new System.Drawing.Point(63, 284);
+            this.speciesLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.speciesLb.Name = "speciesLb";
-            this.speciesLb.Size = new System.Drawing.Size(52, 13);
+            this.speciesLb.Size = new System.Drawing.Size(65, 16);
             this.speciesLb.TabIndex = 76;
             this.speciesLb.Text = "Species:*";
             // 
             // speciesTB
             // 
-            this.speciesTB.Location = new System.Drawing.Point(50, 263);
+            this.speciesTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.speciesTB.BackColor = System.Drawing.SystemColors.Info;
+            this.speciesTB.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.speciesTB.Location = new System.Drawing.Point(67, 324);
+            this.speciesTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.speciesTB.Name = "speciesTB";
-            this.speciesTB.Size = new System.Drawing.Size(163, 20);
+            this.speciesTB.Size = new System.Drawing.Size(216, 22);
             this.speciesTB.TabIndex = 75;
             // 
             // nameLb
             // 
+            this.nameLb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.nameLb.AutoSize = true;
-            this.nameLb.Location = new System.Drawing.Point(47, 145);
+            this.nameLb.Location = new System.Drawing.Point(63, 178);
+            this.nameLb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLb.Name = "nameLb";
-            this.nameLb.Size = new System.Drawing.Size(42, 13);
+            this.nameLb.Size = new System.Drawing.Size(52, 16);
             this.nameLb.TabIndex = 74;
             this.nameLb.Text = "Name:*";
             // 
             // nameTB
             // 
-            this.nameTB.Location = new System.Drawing.Point(50, 177);
+            this.nameTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.nameTB.BackColor = System.Drawing.SystemColors.Info;
+            this.nameTB.ForeColor = System.Drawing.SystemColors.Info;
+            this.nameTB.Location = new System.Drawing.Point(67, 218);
+            this.nameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nameTB.Name = "nameTB";
-            this.nameTB.Size = new System.Drawing.Size(163, 20);
+            this.nameTB.Size = new System.Drawing.Size(216, 22);
             this.nameTB.TabIndex = 73;
             // 
             // requiredLB
             // 
+            this.requiredLB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.requiredLB.AutoSize = true;
-            this.requiredLB.Location = new System.Drawing.Point(50, 562);
+            this.requiredLB.Location = new System.Drawing.Point(67, 692);
+            this.requiredLB.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.requiredLB.Name = "requiredLB";
-            this.requiredLB.Size = new System.Drawing.Size(103, 13);
+            this.requiredLB.Size = new System.Drawing.Size(130, 16);
             this.requiredLB.TabIndex = 84;
             this.requiredLB.Text = "*required information";
             // 
             // sexLstBox
             // 
+            this.sexLstBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.sexLstBox.BackColor = System.Drawing.SystemColors.Info;
+            this.sexLstBox.ForeColor = System.Drawing.Color.SaddleBrown;
             this.sexLstBox.FormattingEnabled = true;
             this.sexLstBox.Items.AddRange(new object[] {
             "K",
             "M",
             "N"});
-            this.sexLstBox.Location = new System.Drawing.Point(50, 332);
+            this.sexLstBox.Location = new System.Drawing.Point(67, 409);
+            this.sexLstBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.sexLstBox.Name = "sexLstBox";
-            this.sexLstBox.Size = new System.Drawing.Size(120, 49);
+            this.sexLstBox.Size = new System.Drawing.Size(159, 55);
             this.sexLstBox.TabIndex = 85;
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 605);
+            this.BackColor = System.Drawing.Color.SaddleBrown;
+            this.ClientSize = new System.Drawing.Size(676, 745);
             this.Controls.Add(this.sexLstBox);
             this.Controls.Add(this.requiredLB);
             this.Controls.Add(this.petLB);
@@ -282,6 +382,8 @@
             this.Controls.Add(this.lastNameTB);
             this.Controls.Add(this.firstNameLb);
             this.Controls.Add(this.firstNameTB);
+            this.ForeColor = System.Drawing.Color.Lavender;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Register";
             this.Text = "Registration";
             this.ResumeLayout(false);

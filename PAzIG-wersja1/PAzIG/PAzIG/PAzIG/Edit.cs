@@ -190,9 +190,10 @@ namespace PAzIG
 
         private void backBt_Click(object sender, EventArgs e)
         {
-            if (formLB.Text == "doctor")
+            if (formLB.Text != "")
             {
                 Doctor doctor = new Doctor();
+                doctor.loginInfoLb.Text = formLB.Text;
                 doctor.Show();
                 this.Close();
             }

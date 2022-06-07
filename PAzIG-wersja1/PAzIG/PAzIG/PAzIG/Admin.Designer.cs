@@ -46,7 +46,9 @@
             // 
             // loginLB
             // 
+            this.loginLB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.loginLB.AutoSize = true;
+            this.loginLB.ForeColor = System.Drawing.Color.Yellow;
             this.loginLB.Location = new System.Drawing.Point(117, 300);
             this.loginLB.Name = "loginLB";
             this.loginLB.Size = new System.Drawing.Size(40, 13);
@@ -55,7 +57,9 @@
             // 
             // passwordLB
             // 
+            this.passwordLB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.passwordLB.AutoSize = true;
+            this.passwordLB.ForeColor = System.Drawing.Color.Yellow;
             this.passwordLB.Location = new System.Drawing.Point(108, 369);
             this.passwordLB.Name = "passwordLB";
             this.passwordLB.Size = new System.Drawing.Size(60, 13);
@@ -64,6 +68,11 @@
             // 
             // loginTB
             // 
+            this.loginTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.loginTB.BackColor = System.Drawing.SystemColors.Info;
+            this.loginTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
             this.loginTB.Location = new System.Drawing.Point(69, 326);
             this.loginTB.Name = "loginTB";
             this.loginTB.Size = new System.Drawing.Size(141, 20);
@@ -71,6 +80,11 @@
             // 
             // passwordTB
             // 
+            this.passwordTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.passwordTB.BackColor = System.Drawing.SystemColors.Info;
+            this.passwordTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
             this.passwordTB.Location = new System.Drawing.Point(69, 397);
             this.passwordTB.Name = "passwordTB";
             this.passwordTB.Size = new System.Drawing.Size(141, 20);
@@ -78,18 +92,29 @@
             // 
             // addBT
             // 
+            this.addBT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.addBT.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.addBT.BackColor = System.Drawing.Color.Yellow;
+            this.addBT.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.addBT.FlatAppearance.BorderSize = 0;
+            this.addBT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.addBT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.addBT.Location = new System.Drawing.Point(30, 438);
             this.addBT.Name = "addBT";
             this.addBT.Size = new System.Drawing.Size(75, 23);
             this.addBT.TabIndex = 4;
             this.addBT.Text = "Add User";
-            this.addBT.UseVisualStyleBackColor = true;
+            this.addBT.UseVisualStyleBackColor = false;
             this.addBT.Click += new System.EventHandler(this.addBT_Click);
             // 
             // registerLb
             // 
+            this.registerLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.registerLb.AutoSize = true;
             this.registerLb.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.registerLb.ForeColor = System.Drawing.Color.Yellow;
             this.registerLb.Location = new System.Drawing.Point(66, 28);
             this.registerLb.Name = "registerLb";
             this.registerLb.Size = new System.Drawing.Size(145, 24);
@@ -98,7 +123,9 @@
             // 
             // typeLB
             // 
+            this.typeLB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.typeLB.AutoSize = true;
+            this.typeLB.ForeColor = System.Drawing.Color.Yellow;
             this.typeLB.Location = new System.Drawing.Point(118, 65);
             this.typeLB.Name = "typeLB";
             this.typeLB.Size = new System.Drawing.Size(34, 13);
@@ -107,6 +134,8 @@
             // 
             // typeLstBox
             // 
+            this.typeLstBox.BackColor = System.Drawing.SystemColors.Info;
+            this.typeLstBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
             this.typeLstBox.FormattingEnabled = true;
             this.typeLstBox.Items.AddRange(new object[] {
             "Doctor",
@@ -119,16 +148,30 @@
             // 
             // backBT
             // 
+            this.backBT.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.backBT.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.backBT.BackColor = System.Drawing.Color.Yellow;
+            this.backBT.FlatAppearance.BorderColor = System.Drawing.Color.Yellow;
+            this.backBT.FlatAppearance.BorderSize = 0;
+            this.backBT.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Yellow;
+            this.backBT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Yellow;
             this.backBT.Location = new System.Drawing.Point(157, 438);
             this.backBT.Name = "backBT";
             this.backBT.Size = new System.Drawing.Size(75, 23);
             this.backBT.TabIndex = 25;
             this.backBT.Text = "Go Back";
-            this.backBT.UseVisualStyleBackColor = true;
+            this.backBT.UseVisualStyleBackColor = false;
             this.backBT.Click += new System.EventHandler(this.backBT_Click);
             // 
             // lastNameTB
             // 
+            this.lastNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lastNameTB.BackColor = System.Drawing.SystemColors.Info;
+            this.lastNameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
             this.lastNameTB.Location = new System.Drawing.Point(69, 254);
             this.lastNameTB.Name = "lastNameTB";
             this.lastNameTB.Size = new System.Drawing.Size(141, 20);
@@ -136,6 +179,11 @@
             // 
             // firstNameTB
             // 
+            this.firstNameTB.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.firstNameTB.BackColor = System.Drawing.SystemColors.Info;
+            this.firstNameTB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
             this.firstNameTB.Location = new System.Drawing.Point(69, 183);
             this.firstNameTB.Name = "firstNameTB";
             this.firstNameTB.Size = new System.Drawing.Size(141, 20);
@@ -143,7 +191,9 @@
             // 
             // lastNameLb
             // 
+            this.lastNameLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lastNameLb.AutoSize = true;
+            this.lastNameLb.ForeColor = System.Drawing.Color.Yellow;
             this.lastNameLb.Location = new System.Drawing.Point(108, 226);
             this.lastNameLb.Name = "lastNameLb";
             this.lastNameLb.Size = new System.Drawing.Size(65, 13);
@@ -152,7 +202,9 @@
             // 
             // firstNameLb
             // 
+            this.firstNameLb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.firstNameLb.AutoSize = true;
+            this.firstNameLb.ForeColor = System.Drawing.Color.Yellow;
             this.firstNameLb.Location = new System.Drawing.Point(108, 158);
             this.firstNameLb.Name = "firstNameLb";
             this.firstNameLb.Size = new System.Drawing.Size(64, 13);
@@ -162,6 +214,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Yellow;
             this.label1.Location = new System.Drawing.Point(30, 468);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 13);
@@ -172,6 +225,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(4)))), ((int)(((byte)(157)))));
             this.ClientSize = new System.Drawing.Size(272, 495);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lastNameTB);
