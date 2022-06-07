@@ -94,7 +94,7 @@ namespace PAzIG
             {
                 //id zwierzaka
                 string[] separated = visitLst.SelectedItems[0].ToString().Split(':');
-                string idp = separated[5].TrimEnd(' ','\\','n','R','o','m');
+                string idp = separated[4].TrimEnd(' ','\\','n','R','o','m');
                 visit.petTextBox.Text = idp;
                 //login
                 visit.doctorTextBox.Text = loginInfoLb.Text;

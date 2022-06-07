@@ -61,7 +61,7 @@
             this.firstNameTB.BackColor = System.Drawing.SystemColors.Info;
             this.firstNameTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.firstNameTB.Location = new System.Drawing.Point(389, 218);
-            this.firstNameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.firstNameTB.Margin = new System.Windows.Forms.Padding(4);
             this.firstNameTB.Name = "firstNameTB";
             this.firstNameTB.Size = new System.Drawing.Size(216, 22);
             this.firstNameTB.TabIndex = 0;
@@ -98,7 +98,7 @@
             this.lastNameTB.BackColor = System.Drawing.SystemColors.Info;
             this.lastNameTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.lastNameTB.Location = new System.Drawing.Point(389, 324);
-            this.lastNameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lastNameTB.Margin = new System.Windows.Forms.Padding(4);
             this.lastNameTB.Name = "lastNameTB";
             this.lastNameTB.Size = new System.Drawing.Size(216, 22);
             this.lastNameTB.TabIndex = 4;
@@ -123,7 +123,7 @@
             this.phoneTB.BackColor = System.Drawing.SystemColors.Info;
             this.phoneTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.phoneTB.Location = new System.Drawing.Point(389, 409);
-            this.phoneTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneTB.Margin = new System.Windows.Forms.Padding(4);
             this.phoneTB.Name = "phoneTB";
             this.phoneTB.Size = new System.Drawing.Size(216, 22);
             this.phoneTB.TabIndex = 8;
@@ -137,7 +137,7 @@
             this.registerBt.BackColor = System.Drawing.Color.Lavender;
             this.registerBt.ForeColor = System.Drawing.Color.SaddleBrown;
             this.registerBt.Location = new System.Drawing.Point(389, 519);
-            this.registerBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.registerBt.Margin = new System.Windows.Forms.Padding(4);
             this.registerBt.Name = "registerBt";
             this.registerBt.Size = new System.Drawing.Size(217, 53);
             this.registerBt.TabIndex = 20;
@@ -166,7 +166,7 @@
             this.backBt.BackColor = System.Drawing.Color.Lavender;
             this.backBt.ForeColor = System.Drawing.Color.SaddleBrown;
             this.backBt.Location = new System.Drawing.Point(389, 612);
-            this.backBt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.backBt.Margin = new System.Windows.Forms.Padding(4);
             this.backBt.Name = "backBt";
             this.backBt.Size = new System.Drawing.Size(217, 53);
             this.backBt.TabIndex = 60;
@@ -230,7 +230,7 @@
             this.infoTB.BackColor = System.Drawing.SystemColors.Info;
             this.infoTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.infoTB.Location = new System.Drawing.Point(67, 626);
-            this.infoTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.infoTB.Margin = new System.Windows.Forms.Padding(4);
             this.infoTB.Name = "infoTB";
             this.infoTB.Size = new System.Drawing.Size(216, 22);
             this.infoTB.TabIndex = 81;
@@ -255,7 +255,7 @@
             this.ageTB.BackColor = System.Drawing.SystemColors.Info;
             this.ageTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.ageTB.Location = new System.Drawing.Point(67, 529);
-            this.ageTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ageTB.Margin = new System.Windows.Forms.Padding(4);
             this.ageTB.Name = "ageTB";
             this.ageTB.Size = new System.Drawing.Size(216, 22);
             this.ageTB.TabIndex = 79;
@@ -292,7 +292,7 @@
             this.speciesTB.BackColor = System.Drawing.SystemColors.Info;
             this.speciesTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.speciesTB.Location = new System.Drawing.Point(67, 324);
-            this.speciesTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.speciesTB.Margin = new System.Windows.Forms.Padding(4);
             this.speciesTB.Name = "speciesTB";
             this.speciesTB.Size = new System.Drawing.Size(216, 22);
             this.speciesTB.TabIndex = 75;
@@ -315,9 +315,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nameTB.BackColor = System.Drawing.SystemColors.Info;
-            this.nameTB.ForeColor = System.Drawing.SystemColors.Info;
+            this.nameTB.ForeColor = System.Drawing.Color.SaddleBrown;
             this.nameTB.Location = new System.Drawing.Point(67, 218);
-            this.nameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTB.Margin = new System.Windows.Forms.Padding(4);
             this.nameTB.Name = "nameTB";
             this.nameTB.Size = new System.Drawing.Size(216, 22);
             this.nameTB.TabIndex = 73;
@@ -348,7 +348,7 @@
             "M",
             "N"});
             this.sexLstBox.Location = new System.Drawing.Point(67, 409);
-            this.sexLstBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sexLstBox.Margin = new System.Windows.Forms.Padding(4);
             this.sexLstBox.Name = "sexLstBox";
             this.sexLstBox.Size = new System.Drawing.Size(159, 55);
             this.sexLstBox.TabIndex = 85;
@@ -383,7 +383,7 @@
             this.Controls.Add(this.firstNameLb);
             this.Controls.Add(this.firstNameTB);
             this.ForeColor = System.Drawing.Color.Lavender;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Register";
             this.Text = "Registration";
             this.ResumeLayout(false);
