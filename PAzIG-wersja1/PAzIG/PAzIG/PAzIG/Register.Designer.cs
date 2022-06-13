@@ -350,7 +350,7 @@
             this.sexLstBox.Location = new System.Drawing.Point(67, 409);
             this.sexLstBox.Margin = new System.Windows.Forms.Padding(4);
             this.sexLstBox.Name = "sexLstBox";
-            this.sexLstBox.Size = new System.Drawing.Size(159, 55);
+            this.sexLstBox.Size = new System.Drawing.Size(159, 72);
             this.sexLstBox.TabIndex = 85;
             // 
             // Register
